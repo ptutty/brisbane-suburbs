@@ -1,0 +1,59 @@
+[
+    {
+        "traveltimes": {
+            "stlucia": 30, 
+            "herston": 15,
+            "color": "#d0ddfa"
+            },
+        "distance": {
+            "city": 0 
+        }, 
+        "id": "brisbane-city", 
+        "imageUrl": "img/suburbs/placeholder1.jpg", 
+        "name": "Brisbane City",
+        "snippet": "Brisbane’s bustling city centre may not be where everyone wants to call home, but if you want everything to be right on your doorstep, this could be the place for you!"
+    }, 
+    {
+        "traveltimes": {
+            "stlucia": 30, 
+            "herston": 15,
+            "color": "#d0ddfa"
+        },  
+        "distance": {
+            "city": 2 
+        }, 
+        "id": "fortitude-valley", 
+        "imageUrl": "img/suburbs/placeholder1.jpg", 
+        "name": "Fortitude Valley",
+        "snippet": "“The Valley” is loved by students for its great nightlife, a mix of pubs, trendy clubs, live music venues and restaurants. You have to wedge yourself into one of the many nightclubs at least once during your stay in Brisvegas."
+    }, 
+    {
+        "traveltimes": {
+            "stlucia": 20, 
+            "herston": 35,
+            "color": "#f8dce6"
+        },  
+        "distance": {
+            "city": 6 
+        }, 
+        "id": "greenslopes", 
+        "imageUrl": "img/suburbs/placeholder1.jpg", 
+        "name": "Greenslopes",
+        "snippet": "Greenslopes is another great inner city suburb with easy access anything you could need including shops and restaurants with plenty of ‘green space’ for those who enjoy the outdoors. With plenty of access to the busway, it’s easy to get around, in and out of the suburb."
+    },
+    {
+        "traveltimes": {
+            "stlucia": 10, 
+            "herston": 35,
+            "color": "#ccedba"
+        },  
+        "distance": {
+            "city": 6 
+        }, 
+        "id": "st-lucia", 
+        "imageUrl": "img/suburbs/placeholder1.jpg", 
+        "name": "St Lucia",
+        "snippet": "Greenslopes is another great inner city suburb with easy access anything you could need including shops and restaurants with plenty of ‘green space’ for those who enjoy the outdoors. With plenty of access to the busway, it’s easy to get around, in and out of the suburb."
+    }
+
+]

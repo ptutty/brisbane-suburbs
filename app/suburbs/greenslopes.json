@@ -1,0 +1,22 @@
+{
+    "id": "greenslopes", 
+    "name": "Greenslopes",
+    "description": "Greenslopes is another great inner city suburb with easy access anything you could need including shops and restaurants with plenty of ‘green space’ for those who enjoy the outdoors. With plenty of access to the busway, it’s easy to get around, in and out of the suburb.The Stones Corner area of Greenslopes, located just off the Eastern Busway, is perfect for anyone looking for unique shops or a delicious café breakfast on a lazy weekend. The South East Freeway Bikeway also runs along the length of the sub- urb, making it a perfect location for the avid bicycle commuter, the more relaxed weekend cyclist, or anyone looking for a leisurely walk into the city. Plenty of su- permarkets, medical centres, and other amenities make Greenslopes a great sub- urb with everything you would need close by.",
+    "distance": {
+        "city": 6 
+    }, 
+    "traveltimes": {
+        "stlucia": 20, 
+        "herston": 35
+    }, 
+    "strapline": "Visit Stones Corner for unique shops and cafes!", 
+    "transport": "Two major bus stops on the SE and Eastern busways service Greenslopes with easy access to the Buranda Train Station on the Doomben/Cleveland Line.",
+    "shopping": "There are plenty of small shops in the Stones Corner area and easy access to supermarkets on LoganRoad.",
+    "cost": "Rentals are plentiful and affordable, suitable for students, young professionals, and families.",
+    "social": "The Stones Corner area is well known for it’s cafe scene and is a great place for a weekend brekkie.",
+    "images": [
+        "img/suburbs/placeholder1.jpg", 
+        "img/suburbs/placeholder2.jpg", 
+        "img/suburbs/placeholder3.jpg"
+    ]
+}

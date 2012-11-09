@@ -1,0 +1,30 @@
+
+<div class="container-fluid">
+  <div class="row-fluid">
+    <div class="span2">
+      <!--Sidebar content-->
+
+      Search: <input ng-model="query">
+      Sort by:
+      <select ng-model="orderProp">
+        <option value="name" selected="selected">Alphabetical</option>
+        <option value="traveltimes.stlucia">Nearest St Lucia</option>
+        <option value="traveltimes.herston">Nearest Herston</option>
+        <option value="distance.city">Nearest City</option>
+      </select>
+
+        <ul class="suburbs">
+        <li ng-repeat="suburb in suburbs | filter:query | orderBy:orderProp" class="thumbnail"> 
+          <a href="#/suburbs/{{suburb.id}}">{{suburb.name}}</a>
+          <p>Travel time St Lucia: {{suburb.traveltimes.stlucia}} mins</p>
+          <p>Travel time Herston: {{suburb.traveltimes.herston}} mins</p>
+          <p>Distance to City: {{suburb.distance.city}} kms</p>
+        </li>
+      </ul>
+
+    </div>
+    <div class="span10">
+      
+    </div>
+  </div>
+</div>

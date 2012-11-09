@@ -1,0 +1,45 @@
+   <img ng-src="{{mainImageUrl}}" class="suburb">
+
+<h1>{{suburb.name}}</h1>
+
+<p>{{suburb.description}}</p>
+
+<h2>{{suburb.strapline}}</h2>
+<ul class="suburb-thumbs">
+  <li ng-repeat="img in suburb.images">
+    <img ng-src="{{img}}" ng-click="setImage(img)">
+  </li>
+</ul>
+
+<ul class="specs">
+  <li>
+    <span>Shopping</span>
+    <p>{{suburb.shopping}}</p>
+  </li>
+  <li>
+    <span>Transport</span>
+    <p>{{suburb.transport}}</p>
+  </li>
+  <li>
+    <span>Social</span>
+   <p>{{suburb.social}}</p>
+  </li>
+  <li>
+    <span>Cost</span>
+    <p>{{suburb.cost}}</p>
+  </li>
+  <li>
+    <span>Facts</span>
+    <dl>
+      <dt>St Lucia by bus</dt>
+      <dd>{{suburb.traveltimes.stlucia}} minutes</dd>
+      <dt>Herston by Bus</dt>
+      <dd>{{suburb.traveltimes.herston}} minutes</dd>
+       <dt>Distance to city</dt>
+      <dd>{{suburb.distance.city}} kms</dd>
+    </dl>
+  </li> 
+</ul>
+ <a href="#/suburbs/" class="btn btn-large btn-primary"><i class="icon-home icon-white"></i> view all suburbs</a>
+
+

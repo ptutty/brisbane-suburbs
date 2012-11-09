@@ -1,0 +1,28 @@
+
+ <!--Sidebar content-->
+  Distance from St Lucia: 
+  <div class="btn-group-time" data-toggle="buttons-radio">
+  <button type="button" class="btn btn10" ng-click="setTime(10)">10</button>
+  <button type="button" class="btn btn20" ng-click="setTime(20)">20</button>
+  <button type="button" class="btn btn30" ng-click="setTime(30)">30</button>
+  <button type="button" class="btn btn40" ng-click="setTime(40)">40</button>
+  <button type="button" class="btn btn50" ng-click="setTime(50)">50</button>
+</div>
+
+      Search: <input ng-click="setTime(0);" ng-model="query">
+      Sort by:
+      <select ng-model="orderProp" ng-change="setTime(0)">
+        <option value="name" >Alphabetical</option>
+        <option value="traveltimes.stlucia">Nearest St Lucia</option>
+        <option value="traveltimes.herston">Nearest Herston</option>
+        <option value="distance.city">Nearest City</option>
+      </select>
+        <p>{{message}}</p>
+        <ul class="suburbs">
+        <li ng-repeat="suburb in suburbs | filter:query | filter:time | orderBy:orderProp" class="thumbnail" style="background-color: {{suburb.traveltimes.color}}"> 
+          <a href="#/suburbs/{{suburb.id}}">{{suburb.name}}</a>
+          <p>Travel time St Lucia: {{suburb.traveltimes.stlucia}} mins</p>
+          <p>Travel time Herston: {{suburb.traveltimes.herston}} mins</p>
+          <p>Distance to City: {{suburb.distance.city}} kms</p>
+        </li>
+      </ul>

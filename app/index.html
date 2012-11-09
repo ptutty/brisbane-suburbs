@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en" ng-app="suburbcat">
+<head>
+  <meta charset="utf-8">
+  <title>Suburb Profiler</title>
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <script src="lib/angular/angular.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/controllers.js"></script>
+  <script src="js/filters.js"></script>
+  <script src="js/services.js"></script>
+  <script src="lib/angular/angular-resource.js"></script>
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script>
+$('.btn-group-time').button();
+</script>
+
+</head>
+<body>
+<div class="container-fluid">
+  <div class="row-fluid" >
+    <div class="span2" ng-controller="SuburbListCtrl" ng-include="'partials/suburb-list.html'">  
+    <!--Sidebar content-->
+  
+    </div>
+
+    <div class="span10 ng-view" >
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
