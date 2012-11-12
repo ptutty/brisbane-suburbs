@@ -10,12 +10,23 @@
   <script src="js/controllers.js"></script>
   <script src="js/filters.js"></script>
   <script src="js/services.js"></script>
+  <script src="js/directives.js"></script>
   <script src="lib/angular/angular-resource.js"></script>
   <script src="http://code.jquery.com/jquery-latest.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?sensor=false" type="text/javascript"></script>
   <script>
 $('.btn-group-time').button();
 </script>
+
+<style type="text/css">
+#map_canvas{
+    width:300px;
+    height: 300px; 
+    border: 1px solid #333335;
+    margin-bottom:20px;
+}​
+</style>
 
 </head>
 <body>
@@ -23,7 +34,7 @@ $('.btn-group-time').button();
   <div class="row-fluid" >
     <div class="span2" ng-controller="SuburbListCtrl" ng-include="'partials/suburb-list.html'">  
     <!--Sidebar content-->
-  
+    
     </div>
 
     <div class="span10 ng-view" >

@@ -2,7 +2,7 @@
 
 /* App Module */
 
-angular.module('suburbcat', ['suburbcatFilters', 'suburbcatServices']).
+var App = angular.module('suburbcat', ['suburbcatFilters', 'suburbcatServices']).
   config(['$routeProvider', function($routeProvider) {
   $routeProvider.
       when('/suburbs', {templateUrl: 'partials/overview.html',   controller: OverviewCtrl}).

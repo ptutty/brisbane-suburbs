@@ -33,6 +33,16 @@ function SuburbDetailCtrl($scope, $routeParams, Suburb) {
   $scope.setImage = function(imageUrl) {
     $scope.mainImageUrl = imageUrl;
   }
+
+  // data for google map directive
+
 }
+
+// simple controller to toggle stuff - see corrresponding directive
+function ToggleCtrl($scope){
+    $scope.test = true;
+    $scope.toggle = function(){ $scope.test = !$scope.test;  };
+};
+
 
 //PhoneDetailCtrl.$inject = ['$scope', '$routeParams', 'Phone'];
