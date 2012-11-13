@@ -4,6 +4,23 @@ body {
   padding-top: 20px;
 }
 
+
+.sidecontrols {
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: inherit;
+  background-color: #EEE;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+}
+
+.sidecontrols .sub-search {
+  width: 190px;
+}
+
 .suburbs {
   list-style: none;
 }
@@ -12,17 +29,19 @@ body {
   float: left;
   margin: -1em 1em 1.5em 0em;
   padding-bottom: 1em;
-  height: 100px;
-  width: 100px;
+  height: 95px;
+  width: 95px;
 }
 
 .suburbs li {
   clear: both;
-  height: 70px;
-  padding-top: 15px;
-  margin-bottom: 10px;
-  width: 200px;
+  height: 15px;
+  padding-top: 5px;
+  margin-bottom: 5px;
+  width: 188px;
 }
+
+
 
 .suburbs li p {
   margin: 0px;
@@ -58,8 +77,8 @@ ul.suburb-thumbs li {
 }
 
 ul.suburb-thumbs img {
-  height: 100px;
-  width: 100px;
+  height: 90px;
+  width: 90px;
   padding: 0em;
 }
 
@@ -75,10 +94,11 @@ ul.specs {
   list-style: none;
 }
 
-ul.specs > li{
+ul.specs > li {
   display: inline-block;
-  width: 200px;
+  width: 160px;
   vertical-align: top;
+  padding: 0px 5px 0px 5px;
 }
 
 ul.specs > li > span{
@@ -96,7 +116,7 @@ h1 {
 
 /* distance key custom button see http://charliepark.org/bootstrap_buttons/*/ 
 
-
+.btn-group-time {margin-bottom: 10px;}
 
 
 .btn-group-time > .btn10 {
@@ -186,6 +206,20 @@ h1 {
 
 
 
+.fast-facts {
+width: 300px;
+padding: 15px;
+margin-top: 5px;
+margin-bottom: 20px;
+font-size: 14px;
+font-weight: 200;
+line-height: 30px;
+color: inherit;
+background-color: #EEE;
+-webkit-border-radius: 6px;
+-moz-border-radius: 6px;
+border-radius: 6px;
+}
 
 
 

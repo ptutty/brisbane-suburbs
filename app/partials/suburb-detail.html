@@ -1,19 +1,31 @@
-   <img ng-src="{{mainImageUrl}}" class="suburb">
 
-<h1>{{suburb.name}}</h1>
+<div class="row">
+   <div class="span4">
+    <gmap markers="{{suburb.gmap.markers}}" id="map_canvas" ></gmap>
+   </div>
+   <div class="span5">
+    <h1>{{suburb.name}}</h1>
+      <h3> {{suburb.strapline}} </h3>
+    <p>{{suburb.description}}</p>
+   
+    </div>
+</div>
 
-<p>{{suburb.description}}</p>
-
-<h2>{{suburb.strapline}}</h2>
-<ul class="suburb-thumbs">
+<div class="row">
+  <div class="span4"><img ng-src="{{mainImageUrl}}" class="suburb"></div>
+  <div class="span5">
+    <ul class="suburb-thumbs">
   <li ng-repeat="img in suburb.images">
     <img ng-src="{{img}}" ng-click="setImage(img)">
   </li>
 </ul>
 
-<div>
-  <p>{{suburb.gmap.markers.x}}</p>
-    <map markers="{{suburb.gmap.markers}}" id="map_canvas" ></map>
+<h3>Fast Facts</h3>
+<div class="fast-facts">
+  <p><strong>St Lucia by bus: </strong> {{suburb.traveltimes.stlucia}} minutes</p>
+    <p><strong>Herston by bus: </strong> {{suburb.traveltimes.herston}} minutes</p>
+   <p><strong>Distance to city: </strong>{{suburb.distance.city}} kms</p> 
+  </div>
 </div>
 
 <ul class="specs">
@@ -37,18 +49,6 @@
     <span>Cost</span>
     <p>{{suburb.cost}}</p>
   </li>
-  <li>
-    <i class="icon-info-sign"></i>
-    <span>Facts</span>
-    <dl>
-      <dt>St Lucia by bus</dt>
-      <dd>{{suburb.traveltimes.stlucia}} minutes</dd>
-      <dt>Herston by Bus</dt>
-      <dd>{{suburb.traveltimes.herston}} minutes</dd>
-       <dt>Distance to city</dt>
-      <dd>{{suburb.distance.city}} kms</dd>
-    </dl>
-  </li> 
 </ul>
  <a href="#/suburbs/" class="btn btn-large btn-primary"><i class="icon-home icon-white"></i> view all suburbs</a>
  <a href="#/suburbs/" class="btn btn-large"><i class="icon-heart icon-black"></i> add to favourites</a> <a href="#/suburbs/" class="btn btn-large"><i class="icon-eye-open icon-black"></i> Show favourites</a>

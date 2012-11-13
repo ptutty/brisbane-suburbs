@@ -18,7 +18,7 @@ App.directive('ngShow2', function() {
 */
 
 
-App.directive('map', function($parse) {
+App.directive('gmap', function($parse) {
     return {
         restrict: 'E',
         replace: true,      
