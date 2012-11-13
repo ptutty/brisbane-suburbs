@@ -1,5 +1,7 @@
 [
     {
+        "id": "brisbane-city",
+        "name": "Brisbane City",
         "traveltimes": {
             "stlucia": 30, 
             "herston": 15,
@@ -7,13 +9,11 @@
             },
         "distance": {
             "city": 0 
-        }, 
-        "id": "brisbane-city", 
-        "imageUrl": "img/suburbs/placeholder1.jpg", 
-        "name": "Brisbane City",
-        "snippet": "Brisbane’s bustling city centre may not be where everyone wants to call home, but if you want everything to be right on your doorstep, this could be the place for you!"
+        }
     }, 
     {
+        "id": "fortitude-valley",
+        "name": "Fortitude Valley", 
         "traveltimes": {
             "stlucia": 30, 
             "herston": 15,
@@ -21,13 +21,11 @@
         },  
         "distance": {
             "city": 2 
-        }, 
-        "id": "fortitude-valley", 
-        "imageUrl": "img/suburbs/placeholder1.jpg", 
-        "name": "Fortitude Valley",
-        "snippet": "“The Valley” is loved by students for its great nightlife, a mix of pubs, trendy clubs, live music venues and restaurants. You have to wedge yourself into one of the many nightclubs at least once during your stay in Brisvegas."
+        }
     }, 
     {
+        "id": "greenslopes", 
+        "name": "Greenslopes",
         "traveltimes": {
             "stlucia": 20, 
             "herston": 35,
@@ -35,13 +33,11 @@
         },  
         "distance": {
             "city": 6 
-        }, 
-        "id": "greenslopes", 
-        "imageUrl": "img/suburbs/placeholder1.jpg", 
-        "name": "Greenslopes",
-        "snippet": "Greenslopes is another great inner city suburb with easy access anything you could need including shops and restaurants with plenty of ‘green space’ for those who enjoy the outdoors. With plenty of access to the busway, it’s easy to get around, in and out of the suburb."
+        }
     },
     {
+        "id": "st-lucia", 
+        "name": "St Lucia",
         "traveltimes": {
             "stlucia": 10, 
             "herston": 35,
@@ -49,11 +45,174 @@
         },  
         "distance": {
             "city": 6 
-        }, 
-        "id": "st-lucia", 
-        "imageUrl": "img/suburbs/placeholder1.jpg", 
-        "name": "St Lucia",
-        "snippet": "Greenslopes is another great inner city suburb with easy access anything you could need including shops and restaurants with plenty of ‘green space’ for those who enjoy the outdoors. With plenty of access to the busway, it’s easy to get around, in and out of the suburb."
-    }
-
+        }
+    },
+    {
+        "id": "woolloongabba", 
+         "name": "Woolloongabba",
+        "traveltimes": {
+            "stlucia": 10, 
+            "herston": 35,
+            "color": "#ccedba"
+        },  
+        "distance": {
+            "city": 6 
+        }
+    },
+    {
+        "id": "west-end", 
+        "name": "West End",
+        "traveltimes": {
+            "stlucia": 10, 
+            "herston": 35,
+            "color": "#ccedba"
+        },  
+        "distance": {
+            "city": 6 
+        }
+    },
+    {
+        "id": "paddington", 
+        "name": "Paddington", 
+        "traveltimes": {
+            "stlucia": 40, 
+            "herston": 35,
+            "color": "#F9F7A3"
+        },  
+        "distance": {
+            "city": 6 
+        }
+    },
+    {
+        "id": "new-farm", 
+        "name": "New Farm", 
+        "traveltimes": {
+            "stlucia": 10, 
+            "herston": 35,
+            "color": "#ccedba"
+        },  
+        "distance": {
+            "city": 6 
+        }
+    },
+    {
+        "id": "holland-park", 
+        "name": "Holland Park",
+        "traveltimes": {
+            "stlucia": 10, 
+            "herston": 35,
+            "color": "#ccedba"
+        },  
+        "distance": {
+            "city": 6 
+        }
+    },
+    {
+        "id": "coopers-plains",
+        "name": "Coopers Plains", 
+        "traveltimes": {
+            "stlucia": 10, 
+            "herston": 35,
+            "color": "#ccedba"
+        },  
+        "distance": {
+            "city": 6 
+        }
+    },
+    {
+        "id": "moorooka", 
+        "name": "Moorooka", 
+        "traveltimes": {
+            "stlucia": 10, 
+            "herston": 35,
+            "color": "#ccedba"
+        },  
+        "distance": {
+            "city": 6 
+        }
+    },
+    {
+        "id": "mount-gravatt",
+        "name": "Mount Gravatt", 
+        "traveltimes": {
+            "stlucia": 40, 
+            "herston": 35,
+            "color": "#F9F7A3"
+        },  
+        "distance": {
+            "city": 6 
+        }
+    },
+    {
+        "id": "salisbury",
+        "name": "Salisbury", 
+        "traveltimes": {
+            "stlucia": 10, 
+            "herston": 35,
+            "color": "#ccedba"
+        },  
+        "distance": {
+            "city": 6 
+        }
+    },
+    {
+        "id": "sunnybank", 
+        "name": "Sunnybank",
+        "traveltimes": {
+            "stlucia": 10, 
+            "herston": 35,
+            "color": "#ccedba"
+        },  
+        "distance": {
+            "city": 6 
+        }
+    },
+    {
+        "id": "tarragindi",
+        "name": "Tarragindi", 
+        "traveltimes": {
+            "stlucia": 10, 
+            "herston": 35,
+            "color": "#ccedba"
+        },  
+        "distance": {
+            "city": 6 
+        }
+    },
+     {
+        "id": "yeronga",
+        "name": "Yeronga", 
+        "traveltimes": {
+            "stlucia": 10, 
+            "herston": 35,
+            "color": "#ccedba"
+        },  
+        "distance": {
+            "city": 6 
+        }
+    },
+    {
+        "id": "rocklea",
+        "name": "Rocklea", 
+        "traveltimes": {
+            "stlucia": 50, 
+            "herston": 35,
+            "color": "#DCD0FA"
+        },  
+        "distance": {
+            "city": 6 
+        }
+    },
+    {
+        "id": "chapel hill",
+        "name": "Chapel Hill", 
+        "traveltimes": {
+            "stlucia": 50, 
+            "herston": 35,
+            "color": "#DCD0FA"
+        },  
+        "distance": {
+            "city": 6 
+        }
+    }    
 ]

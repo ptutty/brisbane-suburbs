@@ -3,7 +3,7 @@
 /* Directives */
 
 // simple directive to get start - toogle visibilty of element 
-/* 
+/*
 App.directive('ngShow2', function() {
     return {
         replace: true,

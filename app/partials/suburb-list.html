@@ -1,6 +1,6 @@
 
  <!--Sidebar content-->
-<div class="sidecontrols" >
+<div id="sidecontrol" >
 
   <h5>Distance from St Lucia </h5>
 <div class="btn-group-time" data-toggle="buttons-radio">
@@ -12,16 +12,16 @@
 </div>
 
       <h5>Search for suburb</h5>
-      <input class="sub-search" ng-click="setTime(0);" ng-model="query">
+      <input class="subsearchinput" ng-click="setTime(0)" ng-model="query">
 
       <h5>Filter suburbs by</h5>
-      <select class="sub-search" ng-model="orderProp" ng-change="setTime(0)">
+      <select class="subsearchselect" ng-model="orderProp" ng-change="setTime(0)">
         <option value="name" >Alphabetical</option>
         <option value="traveltimes.stlucia">Nearest St Lucia</option>
         <option value="traveltimes.herston">Nearest Herston</option>
         <option value="distance.city">Nearest City</option>
       </select>
-        <p>{{message}}</p>
+        <h5 ng-show="message">Distance from UQ St Lucia: {{time}} mins</h5>
         <ul class="suburbs">
         <li ng-repeat="suburb in suburbs | filter:query | filter:time | orderBy:orderProp" class="thumbnail" style="background-color: {{suburb.traveltimes.color}}"> 
           <h4><a href="#/suburbs/{{suburb.id}}">{{suburb.name}}</a></h4>

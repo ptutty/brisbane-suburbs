@@ -1,31 +1,31 @@
 
 <div class="row">
-   <div class="span4">
-    <gmap markers="{{suburb.gmap.markers}}" id="map_canvas" ></gmap>
-   </div>
    <div class="span5">
-    <h1>{{suburb.name}}</h1>
-      <h3> {{suburb.strapline}} </h3>
-    <p>{{suburb.description}}</p>
-   
-    </div>
-</div>
-
-<div class="row">
-  <div class="span4"><img ng-src="{{mainImageUrl}}" class="suburb"></div>
-  <div class="span5">
-    <ul class="suburb-thumbs">
-  <li ng-repeat="img in suburb.images">
-    <img ng-src="{{img}}" ng-click="setImage(img)">
-  </li>
-</ul>
-
-<h3>Fast Facts</h3>
+    <h1 class="spmb" style="
+    margin-bottom:  30px;">{{suburb.name}}</h1>
+      
+    <p ng-repeat="para in suburb.description"> {{para}}</p> 
+    
+   <h3>Fast Facts</h3>
 <div class="fast-facts">
   <p><strong>St Lucia by bus: </strong> {{suburb.traveltimes.stlucia}} minutes</p>
     <p><strong>Herston by bus: </strong> {{suburb.traveltimes.herston}} minutes</p>
    <p><strong>Distance to city: </strong>{{suburb.distance.city}} kms</p> 
   </div>
+  <blockquote class="spmt50"> <p><strong>Don't miss! </strong>{{suburb.strapline}} </p></blockquote>
+   </div>
+
+   <div class="span4">
+    <gmap markers="{{suburb.gmap.markers}}" id="map_canvas" ></gmap>
+     <img ng-src="{{mainImageUrl}}" class="suburb">
+<ul class="suburb-thumbs spmt30">
+  <li ng-repeat="img in suburb.images">
+    <img ng-src="{{img}}" ng-click="setImage(img)">
+  </li>
+</ul>
+
+   </div>
+     
 </div>
 
 <ul class="specs">
@@ -50,7 +50,4 @@
     <p>{{suburb.cost}}</p>
   </li>
 </ul>
- <a href="#/suburbs/" class="btn btn-large btn-primary"><i class="icon-home icon-white"></i> view all suburbs</a>
- <a href="#/suburbs/" class="btn btn-large"><i class="icon-heart icon-black"></i> add to favourites</a> <a href="#/suburbs/" class="btn btn-large"><i class="icon-eye-open icon-black"></i> Show favourites</a>
-
 
