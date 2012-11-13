@@ -2,7 +2,7 @@
 
 /* Directives */
 
-// simple directive to get start - toogle visibilty of element 
+// simple directive to get start - toogle visibilty of element - not in use
 /*
 App.directive('ngShow2', function() {
     return {

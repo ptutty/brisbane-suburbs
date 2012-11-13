@@ -15,11 +15,27 @@
   <script src="http://code.jquery.com/jquery-latest.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?sensor=false" type="text/javascript"></script>
-  <script>
-$('.btn-group-time').button();
-</script>
+  <!-- polyfill for IE -->
+   <!--[if lte IE 8]>
+    <script>
+    // The ieshiv takes care of our ui.directives, bootstrap module directives and 
+    // AngularJS's ng-view, ng-include, ng-pluralize and ng-switch directives.
+    // However, IF you have custom directives (yours or someone else's) then
+    // enumerate the list of tags in window.myCustomTags
+ 
+    window.myCustomTags = [ 'gmap']; // optional
+    </script>
+    <script src="lib/angular-ui-0.3.1/build/angular-ui-ieshiv.js"></script>
+    
+    <script src="lib/JSON3/json3.min.js"></script>
+<![endif]-->
 
 
+
+   <!-- bootstrap clicked persistence-->
+    <script>
+      $('.btn-group-time').button();
+    </script>
 </head>
 <body>
   <div ng-include="'partials/header.html'" class="navbar navbar-inverse navbar-fixed-top">
