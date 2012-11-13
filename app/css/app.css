@@ -1,11 +1,5 @@
 /* app css stylesheet */
-
-body {
-  padding-top: 20px;
-}
-
-
-.sidecontrols {
+#sidecontrol {
   padding: 8px;
   margin-top: 5px;
   margin-bottom: 20px;
@@ -17,9 +11,35 @@ body {
   border-radius: 6px;
 }
 
-.sidecontrols .sub-search {
+.spmt50 {margin-top: 50px;}
+.spmt30 {margin-top: 30px;}
+.spmb20 {margin-bottom: 20px;}
+
+select.subsearchselect {
+  width: 198px;
+}
+
+input.subsearchinput {
   width: 190px;
 }
+
+body {
+  padding-top: 20px;
+}
+
+img#overview-map {
+  border: 1px solid #CCC;
+  margin-top: 8px;
+}
+
+
+#map_canvas {
+    margin-top: 35px;
+    width:300px;
+    height: 300px; 
+    border: 1px solid #333335;
+    margin-bottom:20px;
+}​
 
 .suburbs {
   list-style: none;
@@ -40,7 +60,6 @@ body {
   margin-bottom: 5px;
   width: 188px;
 }
-
 
 
 .suburbs li p {
@@ -72,7 +91,7 @@ ul.suburb-thumbs {
 ul.suburb-thumbs li {
   border: 1px solid black;
   display: inline-block;
-  margin: 1em;
+  margin: 3px;
   background-color: white;
 }
 
@@ -89,7 +108,7 @@ ul.suburb-thumbs img:hover {
 
 ul.specs {
   clear: both;
-  margin: 0;
+  margin: 20px 0px;
   padding: 0;
   list-style: none;
 }
