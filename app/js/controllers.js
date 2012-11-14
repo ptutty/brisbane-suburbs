@@ -2,6 +2,10 @@
 
 /* Controllers */
 
+function MainMap($scope){
+  $scope.markers = {"lat": -27.522217, "lng": 153.003159, "zoom": 12, "main": true };
+}
+
 function SuburbListCtrl($scope, Suburb) {	
   $scope.suburbs = Suburb.query();
   $scope.orderProp = 'name';

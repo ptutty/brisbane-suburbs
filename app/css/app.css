@@ -32,14 +32,19 @@ img#overview-map {
   margin-top: 8px;
 }
 
-
 #map_canvas {
-    margin-top: 35px;
-    width:300px;
-    height: 300px; 
-    border: 1px solid #333335;
-    margin-bottom:20px;
-}​
+  width: 300px;
+  height: 300px;
+  margin: 10px 0px 10px 0px;
+  border: 1px solid #ccc;
+}
+
+#map_canvas_main {
+  width: 700px;
+  height: 700px;
+  margin: 10px 0px 10px 0px;
+  border: 1px solid #ccc;
+}
 
 .suburbs {
   list-style: none;
