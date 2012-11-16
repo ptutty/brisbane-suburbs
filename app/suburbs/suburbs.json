@@ -3,9 +3,9 @@
         "id": "brisbane-city",
         "name": "Brisbane City",
         "traveltimes": {
-            "stlucia": 30, 
+            "stlucia": 40, 
             "herston": 15,
-            "color": "#d0ddfa"
+            "color": "#eeff55"
             },
         "distance": {
             "city": 0 
@@ -17,7 +17,7 @@
         "traveltimes": {
             "stlucia": 30, 
             "herston": 15,
-            "color": "#d0ddfa"
+            "color": "#2277ff"
         },  
         "distance": {
             "city": 2 
@@ -27,9 +27,9 @@
         "id": "greenslopes", 
         "name": "Greenslopes",
         "traveltimes": {
-            "stlucia": 20, 
+            "stlucia": 10, 
             "herston": 35,
-            "color": "#f8dce6"
+            "color": "#116633"
         },  
         "distance": {
             "city": 6 
@@ -41,7 +41,7 @@
         "traveltimes": {
             "stlucia": 10, 
             "herston": 35,
-            "color": "#ccedba"
+            "color": "#116633"
         },  
         "distance": {
             "city": 6 
@@ -51,9 +51,9 @@
         "id": "woolloongabba", 
          "name": "Woolloongabba",
         "traveltimes": {
-            "stlucia": 10, 
+            "stlucia": 20, 
             "herston": 35,
-            "color": "#ccedba"
+            "color": "#dd0000"
         },  
         "distance": {
             "city": 6 
@@ -63,9 +63,9 @@
         "id": "west-end", 
         "name": "West End",
         "traveltimes": {
-            "stlucia": 10, 
+            "stlucia": 20, 
             "herston": 35,
-            "color": "#ccedba"
+            "color": "#dd0000"
         },  
         "distance": {
             "city": 6 
@@ -77,19 +77,19 @@
         "traveltimes": {
             "stlucia": 40, 
             "herston": 35,
-            "color": "#F9F7A3"
+            "color": "#eeff55"
         },  
         "distance": {
             "city": 6 
         }
     },
     {
-        "id": "new-farm", 
-        "name": "New Farm", 
+        "id": "holland-park-west", 
+        "name": "Holland Park West",
         "traveltimes": {
             "stlucia": 10, 
             "herston": 35,
-            "color": "#ccedba"
+            "color": "#116633"
         },  
         "distance": {
             "city": 6 
@@ -99,21 +99,9 @@
         "id": "holland-park", 
         "name": "Holland Park",
         "traveltimes": {
-            "stlucia": 10, 
+            "stlucia": 30, 
             "herston": 35,
-            "color": "#ccedba"
-        },  
-        "distance": {
-            "city": 6 
-        }
-    },
-    {
-        "id": "coopers-plains",
-        "name": "Coopers Plains", 
-        "traveltimes": {
-            "stlucia": 10, 
-            "herston": 35,
-            "color": "#ccedba"
+            "color": "#2277ff"
         },  
         "distance": {
             "city": 6 
@@ -123,7 +111,7 @@
         "id": "moorooka", 
         "name": "Moorooka", 
         "traveltimes": {
-            "stlucia": 10, 
+            "stlucia": 20, 
             "herston": 35,
             "color": "#ccedba"
         },  
@@ -137,7 +125,7 @@
         "traveltimes": {
             "stlucia": 40, 
             "herston": 35,
-            "color": "#F9F7A3"
+            "color": "#eeff55"
         },  
         "distance": {
             "city": 6 
@@ -147,9 +135,9 @@
         "id": "salisbury",
         "name": "Salisbury", 
         "traveltimes": {
-            "stlucia": 10, 
+            "stlucia": 30, 
             "herston": 35,
-            "color": "#ccedba"
+            "color": "#2277ff"
         },  
         "distance": {
             "city": 6 
@@ -159,9 +147,9 @@
         "id": "sunnybank", 
         "name": "Sunnybank",
         "traveltimes": {
-            "stlucia": 10, 
+            "stlucia": 30, 
             "herston": 35,
-            "color": "#ccedba"
+            "color": "#2277ff"
         },  
         "distance": {
             "city": 6 
@@ -171,9 +159,9 @@
         "id": "tarragindi",
         "name": "Tarragindi", 
         "traveltimes": {
-            "stlucia": 10, 
+            "stlucia": 20, 
             "herston": 35,
-            "color": "#ccedba"
+            "color": "#dd0000"
         },  
         "distance": {
             "city": 6 
@@ -183,9 +171,9 @@
         "id": "yeronga",
         "name": "Yeronga", 
         "traveltimes": {
-            "stlucia": 10, 
+            "stlucia": 20, 
             "herston": 35,
-            "color": "#ccedba"
+            "color": "#dd0000"
         },  
         "distance": {
             "city": 6 
@@ -197,7 +185,19 @@
         "traveltimes": {
             "stlucia": 50, 
             "herston": 35,
-            "color": "#DCD0FA"
+            "color": "#7700bb"
+        },  
+        "distance": {
+            "city": 6 
+        }
+    },
+    {
+        "id": "kenmore",
+        "name": "kenmore", 
+        "traveltimes": {
+            "stlucia": 40, 
+            "herston": 35,
+            "color": "#eeff55"
         },  
         "distance": {
             "city": 6 
@@ -209,7 +209,7 @@
         "traveltimes": {
             "stlucia": 50, 
             "herston": 35,
-            "color": "#DCD0FA"
+            "color": "#7700bb"
         },  
         "distance": {
             "city": 6 

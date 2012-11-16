@@ -1,14 +1,29 @@
  <!--Sidebar content-->
 <div id="sidecontrol" >
 
-  <h5>Distance from St Lucia </h5>
-<div class="btn-group-time" data-toggle="buttons-radio">
-  <button type="button" class="btn btn10" ng-click="setTime(10)">10</button>
-  <button type="button" class="btn btn20" ng-click="setTime(20)">20</button>
-  <button type="button" class="btn btn30" ng-click="setTime(30)">30</button>
-  <button type="button" class="btn btn40" ng-click="setTime(40)">40</button>
-  <button type="button" class="btn btn50" ng-click="setTime(50)">50</button>
-</div>
+  <h5>Filter suburbs by travel time to St Lucia:</h5>
+<label class="radio">
+<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" ng-click="setTime(10)">
+  <span class="distance-key">10 mins </span> by public transport
+</label>
+<label class="radio">
+  <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2" ng-click="setTime(20)">
+  <span class="distance-key">20 mins</span> by public transport
+</label>
+<label class="radio">
+  <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2" ng-click="setTime(30)">
+  <span class="distance-key">30  mins</span> by public transport
+</label>
+<label class="radio">
+  <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2" ng-click="setTime(40)">
+  <span class="distance-key">40 mins </span>by public transport
+</label>
+<label class="radio">
+  <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2" ng-click="setTime(50)">
+  <span class="distance-key">50  mins </span>by public transport
+</label>
+
+
 
       <h5>Search for suburb</h5>
       <input class="subsearchinput" ng-click="setTime(0)" ng-model="query">
@@ -22,8 +37,10 @@
       </select>
         <h5 ng-show="message">Distance from UQ St Lucia: {{time}} mins</h5>
         <ul class="suburbs">
-        <li ng-repeat="suburb in suburbs | filter:query | filter:time | orderBy:orderProp" class="thumbnail" style="background-color: {{suburb.traveltimes.color}}"> 
-          <h4><a href="#/suburbs/{{suburb.id}}">{{suburb.name}}</a></h4>
+        <li ng-repeat="suburb in suburbs | filter:query | filter:time | orderBy:orderProp" class="thumbnail"> 
+          <span class="suburb-key" style="background-color: {{suburb.traveltimes.color}}"></span><h4><a href="#/suburbs/{{suburb.id}}">{{suburb.name}}</a></h4>
+          
+          
         </li>
       </ul>
     </div>
