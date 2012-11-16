@@ -1,27 +1,15 @@
 
-// adds markers to googlemap for each suburb
-function setMarkers(map, markers) {
 
-      for (var i = 0; i < markers.length; i++) {
-        var marker = markers[i];
+function setMarkers(map) {
 
-        var image = marker.icon;
-        var uqLatLng = new google.maps.LatLng(marker.lat, marker.lng);
-
-        var uqMarker = new google.maps.Marker({
+      // add UQ marker
+      var image = "img/university.png";
+      var uqLatLng = new google.maps.LatLng(-27.497854,153.013286);
+      var uqMarker = new google.maps.Marker({
             position: uqLatLng,
             map: map,
             icon: image
         });
-
-      };
-
-        /* google.maps.event.addListener(uqMarker, "click", function() {
-           window.location = "http://www.uq.edu.au";
-        }); */
-      
-
-      // var uqLatLng = new google.maps.LatLng(-27.497854,153.013286);
 
 }
 

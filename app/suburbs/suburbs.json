@@ -33,6 +33,13 @@
         },  
         "distance": {
             "city": 6 
+        },
+        "gmap": {
+            "marker": {
+                "lat": -27.508097, 
+                 "lng" : 153.05125,
+                 "icon" : "img/suburb.png"
+             }
         }
     },
     {

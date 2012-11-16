@@ -38,6 +38,7 @@
         <h5 ng-show="message">Distance from UQ St Lucia: {{time}} mins</h5>
         <ul class="suburbs">
         <li ng-repeat="suburb in suburbs | filter:query | filter:time | orderBy:orderProp" class="thumbnail"> 
+    
           <span class="suburb-key" style="background-color: {{suburb.traveltimes.color}}"></span><h4><a href="#/suburbs/{{suburb.id}}">{{suburb.name}}</a></h4>
           
           

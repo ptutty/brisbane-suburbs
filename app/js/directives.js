@@ -9,16 +9,19 @@ App.directive('gmap', function($parse) {
         replace: true,      
         template: '<div></div>',     
         link: function(scope, element, attrs) {       
-        attrs.$observe('markers', function(value) {
+        attrs.$observe('gdata', function(value) {
 			if (value) {
-			  var markers = JSON.parse(value);
+			  var gmapdata = JSON.parse(value);	
+			  // var gmapdata = value;
 				  var myOptions = {
-			            zoom: markers.zoom,
-			            center: new google.maps.LatLng(markers.lat, markers.lng),
+			            zoom: gmapdata.centre.zoom,
+			            center: new google.maps.LatLng(gmapdata.centre.lat, gmapdata.centre.lng),
 			            mapTypeId: google.maps.MapTypeId.ROADMAP
 			        };
-			  var map = new google.maps.Map(document.getElementById(attrs.id), myOptions); 
-              if (markers.main) {createOverlays(map);}     
+			  var map = new google.maps.Map(document.getElementById(attrs.id), myOptions);
+			  
+			 setMarkers(map); // adds array of suburb markers
+             if (gmapdata.mainmap) {createOverlays(map)}  // add overlay for homepage only   
 			}
 		})
         }
