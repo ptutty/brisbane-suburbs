@@ -2,19 +2,9 @@
 
 /* Controllers */
 
-function MainMap($scope){
- $scope.gmapdata = {"centre": {"lat": -27.522217, "lng": 153.003159, "zoom": 12}, "mainmap": true}
-
- /*
- $scope.gmapdata.markers = [{
-                "lat": -27.508097, 
-                 "lng" : 153.05125,
-                 "icon" : "img/suburb.png"
-             }];
-
-  */
-
-};
+function MainMap($scope, Suburb){
+ $scope.suburbs = Suburb.query();
+}
 
 function SuburbListCtrl($scope, Suburb) {	
   $scope.suburbs = Suburb.query();

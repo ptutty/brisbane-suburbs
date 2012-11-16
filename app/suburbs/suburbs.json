@@ -20,7 +20,14 @@
             "color": "#2277ff"
         },  
         "distance": {
-            "city": 2 
+            "city": 2
+        },
+        "gmap": {
+            "marker": {
+                "lat": -27.457486, 
+                 "lng" : 153.033686,
+                 "icon" : "img/suburb.png"
+             }
         }
     }, 
     {
