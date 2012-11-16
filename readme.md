@@ -1,4 +1,4 @@
-# Brisbane Subsurb profiler
+# Brisbane Suburb Profiler
 
 Just clone the repo (or download the zip/tarball), start up your webserver and you are ready go.
 You can check it out by opening app/index.html in your browser (might not work file `file://` scheme in certain browsers)
