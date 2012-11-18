@@ -16,17 +16,20 @@ function SuburbListCtrl($scope, Suburb, querySuburb) {
   $scope.query = querySuburb.query; 
 
   $scope.setTime = function(mins) {
+  querySuburb.query.name = "";
+   
     if (mins != 0) {
-  		$scope.time = mins;
+      querySuburb.query.time = mins;
       $scope.message = true;
     } else {
       $scope.message = false;
-      $scope.time = null;
+      querySuburb.query.time = mins;
+
+      // jquery dom maniuplation in contoller - not the angular way!! but...
+      $("#timetravel label").find("input:radio:checked").prop('checked',false);
   	}
   }
 }
-
-//PhoneListCtrl.$inject = ['$scope', 'Phone'];
 
 
 function SuburbDetailCtrl($scope, $routeParams, Suburb) {
@@ -38,12 +41,6 @@ function SuburbDetailCtrl($scope, $routeParams, Suburb) {
     $scope.mainImageUrl = imageUrl;
   }
 }
-
-// simple controller to toggle stuff - see corrresponding directive  **not in use
-/* function ToggleCtrl($scope){
-    $scope.test = true;
-    $scope.toggle = function(){ $scope.test = !$scope.test;  };
-}; */
 
 
 //PhoneDetailCtrl.$inject = ['$scope', '$routeParams', 'Phone'];

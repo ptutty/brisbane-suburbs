@@ -2,6 +2,8 @@
 <div id="sidecontrol" >
 
   <h5>Filter suburbs by travel time to St Lucia:</h5>
+<div id="timetravel">
+  
 <label class="radio">
 <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" ng-click="setTime(10)">
   <span class="distance-key">10 mins </span> by public transport
@@ -22,6 +24,7 @@
   <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2" ng-click="setTime(50)">
   <span class="distance-key">50  mins </span>by public transport
 </label>
+</div>
 
 
 
@@ -35,9 +38,9 @@
         <option value="traveltimes.herston">Nearest Herston</option>
         <option value="distance.city">Nearest City</option>
       </select>
-        <h5 ng-show="message">Distance from UQ St Lucia: {{time}} mins</h5>
+        <h5 ng-show="message">Distance from UQ St Lucia: {{query.time}} mins</h5>
         <ul class="suburbs">
-        <li ng-repeat="suburb in suburbs | filter:query.name | filter:time | orderBy:orderProp" class="thumbnail"> 
+        <li ng-repeat="suburb in suburbs | filter:query.name | filter:query.time | orderBy:orderProp" class="thumbnail"> 
     
           <span class="suburb-key" style="background-color: {{suburb.traveltimes.color}}"></span><h4><a href="#/suburbs/{{suburb.id}}">{{suburb.name}}</a></h4>
           
