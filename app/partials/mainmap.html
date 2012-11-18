@@ -1,3 +1,5 @@
-<div ng-controller="MainMap">
-  <gmapmain gdata="{{suburbs}}" id="map_canvas_main"></gmapmain>
-</div>
+
+
+<div ng-controller="MainMap" >
+<gmapmain gdata="{{suburbs | filter: query.name }}" id="map_canvas_main"></gmapmain>
+</div>  

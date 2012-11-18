@@ -2,14 +2,18 @@
 
 /* Controllers */
 
-function MainMap($scope, Suburb){
+
+
+function MainMap($scope, Suburb, querySuburb){
  $scope.suburbs = Suburb.query();
+ $scope.query = querySuburb.query;
 }
 
-function SuburbListCtrl($scope, Suburb) {	
+function SuburbListCtrl($scope, Suburb, querySuburb) {	
   $scope.suburbs = Suburb.query();
   $scope.orderProp = 'name';
   $scope.message = false;
+  $scope.query = querySuburb.query; 
 
   $scope.setTime = function(mins) {
     if (mins != 0) {

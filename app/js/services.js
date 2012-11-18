@@ -8,3 +8,14 @@ angular.module('suburbcatServices', ['ngResource']).
     query: {method:'GET', params:{suburbId:'suburbs'}, isArray:true}
   });
 });
+
+
+// Service for cross controller communication of search query
+App.factory('querySuburb', function() {  
+    return {
+        query : {
+            name : "",
+            time : null
+        }
+    };
+});

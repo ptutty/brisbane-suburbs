@@ -9,3 +9,6 @@ var App = angular.module('suburbcat', ['suburbcatFilters', 'suburbcatServices'])
       when('/suburbs/:suburbId', {templateUrl: 'partials/suburb-detail.html', controller: SuburbDetailCtrl}).
       otherwise({redirectTo: '/suburbs'});
 }]);
+
+
+
