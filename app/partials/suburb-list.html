@@ -30,10 +30,10 @@
 
 
       <h5>Search for suburb</h5>
-      <input class="subsearchinput" ng-click="setTime(0)" ng-model="query.name">
+      <input class="subsearchinput" ng-model="query.name" ng-click="query.time = 0">
 
       <h5>Filter suburbs by</h5>
-      <select class="subsearchselect" ng-model="orderProp" ng-change="setTime(0)">
+      <select class="subsearchselect" ng-model="orderProp" ng-change="query.time = 0">
         <option value="name" >Alphabetical</option>
         <option value="traveltimes.stlucia">Nearest St Lucia</option>
         <option value="traveltimes.herston">Nearest Herston</option>

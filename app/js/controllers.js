@@ -15,7 +15,7 @@ function SuburbListCtrl($scope, Suburb, querySuburb) {
   $scope.message = false;
   $scope.query = querySuburb.query; 
 
-  if ($scope.distance != 0) {
+  if (querySuburb.query.time != 0) {
       $scope.message = true;
     } else {
       $scope.message = false;
