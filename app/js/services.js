@@ -15,7 +15,7 @@ App.factory('querySuburb', function() {
     return {
         query : {
             name : "",
-            time : null
+            time : 0,
         }
     };
 });

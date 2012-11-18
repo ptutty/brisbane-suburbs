@@ -15,20 +15,11 @@ function SuburbListCtrl($scope, Suburb, querySuburb) {
   $scope.message = false;
   $scope.query = querySuburb.query; 
 
-  $scope.setTime = function(mins) {
-  querySuburb.query.name = "";
-   
-    if (mins != 0) {
-      querySuburb.query.time = mins;
+  if ($scope.distance != 0) {
       $scope.message = true;
     } else {
       $scope.message = false;
-      querySuburb.query.time = mins;
-
-      // jquery dom maniuplation in contoller - not the angular way!! but...
-      $("#timetravel label").find("input:radio:checked").prop('checked',false);
-  	}
-  }
+    } 
 }
 
 

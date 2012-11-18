@@ -9,6 +9,13 @@
             },
         "distance": {
             "city": 0 
+        },
+        "gmap": {
+            "marker": {
+                "lat": -27.471011,
+                 "lng" : 153.023449,
+                 "icon" : "img/suburb.png"
+             }
         }
     }, 
     {
@@ -59,11 +66,18 @@
         },  
         "distance": {
             "city": 6 
+        },
+        "gmap": {
+            "marker": { 
+                "lat": -27.502045, 
+                 "lng" : 153.006546,
+                 "icon" : "img/suburb.png"
+             }
         }
     },
     {
         "id": "woolloongabba", 
-         "name": "Woolloongabba",
+         "name": "Woolloongabba", 
         "traveltimes": {
             "stlucia": 20, 
             "herston": 35,
@@ -71,6 +85,13 @@
         },  
         "distance": {
             "city": 6 
+        },
+        "gmap": {
+            "marker": {
+                "lat": -27.500558, 
+                 "lng" : 153.035321,
+                 "icon" : "img/suburb.png"
+             }
         }
     },
     {
@@ -83,6 +104,13 @@
         },  
         "distance": {
             "city": 6 
+        },
+        "gmap": {
+            "marker": {
+                "lat": 51.755746,
+                 "lng" : -2.284046,
+                 "icon" : "img/suburb.png"
+             }
         }
     },
     {
@@ -95,6 +123,13 @@
         },  
         "distance": {
             "city": 6 
+        },
+        "gmap": {
+            "marker": {
+                "lat": -27.461725,  
+                 "lng" : 153.006101,
+                 "icon" : "img/suburb.png"
+             }
         }
     },
     {
@@ -107,6 +142,13 @@
         },  
         "distance": {
             "city": 6 
+        },
+        "gmap": {
+            "marker": {
+                "lat": -27.517109, 
+                 "lng" : 153.069703,
+                 "icon" : "img/suburb.png"
+             }
         }
     },
     {
@@ -119,6 +161,13 @@
         },  
         "distance": {
             "city": 6 
+        },
+        "gmap": {
+            "marker": {
+                "lat": -27.517109,
+                 "lng" : 153.05125,
+                 "icon" : "img/suburb.png"
+             }
         }
     },
     {
@@ -131,6 +180,13 @@
         },  
         "distance": {
             "city": 6 
+        },
+        "gmap": {
+            "marker": {
+                "lat": 27.531616,
+                 "lng" : 153.023869,
+                 "icon" : "img/suburb.png"
+             }
         }
     },
     {
@@ -143,6 +199,13 @@
         },  
         "distance": {
             "city": 6 
+        },
+        "gmap": {
+            "marker": {
+                "lat": -27.53722, 
+                 "lng" : 153.078308,
+                 "icon" : "img/suburb.png"
+             }
         }
     },
     {
@@ -155,6 +218,13 @@
         },  
         "distance": {
             "city": 6 
+        },
+        "gmap": {
+            "marker": {
+                "lat": -27.551095, 
+                 "lng" : 153.036698,
+                 "icon" : "img/suburb.png"
+             }
         }
     },
     {
@@ -167,6 +237,13 @@
         },  
         "distance": {
             "city": 6 
+        },
+        "gmap": {
+            "marker": {
+                "lat":  -27.572371,
+                 "lng" : 153.066028,
+                 "icon" : "img/suburb.png"
+             }
         }
     },
     {
@@ -179,6 +256,13 @@
         },  
         "distance": {
             "city": 6 
+        },
+        "gmap": {
+            "marker": {
+                "lat": -27.522299,
+                 "lng" : 153.047111,
+                 "icon" : "img/suburb.png"
+             }
         }
     },
      {
@@ -191,6 +275,13 @@
         },  
         "distance": {
             "city": 6 
+        },
+        "gmap": {
+            "marker": {
+                "lat": -27.516494, 
+                 "lng" : 153.01605,
+                 "icon" : "img/suburb.png"
+             }
         }
     },
     {
@@ -203,6 +294,13 @@
         },  
         "distance": {
             "city": 6 
+        },
+        "gmap": {
+            "marker": {
+                "lat": -27.535603, 
+                 "lng" : 152.998864,
+                 "icon" : "img/suburb.png"
+             }
         }
     },
     {
@@ -215,6 +313,13 @@
         },  
         "distance": {
             "city": 6 
+        },
+        "gmap": {
+            "marker": {
+                "lat": -27.507375, 
+                 "lng" : 152.940012,
+                 "icon" : "img/suburb.png"
+             }
         }
     },
     {
@@ -227,6 +332,13 @@
         },  
         "distance": {
             "city": 6 
+        },
+        "gmap": {
+            "marker": {
+                "lat": -27.493986, 
+                 "lng" : 152.944923,
+                 "icon" : "img/suburb.png"
+             }
         }
     }    
 ]
