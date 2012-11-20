@@ -7,10 +7,10 @@
           </button>
           <a class="brand" href="#/suburbs/">Suburb Profiler</a>
           <div class="nav-collapse collapse">
-             <a href="#/suburbs/" class="btn btn-small btn-primary pull-right"><i class="icon-home icon-white"></i> view all suburbs</a>
+             <a href="#/suburbs/" ng-show="currentviews.suburbdetail" class="btn btn-small btn-primary pull-right"><i class="icon-home icon-white"></i>Show all suburbs map</a> {{mainview}}
             <a href="#/suburbs/" class="btn btn-small pull-right"><i class="icon-eye-open icon-black"></i> Show favourites</a>
            
-            <a href="#/suburbs/" class="btn btn-small pull-right"><i class="icon-heart icon-black"></i>add to favourites</a> 
+            <a href="#/suburbs/" ng-show="currentviews.suburbdetail" class="btn btn-small pull-right"><i class="icon-heart icon-black"></i> Add {{suburbdetail.current}} to favourites</a> 
           </div>
         </div>
       </div>

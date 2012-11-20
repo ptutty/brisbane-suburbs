@@ -3,43 +3,42 @@
 
   <h5>Travel time to St Lucia:</h5>
 <label class="radio">
-<input type="radio" ng-model="query.time" value="0" >
+<input type="radio" ng-model="query.time" value="0" ng-click="resetname()" >
   <span class="distance-key">show all</span>
 </label>  
 <label class="radio">
-<input type="radio" ng-model="query.time" value="10" >
+<input type="radio" ng-model="query.time" value="10" ng-click="resetname()">
   <span class="distance-key">10 mins </span> by public transport
 </label>
 <label class="radio">
-<input type="radio" ng-model="query.time" value="20" >
+<input type="radio" ng-model="query.time" value="20" ng-click="resetname()">
   <span class="distance-key">20 mins</span> by public transport
 </label>
 <label class="radio">
-  <input type="radio" ng-model="query.time" value="30" >
+  <input type="radio" ng-model="query.time" value="30" ng-click="resetname()">
   <span class="distance-key">30  mins</span> by public transport
 </label>
 <label class="radio">
-  <input type="radio" ng-model="query.time" value="40" >
+  <input type="radio" ng-model="query.time" value="40" ng-click="resetname()">
   <span class="distance-key">40 mins </span>by public transport
 </label>
 <label class="radio">
- <input type="radio" ng-model="query.time" value="50" >
+ <input type="radio" ng-model="query.time" value="50" ng-click="resetname()" >
   <span class="distance-key">50  mins </span>by public transport
 </label>
 
 
 
       <h5>Search for suburb</h5>
-      <input class="subsearchinput" ng-model="query.name" ng-click="query.time = 0">
+      <input class="subsearchinput" ng-model="query.name" ng-click="resettime(); resetname()">
 
       <h5>Filter suburbs by</h5>
-      <select class="subsearchselect" ng-model="orderProp" ng-change="query.time = 0">
+      <select class="subsearchselect" ng-model="orderProp" ng-change="resettime(); resetname()">
         <option value="name" >Alphabetical</option>
         <option value="traveltimes.stlucia">Nearest St Lucia</option>
         <option value="traveltimes.herston">Nearest Herston</option>
         <option value="distance.city">Nearest City</option>
       </select>
-        <h5 ng-show="message">Distance from UQ St Lucia: {{query.time}} mins</h5>
         <ul class="suburbs">
         <li ng-repeat="suburb in suburbs | filter:query.name | filter:query.time | orderBy:orderProp" class="thumbnail"> 
     
