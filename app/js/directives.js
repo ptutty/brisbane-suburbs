@@ -17,9 +17,7 @@ App.directive('gmapmain', function($parse) {
 			            center: new google.maps.LatLng(-27.522217, 153.003159),
 			            mapTypeId: google.maps.MapTypeId.ROADMAP
 			        };
-			  var map = new google.maps.Map(document.getElementById(attrs.id), myOptions);
-			  
-			  
+			 var map = new google.maps.Map(document.getElementById(attrs.id), myOptions);
              createOverlays(map);  // add overlay for homepage only  
              setMarkers(map, gmapdata); // adds array of suburb markers
 			}
@@ -27,6 +25,7 @@ App.directive('gmapmain', function($parse) {
         }
     }
 })
+
 
 
 // suburb gmap

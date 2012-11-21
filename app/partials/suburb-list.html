@@ -1,33 +1,38 @@
  <!--Sidebar content-->
 <div id="sidecontrol" >
 
-  <h5>Travel time to St Lucia:</h5>
+
+<!--[if gte IE 9]><!-->
+
+<h5>Travel time to St Lucia:</h5>
+<form action="">
 <label class="radio">
-<input type="radio" ng-model="query.time" value="0" ng-click="resetname()" >
+<input type="radio" name="traveltime" ng-model="query.time" value="0" ng-click="resetname()" >
   <span class="distance-key">show all</span>
 </label>  
 <label class="radio">
-<input type="radio" ng-model="query.time" value="10" ng-click="resetname()">
+<input type="radio" name="traveltime" ng-model="query.time" value="10" ng-click="resetname()">
   <span class="distance-key">10 mins </span> by public transport
 </label>
 <label class="radio">
-<input type="radio" ng-model="query.time" value="20" ng-click="resetname()">
+<input type="radio" name="traveltime" ng-model="query.time" value="20" ng-click="resetname()">
   <span class="distance-key">20 mins</span> by public transport
 </label>
 <label class="radio">
-  <input type="radio" ng-model="query.time" value="30" ng-click="resetname()">
-  <span class="distance-key">30  mins</span> by public transport
+  <input type="radio" name="traveltime" ng-model="query.time" value="30" ng-click="resetname()">
+  <span class="distance-key">30 mins</span> by public transport
 </label>
 <label class="radio">
-  <input type="radio" ng-model="query.time" value="40" ng-click="resetname()">
+  <input type="radio" name="traveltime" ng-model="query.time" value="40" ng-click="resetname()">
   <span class="distance-key">40 mins </span>by public transport
 </label>
 <label class="radio">
- <input type="radio" ng-model="query.time" value="50" ng-click="resetname()" >
-  <span class="distance-key">50  mins </span>by public transport
+ <input type="radio" name="traveltime" ng-model="query.time" value="50" ng-click="resetname()" >
+  <span class="distance-key">50 mins </span>by public transport
 </label>
+</form>
 
-
+<!--<![endif]-->
 
       <h5>Search for suburb</h5>
       <input class="subsearchinput" ng-model="query.name" ng-click="resettime(); resetname()">
@@ -41,8 +46,7 @@
       </select>
         <ul class="suburbs">
         <li ng-repeat="suburb in suburbs | filter:query.name | filter:query.time | orderBy:orderProp" class="thumbnail"> 
-    
-          <span class="suburb-key" style="background-color: {{suburb.traveltimes.color}}"></span><h4><a href="#/suburbs/{{suburb.id}}">{{suburb.name}}</a></h4>
+          <div class="suburb-key" ng-style="{'background-color': suburb.traveltimes.color}"></div><h4><a href="#/suburbs/{{suburb.id}}">{{suburb.name}}</a></h4>
           
           
         </li>

@@ -8,9 +8,9 @@ function HeaderCtrl($scope, appServices){
 }
 
 function MainMap($scope, Suburb, appServices){
- $scope.suburbs = Suburb.query();
- $scope.query = appServices.query;
- appServices.currentviews.suburbdetail = false;
+  $scope.suburbs = Suburb.query();
+  $scope.query = appServices.query;
+  appServices.currentviews.suburbdetail = false;
 }
 
 function SuburbListCtrl($scope, Suburb, appServices) {	
@@ -23,7 +23,7 @@ function SuburbListCtrl($scope, Suburb, appServices) {
     appServices.query.time = 0;
   }
   $scope.resetname = function(){
-    appServices.query.name = "";
+     appServices.query.name = "";
   }
 }
 

@@ -1,3 +1,4 @@
-<div ng-controller="MainMap" >
+{{}} <!-- these brackets to fix bug in ie8 -->
 <gmapmain gdata="{{suburbs | filter: query.name | filter: query.time }}" id="map_canvas_main"></gmapmain>
-</div>  
+
+

@@ -69,11 +69,13 @@ img#overview-map {
 
 
 
-.suburb-key { opacity: 0.65;
-              float: left;
-              width: 15px;
-              height: 15px;
-              margin-right: 20px}
+.suburb-key { 
+    opacity: 0.65;
+    float: left;
+    width: 15px;
+    height: 15px;
+    margin-right: 20px
+}
 
 ul.suburbs {
   margin: 0 0 9px 5px;

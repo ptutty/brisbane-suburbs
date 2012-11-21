@@ -25,7 +25,7 @@ App.factory('appServices', function() {
     return {
         query : { // for suburb search filter sharing between controllers 
             name : "",
-            time : 0,
+            time : 0
         },
         currentviews: { // for current view state sharing between controllers
            mainmap: true,
