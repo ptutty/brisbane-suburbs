@@ -7,23 +7,27 @@ function HeaderCtrl($scope, appServices){
  $scope.suburbdetail = appServices.suburbdetail; 
 }
 
+// both controller MainMap and SuburbList share a model of the current suburb filtering state so both views are updated.
+// this model is call 'filter' and is stored in a generic service for sharing data between views called 
+// appServices
+
 function MainMap($scope, Suburb, appServices){
   $scope.suburbs = Suburb.query();
-  $scope.query = appServices.query;
+  $scope.filter = appServices.filter;
   appServices.currentviews.suburbdetail = false;
 }
 
 function SuburbListCtrl($scope, Suburb, appServices) {	
   $scope.suburbs = Suburb.query();
   $scope.orderProp = 'name';
-  $scope.message = false;
-  $scope.query = appServices.query; 
+  $scope.filter = appServices.filter;
 
   $scope.resettime = function(){
-    appServices.query.time = 0;
+    appServices.filter.traveltimes.stlucia = 0;
   }
+
   $scope.resetname = function(){
-     appServices.query.name = "";
+     appServices.filter.name = "";
   }
 }
 
