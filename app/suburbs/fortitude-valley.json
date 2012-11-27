@@ -10,7 +10,7 @@
         "herston": 35
     }, 
     "gmap": {
-       "markers" : {"lat": -27.457486, "lng" : 153.033686 }
+        "centre" : {"lat": -27.457486, "lng" : 153.033686, "zoom": 15 }
     },
     "strapline": "Visit Stones Corner for unique shops and cafes!", 
     "transport": "Two major bus stops on the SE and Eastern busways service Greenslopes with easy access to the Buranda Train Station on the Doomben/Cleveland Line.",

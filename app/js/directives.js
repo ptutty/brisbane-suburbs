@@ -1,9 +1,11 @@
 'use strict';
 
 /* Directives */
+var subcatdirectives = angular.module('suburbcatDirectives', []);
+
 
 // main gmap
-App.directive('gmapmain', function($parse) {
+subcatdirectives.directive('gmapmain', function($parse) {
     return {
         restrict: 'E',
         replace: true,      
@@ -29,7 +31,7 @@ App.directive('gmapmain', function($parse) {
 
 
 // suburb gmap
-App.directive('gmap', function($parse) {
+subcatdirectives.directive('gmap', function($parse) {
     return {
         restrict: 'E',
         replace: true,      
