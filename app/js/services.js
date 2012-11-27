@@ -28,8 +28,33 @@ subcatservices.factory('appServices', function() {
         currentview: "home", // for current view state sharing between controller    
         suburbdetail: { // for current view state sharing between controllers
            current: ""     
-        },
-        favourites: [{"name": "Greenslopes", "url": "#/suburbs/greenslopes" }]
+        }
     };
 });
 
+
+// for managing favourites
+subcatservices.factory('Favourites', function() {
+  return {
+          favlist: [],
+          updatefavlist: function(url, name) {
+            this.favlist.push({"name": name, "url": url});
+          },
+          checkfavlist: function(url) {
+            if (!this.favlist.length) {return false}
+             else { 
+              for (var i = 0; i < this.favlist.length; i++) {
+                if (url == this.favlist[i].url) {
+                  console.log("item already exists");
+                  return true; } 
+                else { 
+                  return false;
+                };
+              };
+             } 
+          },
+          removeitem: function() {
+
+          }
+  }
+})

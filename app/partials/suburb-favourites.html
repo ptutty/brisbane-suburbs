@@ -1,5 +1,5 @@
-<ul ng-repeat="favourite in favourites">
-	<li><a ng-href="{{favourite.url}}"> {{favourite.name}} </a></li>
+<ul ng-repeat="favourite in favlist">
+	<li><a ng-href="#{{favourite.url}}"> {{favourite.name}} </a></li>
 </ul>
 
-<p>{{favlist}} </p>
+<p>{{favlist | json}} </p>

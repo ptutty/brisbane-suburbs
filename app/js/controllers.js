@@ -1,38 +1,16 @@
 'use strict';
 
 /* Controllers */
-
-function HeaderCtrl($scope, appServices, $location){
+function HeaderCtrl($scope, appServices, $location, Favourites){
  $scope.suburbdetail = appServices.suburbdetail; 
-
-$scope.add = function(){
-  // get the current path and suburb name
-  var url = $location.path();
-  var name = appServices.suburbdetail.current;
-  // create object to add to array 
-
-  // check if object with that name property already exist in the array;
-  console.log(name);
-  var favlist = appServices.favourites;
-  var exists = false;
-  for (var i = 0; i < favlist.length; i++) {
-      if (name == favlist[i].name) {
-       console.log("item already exists");
-       exists = true; } 
-       else { 
-        console.log("not found");
-      };
-   }; 
-    // add to array if not found
-   if (!exists){
-    var favourite = {"name": name, "url": url};
-    appServices.favourites.push(favourite);
-   }
-
-  
-
-}
-
+ $scope.add = function(){
+    // get the current path 
+    var url = $location.path();
+    var name = appServices.suburbdetail.current;
+    if (Favourites.checkfavlist(url) == false){
+      Favourites.updatefavlist(url, name); 
+    }
+  };
 
  // button states based on current view
  $scope.state = function() {
@@ -45,9 +23,6 @@ $scope.add = function(){
             return  {"mainmap": true ,"showfavourites": false , "addfavourites": false};
     }
   } 
-
-
-
 };
 
 /* 
@@ -90,9 +65,9 @@ function SuburbDetailCtrl($scope, $routeParams, Suburb, appServices) {
   // update appService info - for cross controller sharing of state
 }
 
-function SuburbFavouritesCtrl($scope, appServices) {
-  $scope.favourites = appServices.favourites;
-  appServices.currentview = "favourites";
+function SuburbFavouritesCtrl($scope, Favourites) {
+  $scope.favlist = Favourites.favlist;
+  // appServices.currentview = "favourites";
 }
 
 
