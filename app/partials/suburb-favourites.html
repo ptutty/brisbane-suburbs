@@ -1,4 +1,11 @@
-<ul class="unstyled" ng-repeat="favourite in favlist">
-	<li><a ng-href="#{{favourite.url}}"> {{favourite.name}}</a> <button class="btn btn-danger"> Remove</button>
+
+
+<h1>Your saved bookmarks</h1>
+
+<ul class="unstyled favs" ng-repeat="favourite in favlist">
+	<li> 
+	  <input type="checkbox" ng-model="favourite.done">
+       <a class="fav-{{favourite.done}}" ng-href="#{{favourite.url}}"> {{favourite.name}}</a></a>	
+
 </li>
 </ul>

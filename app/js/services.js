@@ -38,20 +38,16 @@ subcatservices.factory('Favourites', function() {
   return {
           favlist: [],
           updatefavlist: function(url, name) {
-            this.favlist.push({"name": name, "url": url});
+            this.favlist.push({"name": name, "url": url, "done": false});
           },
           checkfavlist: function(url) {
-            if (!this.favlist.length) {return false}
-             else { 
-              for (var i = 0; i < this.favlist.length; i++) {
-                if (url == this.favlist[i].url) {
-                  console.log("item already exists");
-                  return true; } 
-                else { 
-                  return false;
-                };
-              };
-             } 
+            if (!this.favlist.length) {
+              return false;
+            } else { 
+              angular.forEach(this.favlist, function(fav) {
+                if (fav.url == url) {return true } else {return false};
+              });
+            } 
           },
           removeitem: function() {
 
