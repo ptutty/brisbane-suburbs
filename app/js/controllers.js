@@ -1,28 +1,14 @@
 'use strict';
 
 /* Controllers */
-function HeaderCtrl($scope, appServices, $location, Favourites){
- $scope.suburbdetail = appServices.suburbdetail; 
+function HeaderCtrl($scope, State, Favourites){
+ $scope.favourites = Favourites;
+ $scope.state = State;
  $scope.add = function(){
-    // get the current path 
-    var url = $location.path();
-    var name = appServices.suburbdetail.current;
-    if (Favourites.checkfavlist(url) == false){
-      Favourites.updatefavlist(url, name); 
-    }
-  };
+    Favourites.updatefavlist(); 
+ };
 
- // button states based on current view
- $scope.state = function() {
-    var view = appServices.currentview;
-    if (view == "home") {
-            return {"mainmap": false ,"showfavourites": true, "addfavourites": false};
-      } else if (view == "detailed") {
-            return  {"mainmap": true ,"showfavourites": true , "addfavourites": true};
-          } else if (view == "favourites") {
-            return  {"mainmap": true ,"showfavourites": false , "addfavourites": false};
-    }
-  } 
+
 };
 
 /* 
@@ -31,10 +17,10 @@ this model is call 'filter' and is stored in a generic service for sharing data 
 appServices 
 */
 
-function SuburbMainMapCtrl($scope, Suburb, appServices){
+function SuburbMainMapCtrl($scope, Suburb, appServices, State){
   $scope.suburbs = Suburb.query();
   $scope.filter = appServices.filter;
-  appServices.currentview = "home";
+  State.currentview = "home";
 }
 
 function SuburbListCtrl($scope, Suburb, appServices) {	
@@ -52,12 +38,13 @@ function SuburbListCtrl($scope, Suburb, appServices) {
 }
 
 
-function SuburbDetailCtrl($scope, $routeParams, Suburb, appServices) {
+function SuburbDetailCtrl($scope, $routeParams, Suburb, Favourites, State) {
   $scope.suburb = Suburb.get({suburbId: $routeParams.suburbId}, function(suburb) {
     $scope.mainImageUrl = suburb.images[0];
-    appServices.suburbdetail.current = suburb.name;
-    appServices.currentview = "detailed";
+    Favourites.currentsuburb = suburb.name;
   });
+
+  State.currentview = "detailed";
 
   $scope.setImage = function(imageUrl) {
     $scope.mainImageUrl = imageUrl;
@@ -65,9 +52,9 @@ function SuburbDetailCtrl($scope, $routeParams, Suburb, appServices) {
   // update appService info - for cross controller sharing of state
 }
 
-function SuburbFavouritesCtrl($scope, Favourites) {
+function SuburbFavouritesCtrl($scope, Favourites, State) {
   $scope.favlist = Favourites.favlist;
-  // appServices.currentview = "favourites";
+  State.currentview = "favourites";
 }
 
 

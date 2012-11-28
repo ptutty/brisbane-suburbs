@@ -1,11 +1,9 @@
-
-
 <h1>Your saved bookmarks</h1>
 
-<ul class="unstyled favs" ng-repeat="favourite in favlist">
+<ul class="unstyled favs" ng-repeat="fav in favlist">
 	<li> 
-	  <input type="checkbox" ng-model="favourite.done">
-       <a class="fav-{{favourite.done}}" ng-href="#{{favourite.url}}"> {{favourite.name}}</a></a>	
-
+	  <input type="checkbox" ng-model="fav.done">
+       <a class="fav-{{fav.done}}" ng-href="#{{fav.url}}"> {{fav.name}}</a></a>	
 </li>
 </ul>
+{{favlist | json}}

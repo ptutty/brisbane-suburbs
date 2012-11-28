@@ -5,7 +5,6 @@
 // service module
 var subcatservices = angular.module('suburbcatServices', ['ngResource']);
 
-// service:
 
 // does the ajax calls
 subcatservices.factory('Suburb', function($resource){
@@ -15,39 +14,56 @@ subcatservices.factory('Suburb', function($resource){
 });    
 
 
-// service for cross controller communication of state, data, views etc
+/* services for cross controller communication of state, data, views etc  */
+
+
+// shares a model current filters on suburbs across suburblist and mainmap controllers
 subcatservices.factory('appServices', function() {  
     return { 
-        filter: { // shares a model current filters on suburbs across suburblist and mainmap controllers
+        filter: { 
           name: "",
           traveltimes: {
               "stlucia": 0, 
               "herston": 0
           } 
-        },  
-        currentview: "home", // for current view state sharing between controller    
-        suburbdetail: { // for current view state sharing between controllers
-           current: ""     
         }
     };
 });
 
+// for tracking current view 
+subcatservices.factory('State', function() {  
+  return {  
+    currentview: "home",
+    buttonstate: function() {
+      if (this.currentview == "home") {
+        return {"mainmap": false ,"showfavourites": true, "addfavourites": false};
+      } else if (this.currentview == "detailed") {
+        return  {"mainmap": true ,"showfavourites": true , "addfavourites": true};
+      } else if (this.currentview == "favourites") {
+        return  {"mainmap": true ,"showfavourites": false , "addfavourites": false};
+      } 
+    } 
+  }    
+});
+
+
 
 // for managing favourites
-subcatservices.factory('Favourites', function() {
+subcatservices.factory('Favourites', function($location) {
   return {
+          currenturl: function (){ return $location.path();},
+          currentsuburb: "",
           favlist: [],
-          updatefavlist: function(url, name) {
-            this.favlist.push({"name": name, "url": url, "done": false});
+          updatefavlist: function() {
+             if (!this.checkfavlist(this.currenturl())) {
+                this.favlist.push({"name": this.currentsuburb, "url": this.currenturl(), "done": false});
+             } 
           },
-          checkfavlist: function(url) {
-            if (!this.favlist.length) {
-              return false;
-            } else { 
+          checkfavlist: function(currenturl) { // returns false if not currently in favlist array
+            console.log("checklist" + this.favlist.length);
               angular.forEach(this.favlist, function(fav) {
-                if (fav.url == url) {return true } else {return false};
+                if (fav.url == currenturl) { return true; } else {return false;};
               });
-            } 
           },
           removeitem: function() {
 
