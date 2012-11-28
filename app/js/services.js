@@ -52,15 +52,22 @@ subcatservices.factory('Favourites', function($location) {
           currenturl: function (){ return $location.path();},
           currentsuburb: "",
           favlist: [],
-          updatefavlist: function() {
+          updatefavlist: function() { 
              if (!this.checkfavlist(this.currenturl())) {
                 this.favlist.push({"name": this.currentsuburb, "url": this.currenturl(), "done": false});
-             } 
+             }
           },
-          checkfavlist: function(currenturl) { // returns false if not currently in favlist array
+          checkfavlist: function(urlcurrent) { // returns false if not currently in favlist array
+             if (this.favlist.length == 0) {
+              return false;
+             } else {
+              // return false;
+              var found = null;
               angular.forEach(this.favlist, function(fav) {
-                if (fav.url == currenturl) { return true; } else {return false;};
-              });
+                if (fav.url == urlcurrent) { found = true } else { found = false}
+              }); 
+              return found;
+             } 
           },
           removeitem: function() {
 
