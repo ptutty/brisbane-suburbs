@@ -2,8 +2,7 @@
 
 function setMarkers(map, suburbs) {
 
-
-      function addmarker(suburb) {
+      function addmarker(suburb, infowindow) {
         if (suburb.gmap) {
             var lat = suburb.gmap.marker.lat;
             var lng = suburb.gmap.marker.lng;
@@ -15,11 +14,9 @@ function setMarkers(map, suburbs) {
                   icon: image
               });
 
-
             google.maps.event.addListener(uqMarker, 'click', function() {
-              console.log(suburb.id);
               window.location = "#/suburbs/" + suburb.id;
-            });            
+            });         
         }
       }  
 

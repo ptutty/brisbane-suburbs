@@ -18,14 +18,12 @@ subcatservices.factory('Suburb', function($resource){
 
 
 // shares a model current filters on suburbs across suburblist and mainmap controllers
-subcatservices.factory('appServices', function() {  
+subcatservices.factory('Subfilter', function() {  
     return { 
-        filter: { 
-          name: "",
-          traveltimes: {
-              "stlucia": 0, 
-              "herston": 0
-          } 
+        name: "",
+        traveltimes: {
+            "stlucia": 0, 
+            "herston": 0
         }
     };
 });
@@ -60,7 +58,6 @@ subcatservices.factory('Favourites', function($location) {
              } 
           },
           checkfavlist: function(currenturl) { // returns false if not currently in favlist array
-            console.log("checklist" + this.favlist.length);
               angular.forEach(this.favlist, function(fav) {
                 if (fav.url == currenturl) { return true; } else {return false;};
               });

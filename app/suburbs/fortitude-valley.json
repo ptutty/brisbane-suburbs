@@ -1,22 +1,29 @@
 {
     "id": "fortitude-valley", 
     "name": "Fortitude Valley",
-    "description": "Greenslopes is another great inner city suburb with easy access anything you could need including shops and restaurants with plenty of ‘green space’ for those who enjoy the outdoors. With plenty of access to the busway, it’s easy to get around, in and out of the suburb.The Stones Corner area of Greenslopes, located just off the Eastern Busway, is perfect for anyone looking for unique shops or a delicious café breakfast on a lazy weekend. The South East Freeway Bikeway also runs along the length of the sub- urb, making it a perfect location for the avid bicycle commuter, the more relaxed weekend cyclist, or anyone looking for a leisurely walk into the city. Plenty of su- permarkets, medical centres, and other amenities make Greenslopes a great sub- urb with everything you would need close by.",
+    "description": 
+    ["'The Valley' is loved by students for its great nightlife, a mix of pubs, trendy clubs, live music venues and restaurants. You have to wedge yourself into one of the many nightclubs at least once during your stay in Brisvegas.",
+    "If you are looking for peace and quiet this may not be place for you to call home. There is always something going on, and it can get pretty rowdy on the weekends, so be prepared for taxi queues and a lot of people.",
+    "Because of its close proximity to the city the Valley is popular with young singles and couples, with most accommodation in the form of flats and apartments. Share houses are pretty common, although sometimes a bit more expensive then the surrounding suburbs. There are plenty of studio-type apartments about, but be prepared to pay more for your space.",
+    "The Valley is well-serviced by public transport, with a bus trip to UQ St Lucia taking about 30 mins. UQ Herston is even closer, with only a 15 minute commute. Night buses also operate for those late nights out.",
+    "Shopping is a unique experience in The Valley—the weekend markets are a mix of cheap clothes, handmade jewellery, and other odds and ends, and there is a great range of independent boutiques and crafts. The suburb has a supermarket and Chinatown is a must for its fantastic restaurants.",
+    "If people-watching is your thing, sit outside one of the many cafes , order a deli- cious breakfast and soak up some sun, watching the weird and wonderful Valley- world go by."
+    ],
     "distance": {
-        "city": 6 
+        "city": 2 
     }, 
     "traveltimes": {
-        "stlucia": 20, 
-        "herston": 35
+        "stlucia": 30, 
+        "herston": 15
     }, 
     "gmap": {
         "centre" : {"lat": -27.457486, "lng" : 153.033686, "zoom": 15 }
     },
-    "strapline": "Visit Stones Corner for unique shops and cafes!", 
-    "transport": "Two major bus stops on the SE and Eastern busways service Greenslopes with easy access to the Buranda Train Station on the Doomben/Cleveland Line.",
-    "shopping": "There are plenty of small shops in the Stones Corner area and easy access to supermarkets on LoganRoad.",
-    "cost": "Rentals are plentiful and affordable, suitable for students, young professionals, and families.",
-    "social": "The Stones Corner area is well known for it’s cafe scene and is a great place for a weekend brekkie.",
+    "strapline": "The annual Valley Fiesta in October or the weekend Valley Markets", 
+    "transport": "All trains travel through Fortitude Valley train station, including the Airtrain to the airport Frequent buses also cross through The Valley into the city and beyond",
+    "shopping": "A Foodworks supermarket is the closest, with larger retailers in surrounding suburbs",
+    "cost": "Rental prices in share houses start at $220/wk, vacant rentals start at $300 for a studio and increase based on size and type",
+    "social": "Head to the Brunswick and Ann St precincts for great bars, pubs, and nightclubs",
     "images": [
         "img/suburbs/placeholder1.jpg", 
         "img/suburbs/placeholder2.jpg", 

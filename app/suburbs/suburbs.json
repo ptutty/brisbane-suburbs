@@ -1,11 +1,28 @@
 [
+{
+        "id": "toowong",
+        "name": "Toowong",
+        "traveltimes": {
+            "stlucia": 20, 
+            "herston": 35
+            },
+        "distance": {
+            "city": 4 
+        },
+        "gmap": {
+            "marker": {
+                "lat": -27.48532,
+                 "lng" : 152.990576, 
+                 "icon" : "img/suburb-20.png"
+             }
+        }
+    }, 
     {
         "id": "brisbane-city",
         "name": "Brisbane City",
         "traveltimes": {
             "stlucia": 40, 
-            "herston": 15,
-            "color": "#eeff55"
+            "herston": 15
             },
         "distance": {
             "city": 0 
@@ -14,7 +31,7 @@
             "marker": {
                 "lat": -27.471011,
                  "lng" : 153.023449,
-                 "icon" : "img/suburb.png"
+                 "icon" : "img/suburb-40.png"
              }
         }
     }, 
@@ -23,8 +40,7 @@
         "name": "Fortitude Valley", 
         "traveltimes": {
             "stlucia": 30, 
-            "herston": 15,
-            "color": "#2277ff"
+            "herston": 15
         },  
         "distance": {
             "city": 2
@@ -42,8 +58,7 @@
         "name": "Greenslopes",
         "traveltimes": {
             "stlucia": 10, 
-            "herston": 35,
-            "color": "#116633"
+            "herston": 35
         },  
         "distance": {
             "city": 6 
@@ -52,7 +67,7 @@
             "marker": {
                 "lat": -27.508097, 
                  "lng" : 153.05125,
-                 "icon" : "img/suburb.png"
+                 "icon" : "img/suburb-10.png"
              }
         }
     },
@@ -61,8 +76,7 @@
         "name": "St Lucia",
         "traveltimes": {
             "stlucia": 10, 
-            "herston": 35,
-            "color": "#116633"
+            "herston": 35
         },  
         "distance": {
             "city": 6 
@@ -71,7 +85,7 @@
             "marker": { 
                 "lat": -27.502045, 
                  "lng" : 153.006546,
-                 "icon" : "img/suburb.png"
+                 "icon" : "img/suburb-10.png"
              }
         }
     },
@@ -80,8 +94,7 @@
          "name": "Woolloongabba", 
         "traveltimes": {
             "stlucia": 20, 
-            "herston": 35,
-            "color": "#dd0000"
+            "herston": 35
         },  
         "distance": {
             "city": 6 
@@ -90,7 +103,7 @@
             "marker": {
                 "lat": -27.500558, 
                  "lng" : 153.035321,
-                 "icon" : "img/suburb.png"
+                 "icon" : "img/suburb-20.png"
              }
         }
     },
@@ -99,17 +112,16 @@
         "name": "West End",
         "traveltimes": {
             "stlucia": 20, 
-            "herston": 35,
-            "color": "#dd0000"
+            "herston": 35
         },  
         "distance": {
             "city": 6 
         },
         "gmap": {
             "marker": {
-                "lat": 51.755746,
-                 "lng" : -2.284046,
-                 "icon" : "img/suburb.png"
+                "lat": -27.4809,
+                 "lng" : 153.0121,
+                 "icon" : "img/suburb-20.png"
              }
         }
     },
@@ -118,8 +130,7 @@
         "name": "Paddington", 
         "traveltimes": {
             "stlucia": 40, 
-            "herston": 35,
-            "color": "#eeff55"
+            "herston": 35
         },  
         "distance": {
             "city": 6 
@@ -128,7 +139,7 @@
             "marker": {
                 "lat": -27.461725,  
                  "lng" : 153.006101,
-                 "icon" : "img/suburb.png"
+                 "icon" : "img/suburb-40.png"
              }
         }
     },
@@ -137,17 +148,16 @@
         "name": "Holland Park West",
         "traveltimes": {
             "stlucia": 10, 
-            "herston": 35,
-            "color": "#116633"
+            "herston": 35
         },  
         "distance": {
             "city": 6 
         },
         "gmap": {
-            "marker": {
-                "lat": -27.517109, 
-                 "lng" : 153.069703,
-                 "icon" : "img/suburb.png"
+            "marker": {   
+                "lat": -27.529609, 
+                 "lng" : 153.07049,
+                 "icon" : "img/suburb-10.png"
              }
         }
     },
@@ -156,16 +166,15 @@
         "name": "Holland Park",
         "traveltimes": {
             "stlucia": 30, 
-            "herston": 35,
-            "color": "#2277ff"
+            "herston": 35
         },  
         "distance": {
             "city": 6 
         },
         "gmap": {
             "marker": {
-                "lat": -27.517109,
-                 "lng" : 153.05125,
+                "lat": -27.5171,
+                 "lng" : 153.0512,
                  "icon" : "img/suburb.png"
              }
         }
@@ -175,17 +184,16 @@
         "name": "Moorooka", 
         "traveltimes": {
             "stlucia": 20, 
-            "herston": 35,
-            "color": "#ccedba"
+            "herston": 35
         },  
         "distance": {
             "city": 6 
         },
         "gmap": {
             "marker": {
-                "lat": 27.531616,
-                 "lng" : 153.023869,
-                 "icon" : "img/suburb.png"
+                "lat": -27.5316,
+                 "lng" : 153.0238,
+                 "icon" : "img/suburb-20.png"
              }
         }
     },
@@ -194,8 +202,7 @@
         "name": "Mount Gravatt", 
         "traveltimes": {
             "stlucia": 40, 
-            "herston": 35,
-            "color": "#eeff55"
+            "herston": 35
         },  
         "distance": {
             "city": 6 
@@ -204,7 +211,7 @@
             "marker": {
                 "lat": -27.53722, 
                  "lng" : 153.078308,
-                 "icon" : "img/suburb.png"
+                 "icon" : "img/suburb-40.png"
              }
         }
     },
@@ -213,8 +220,7 @@
         "name": "Salisbury", 
         "traveltimes": {
             "stlucia": 30, 
-            "herston": 35,
-            "color": "#2277ff"
+            "herston": 35
         },  
         "distance": {
             "city": 6 
@@ -232,8 +238,7 @@
         "name": "Sunnybank",
         "traveltimes": {
             "stlucia": 30, 
-            "herston": 35,
-            "color": "#2277ff"
+            "herston": 35
         },  
         "distance": {
             "city": 6 
@@ -250,18 +255,17 @@
         "id": "tarragindi",
         "name": "Tarragindi", 
         "traveltimes": {
-            "stlucia": 20, 
-            "herston": 35,
-            "color": "#dd0000"
+            "stlucia": 30, 
+            "herston": 35
         },  
         "distance": {
             "city": 6 
         },
         "gmap": {
-            "marker": {
-                "lat": -27.522299,
-                 "lng" : 153.047111,
-                 "icon" : "img/suburb.png"
+            "marker": {  
+                "lat": -27.5222,
+                 "lng" : 153.0471,
+                 "icon" : "img/suburb-30.png"
              }
         }
     },
@@ -270,8 +274,7 @@
         "name": "Yeronga", 
         "traveltimes": {
             "stlucia": 20, 
-            "herston": 35,
-            "color": "#dd0000"
+            "herston": 35
         },  
         "distance": {
             "city": 6 
@@ -280,7 +283,7 @@
             "marker": {
                 "lat": -27.516494, 
                  "lng" : 153.01605,
-                 "icon" : "img/suburb.png"
+                 "icon" : "img/suburb-20.png"
              }
         }
     },
@@ -289,8 +292,7 @@
         "name": "Rocklea", 
         "traveltimes": {
             "stlucia": 50, 
-            "herston": 35,
-            "color": "#7700bb"
+            "herston": 35
         },  
         "distance": {
             "city": 6 
@@ -299,7 +301,7 @@
             "marker": {
                 "lat": -27.535603, 
                  "lng" : 152.998864,
-                 "icon" : "img/suburb.png"
+                 "icon" : "img/suburb-50.png"
              }
         }
     },
@@ -308,8 +310,7 @@
         "name": "kenmore", 
         "traveltimes": {
             "stlucia": 40, 
-            "herston": 35,
-            "color": "#eeff55"
+            "herston": 35
         },  
         "distance": {
             "city": 6 
@@ -318,7 +319,7 @@
             "marker": {
                 "lat": -27.507375, 
                  "lng" : 152.940012,
-                 "icon" : "img/suburb.png"
+                 "icon" : "img/suburb-40.png"
              }
         }
     },
@@ -327,8 +328,7 @@
         "name": "Chapel Hill", 
         "traveltimes": {
             "stlucia": 50, 
-            "herston": 35,
-            "color": "#7700bb"
+            "herston": 35
         },  
         "distance": {
             "city": 6 
@@ -337,7 +337,7 @@
             "marker": {
                 "lat": -27.493986, 
                  "lng" : 152.944923,
-                 "icon" : "img/suburb.png"
+                 "icon" : "img/suburb-50.png"
              }
         }
     }    

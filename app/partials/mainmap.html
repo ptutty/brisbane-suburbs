@@ -1,4 +1,4 @@
 {{}} <!-- these brackets to fix bug in ie8 -->
-<gmapmain gdata="{{suburbs | filter: filter.name | filter: filter.traveltimes.stlucia }}" id="map_canvas_main"></gmapmain>
+<gmapmain gdata="{{suburbs | filter: subfilter.name | filter:{traveltimes.stlucia: subfilter.traveltimes.stlucia} }}" id="map_canvas_main"></gmapmain>
 
 

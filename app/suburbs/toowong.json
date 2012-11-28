@@ -1,0 +1,31 @@
+{
+    "id": "toowong", 
+    "name": "Toowong",
+    "description": 
+     ["Toowong is one of those great inner city suburbs that is close to everything, yet still retains a sense of community and offers a more relaxed pace. The suburb stretches from the lovely Brisbane River to the bottom of Mt Coo-tha, so it is quite hilly in places.",
+     "Toowong Village (the large blue glass box that dominates the skyline), houses a decent-sized shopping centre, with a large supermarket, department stores and a range of other shops and services. The Village also has medical centres, public library and the Toowong train station is underneath. In the streets surrounding the Village there is a good range of cafes, restaurants and shops, as well as another large supermarket.",
+     "The suburb is popular with young professionals and students, and accommodation in the area is a mix of apartments and houses. Share houses (often in great Queenslander-style houses), start at about $150 per week, you can rent a self- contained studio for about $260 per week, and prices increase depending on location and size.",
+     "Toowong has a great range of public transport options—as well as the train, most buses from the western suburbs pass through Toowong into the city, and there are direct buses to UQ. The Citycat also has a stop outside of the very popular Regatta Hotel.",
+     "The area has great pedestrian paths and cycleways—you can walk or cycle into the CBD along the river, which offers a great view of the city skyline and the passing boat traffic."
+     ],
+    "distance": {
+        "city": 4 
+    }, 
+    "traveltimes": {
+        "stlucia": 20, 
+        "herston": 35
+    }, 
+    "gmap": {
+       "centre" : {"lat": -27.508097, "lng" : 153.05125, "zoom": 15 }
+    },
+    "strapline": "Take a walk along the river for great views of the city", 
+    "transport": "Two major bus stops on the SE and Eastern busways service Greenslopes with easy access to the Buranda Train Station on the Doomben/Cleveland Line.",
+    "shopping": "There are plenty of small shops in the Stones Corner area and easy access to supermarkets on LoganRoad.",
+    "cost": "Rentals are plentiful and affordable, suitable for students, young professionals, and families.",
+    "social": "The Stones Corner area is well known for it’s cafe scene and is a great place for a weekend brekkie.",
+    "images": [
+        "img/suburbs/placeholder1.jpg", 
+        "img/suburbs/placeholder2.jpg", 
+        "img/suburbs/placeholder3.jpg"
+    ]
+}

@@ -1,4 +1,4 @@
-<h1>Your saved bookmarks</h1>
+<h1>Your Favourites</h1>
 
 <ul class="unstyled favs" ng-repeat="fav in favlist">
 	<li> 
@@ -6,4 +6,3 @@
        <a class="fav-{{fav.done}}" ng-href="#{{fav.url}}"> {{fav.name}}</a></a>	
 </li>
 </ul>
-{{favlist | json}}

@@ -1,4 +1,11 @@
 
+
+.ttmin-10 {background-color: #116633;} /* green */
+.ttmin-20 {background-color: #dd0000;} /*red */
+.ttmin-30 {background-color: #2277ff;} /* blue */
+.ttmin-40 {background-color: #eeff55;} /* yellow*/
+.ttmin-50 {background-color: #7700bb;} /* purple */
+
 .fav-true {
   text-decoration: line-through;
   color: grey;
@@ -87,6 +94,15 @@ img#overview-map {
     margin-right: 20px
 }
 
+.suburb-key-filter { 
+   opacity: 0.65;
+float: right;
+width: 12px;
+height: 12px;
+margin-right: 50px;
+margin-top: 2px;
+}
+
 ul.suburbs {
   margin: 0 0 9px 5px;
 
@@ -152,28 +168,6 @@ ul.specs dt {
 
 h1 {
   border-bottom: 1px solid gray;
-}
-
-/* distance key custom button see http://charliepark.org/bootstrap_buttons/*/ 
-
-
-.distance-key {font-weight: 500;}
-
-.suburb-color-10 {
-  background-color: #116633;
-  opacity: 0.65;
-}
-.distance-key-20 {
-  color: #dd0000;
-}
-.distance-key-30 {
-  color: #2277ff;
-}
-.distance-key-40 {
-  color: #eeff55;
-}
-.distance-key-50 {
-  color: #7700bb;
 }
 
 

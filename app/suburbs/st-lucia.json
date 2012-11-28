@@ -1,0 +1,32 @@
+{
+    "id": "st-lucia", 
+    "name": "St Lucia",
+    "description": 
+     ["St Lucia is home to UQ’s largest campus and as a result a lot of students choose to live here so they can roll out of bed and into their early-morning lectures. The campus is situated at one end of the suburb and is surrounded by the gorgeous Brisbane River on three sides.",
+     "As a result of its proximity to the city and the uni, St Lucia is an interesting mix of budget student digs and multi-million dollar riverfront homes. It is still possible however to find a great place to live, either in a share house or apartment within easy commute to campus.",
+     "The main shopping area is Hawken Village, with a supermarket, great range of shops and cheap restaurants—perfect for budget-conscious students. There’s also the almost-famous Asian supermarket on Sir Fred Schonell Drive—if you cant find what you want there, it doesn't exist!",
+     "From St Lucia you can travel really easily into the city or Valley for a night out, and the neighbouring suburbs of Toowong and Indooroopilly both offer train connec- tions and shopping malls.",
+     "One of the real charms of the suburb is the range of riverside parks and walks— most offering free barbeque facilities and WiFi. Guyatt Park is a particularly popu- lar spot for weekend parties and celebrations—just get there early to claim your spot.",
+     "Cycling is also a very popular way to get around, with a bikeway from UQ leading all the way into the city centre."
+     ],
+    "distance": {
+        "city": 4 
+    }, 
+    "traveltimes": {
+        "stlucia": 10, 
+        "herston": 50
+    }, 
+    "gmap": {  
+       "centre" : {"lat": -27.502045, "lng" : 153.006546, "zoom": 15 }
+    },
+    "strapline": "UQ's sports facilities and events on your doorstep", 
+    "transport": "Great bus connections exist to/from St Lucia to the city and surrounds. The CityCat ferry also has stops at UQ and Guyatt Park",
+    "shopping": "There’s a smaller supermarket in Hawken Village, and larger supermarkets in neighbouring suburbs",
+    "cost": "Rental prices vary...a lot! You can get a basic share for about $175 all inclusive. Naturally waterfront rentals cost a lot more...",
+    "social": "If hanging at the uni bar isn't your thing you might want to head elsewhere for your night out. Try the Hawken Village restaurants for cheap eats",
+    "images": [
+        "img/suburbs/placeholder1.jpg", 
+        "img/suburbs/placeholder2.jpg", 
+        "img/suburbs/placeholder3.jpg"
+    ]
+}

@@ -1,0 +1,31 @@
+{
+    "id": "brisbane-city", 
+    "name": "Brisbane City",
+    "description": 
+     ["Brisbane’s bustling city centre may not be where everyone wants to call home, but if you want everything to be right on your doorstep, this could be the place for you!",
+     "The compact city centre is easy to get around on foot, and has a great range of restaurants, shopping centres and entertainment venues to suit all tastes and most budgets. The architecture is a random mix of heritage buildings, flash high- rises and the odd ugly concrete block.",
+     "Roma Street Parkland and the city Botanic Gardens offer a great green escape from the concrete and crowds, and the Brisbane River forms a beautiful natural boundary. Take a stroll along the riverside walkways to get a great view of the bridges and city skyline.",
+     "The Queen Street Mall is buzzing most of the time, the pedestrian-only area is a shopper’s heaven, with three big shopping centres, pubs, cafes and lots of inde- pendent stores. Its still possible to have a cheap night out if you look around.",
+"The Riverside precinct is where the young and trendy go to play after a long work week, and from the city centre you can go virtually anywhere by bus, train or ferry."
+     ],
+    "distance": {
+        "city": 0 
+    }, 
+    "traveltimes": {
+        "stlucia": 30, 
+        "herston": 15
+    }, 
+    "gmap": {
+       "centre" : {"lat": -27.508097, "lng" : 153.05125, "zoom": 15 }
+    },
+    "strapline": "The annual Riverfire spectacular on Brisbane River", 
+    "transport": "There are train stations at Roma St and Ann St (Central). Ferry terminals at Riverside, Gardens Point and North Quay will get you to UQ, as will direct buses from Adelaide St",
+    "shopping": "There are big supermarkets in MacArthur and Broadway shopping centres, both off the Queen St Mall",
+    "cost": "A fully furnished studio starts at $300/week, and shared accommodation at about $250",
+    "social": "There are small bars in the Mall, as heaps of restaurants in the surrounding streets. Some pricy clubs along the riverfront",
+    "images": [
+        "img/suburbs/placeholder1.jpg", 
+        "img/suburbs/placeholder2.jpg", 
+        "img/suburbs/placeholder3.jpg"
+    ]
+}

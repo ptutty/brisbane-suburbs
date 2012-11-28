@@ -17,23 +17,23 @@ this model is call 'filter' and is stored in a generic service for sharing data 
 appServices 
 */
 
-function SuburbMainMapCtrl($scope, Suburb, appServices, State){
+function SuburbMainMapCtrl($scope, Suburb, Subfilter, State){
   $scope.suburbs = Suburb.query();
-  $scope.filter = appServices.filter;
+  $scope.subfilter = Subfilter;
   State.currentview = "home";
 }
 
-function SuburbListCtrl($scope, Suburb, appServices) {	
+function SuburbListCtrl($scope, Suburb, Subfilter) {	
   $scope.suburbs = Suburb.query();
-  $scope.orderProp = 'name';
-  $scope.filter = appServices.filter;
+  $scope.orderProp = 'traveltimes.stlucia';
+  $scope.subfilter = Subfilter;
 
   $scope.resettime = function(){
-    appServices.filter.traveltimes.stlucia = 0;
+    Subfilter.traveltimes.stlucia = 0;
   }
 
   $scope.resetname = function(){
-     appServices.filter.name = "";
+     Subfilter.name = "";
   }
 }
 
