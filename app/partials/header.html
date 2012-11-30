@@ -7,10 +7,10 @@
           </button>
           <a class="brand" href="#/suburbs/">Brisbane suburbs</a>
           <div class="nav-collapse collapse"> 
-             <a href="#/suburbs/" ng-show="state.buttonstate().mainmap" class="btn btn-small btn-primary pull-right"><i class="icon-home icon-white"></i> Show all suburbs map</a>
-            <a href="#/favourites" ng-show="state.buttonstate().showfavourites"  class="btn btn-small pull-right"><i class="icon-eye-open icon-black"></i> Show Favourites</a>
+             <a href="#/suburbs/" ng-show="buttonstate.mainmap" class="btn btn-small btn-primary pull-right"><i class="icon-home icon-white"></i> Show all suburbs map</a>
+            <a href="#/favourites" ng-show="buttonstate.showfavourites"  class="btn btn-small pull-right"><i class="icon-eye-open icon-black"></i> Show Favourites</a>
            
-            <a href="#/favourites" ng-click="add();" ng-show="state.buttonstate().addfavourites" class="btn btn-small pull-right"><i class="icon-heart icon-black"></i> Add {{favourites.currentsuburb}} to Favourites</a> 
+            <a href="#/favourites" ng-click="add();" ng-show="buttonstate.addfavourites" class="btn btn-small pull-right"><i class="icon-heart icon-black"></i> Add {{favourites.currentsuburb}} to Favourites</a> 
           </div>
         </div>
       </div>

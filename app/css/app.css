@@ -1,4 +1,6 @@
-
+.ng-cloak {
+  display: none!important;
+}
 
 .ttmin-10 {background-color: #116633;} /* green */
 .ttmin-20 {background-color: #dd0000;} /*red */

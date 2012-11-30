@@ -4,8 +4,14 @@
 function HeaderCtrl($scope, State, Favourites){
  $scope.favourites = Favourites;
  $scope.state = State;
+
+// $watch is need here as we need to run a function when value of something changes
+$scope.$watch('state.currentview', function(currentview) {
+        $scope.buttonstate = State.buttonstate();
+  });
+
  $scope.add = function(){
-    Favourites.updatefavlist(); 
+    Favourites.add(); 
  };
 
 
@@ -53,8 +59,19 @@ function SuburbDetailCtrl($scope, $routeParams, Suburb, Favourites, State) {
 }
 
 function SuburbFavouritesCtrl($scope, Favourites, State) {
-  $scope.favlist = Favourites.favlist;
+  $scope.subfav = Favourites;
+  
+  // To make sure the view is updated when service variables are change it is important
+  // that you create scope for service object at the top level i.e. $scope.subfav = Favourites
+  // and then reference sub properties in the view {{ subfav.list}} rather than doing: $scope.list = Favourites.list
+  // in the controller which will take a static reference. 
+  // in some instances you could use $watch but it should not be necessary.
+  
+  $scope.remove =  function() {
+    Favourites.remove();
+  };
   State.currentview = "favourites";
+  Favourites.localstorage.read();
 }
 
 

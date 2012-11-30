@@ -48,29 +48,58 @@ subcatservices.factory('State', function() {
 
 // for managing favourites
 subcatservices.factory('Favourites', function($location) {
-  return {
-          currenturl: function (){ return $location.path();},
-          currentsuburb: "",
-          favlist: [],
-          updatefavlist: function() { 
-             if (!this.checkfavlist(this.currenturl())) {
-                this.favlist.push({"name": this.currentsuburb, "url": this.currenturl(), "done": false});
-             }
-          },
-          checkfavlist: function(urlcurrent) { // returns false if not currently in favlist array
-             if (this.favlist.length == 0) {
-              return false;
-             } else {
-              // return false;
-              var found = null;
-              angular.forEach(this.favlist, function(fav) {
-                if (fav.url == urlcurrent) { found = true } else { found = false}
-              }); 
-              return found;
-             } 
-          },
-          removeitem: function() {
 
+  var favourites = {
+          currentsuburb: "",
+          list: [],
+          add: function() { 
+           if (this.match()) {
+              this.list.push({"name": this.currentsuburb, "url": $location.path(), "done": false});
+           }
+           this.localstorage.save();
+          },
+          match: function() {
+            var found = true;
+            angular.forEach(this.list, function(item) {
+              if (item.url == $location.path()) {found = false};
+            }); 
+            return found;
+          },
+          length: function() { // checks if array is empty
+            if (this.list.length !== 0) { return true }
+          },
+          remove: function() {
+              var oldlist = this.list;
+              var newlist = [];
+              angular.forEach(oldlist, function(olditem){
+                if (!olditem.done) {newlist.push(olditem)}
+              })
+              this.list = newlist; 
+              this.localstorage.save();
+          },
+          localstorage: {   // persistence of favourites using HTML storage
+            notloaded: true, // load locally stored data once              
+            test: function()  { // test for web storage ability using modernizr
+              if (Modernizr.localstorage) {
+              return true;
+              } else {
+          // no native support for HTML5 storage :(
+              return false;
+              }
+            }, 
+            save: function() {
+              if (this.test()) { 
+                localStorage.setItem("suburbfavourites", "");
+                localStorage.setItem("suburbfavourites", angular.toJson(favourites.list));
+              }; 
+            },
+            read: function(){
+              if (this.test() && this.notloaded) { 
+                favourites.list  = angular.fromJson(localStorage.getItem("suburbfavourites"));
+                this.notloaded = false;
+              }
+            }
           }
-  }
+      }
+  return favourites;    
 })

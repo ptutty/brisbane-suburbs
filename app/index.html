@@ -24,9 +24,10 @@
   <script src="https://maps.googleapis.com/maps/api/js?sensor=false" type="text/javascript"></script>
   <script src="js/pathdata.js"></script>
   <script src="js/gmap-helper-funcs.js"></script>
+  <script src="lib/modernizr/modernizr-latest.js"></script>
  
 </head>
-<body>
+<body >
   <div ng-controller="HeaderCtrl" ng-include="'partials/header.html'" class="navbar navbar-inverse navbar-fixed-top">
   </div>  
 <div class="container">
@@ -36,7 +37,7 @@
     
     </div>
 
-    <div class="span9 ng-view" >
+    <div class="span9 ng-cloak ng-view" >
     </div>
 
   </div>

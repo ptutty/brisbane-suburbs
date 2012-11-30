@@ -1,8 +1,14 @@
 <h1>Your Favourites</h1>
 
-<ul class="unstyled favs" ng-repeat="fav in favlist">
+<ul class="unstyled favs" ng-repeat="item in subfav.list">
 	<li> 
-	  <input type="checkbox" ng-model="fav.done">
-       <a class="fav-{{fav.done}}" ng-href="#{{fav.url}}"> {{fav.name}}</a></a>	
+	  <input type="checkbox" ng-model="item.done">
+       <a class="fav-{{item.done}}" ng-href="#{{item.url}}"> {{item.name}}</a></a>	
 </li>
 </ul>
+
+
+
+<button ng-show="subfav.length()" class="btn btn-danger" ng-click="remove();" type="button">Remove selected</button> 
+
+<!-- <button  class="btn btn-danger" ng-click="test();" type="button">test</button> -->
