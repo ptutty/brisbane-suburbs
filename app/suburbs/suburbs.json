@@ -101,8 +101,8 @@
         },
         "gmap": {
             "marker": {
-                "lat": -27.500558, 
-                 "lng" : 153.035321,
+                "lat": -27.5005, 
+                 "lng" : 153.0353,
                  "icon" : "img/suburb-20.png"
              }
         }
@@ -137,8 +137,8 @@
         },
         "gmap": {
             "marker": {
-                "lat": -27.461725,  
-                 "lng" : 153.006101,
+                "lat": -27.4617,  
+                 "lng" : 153.0061,
                  "icon" : "img/suburb-40.png"
              }
         }
@@ -281,8 +281,8 @@
         },
         "gmap": {
             "marker": {
-                "lat": -27.516494, 
-                 "lng" : 153.01605,
+                "lat": -27.5164, 
+                 "lng" : 153.0160,
                  "icon" : "img/suburb-20.png"
              }
         }
@@ -307,7 +307,7 @@
     },
     {
         "id": "kenmore",
-        "name": "kenmore", 
+        "name": "Kenmore", 
         "traveltimes": {
             "stlucia": 40, 
             "herston": 35

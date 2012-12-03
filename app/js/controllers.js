@@ -45,9 +45,12 @@ function SuburbListCtrl($scope, Suburb, Subfilter) {
 
 
 function SuburbDetailCtrl($scope, $routeParams, Suburb, Favourites, State) {
+
+  $scope.httpStatus = false; // in progress
   $scope.suburb = Suburb.get({suburbId: $routeParams.suburbId}, function(suburb) {
     $scope.mainImageUrl = suburb.images[0];
     Favourites.currentsuburb = suburb.name;
+    $scope.httpStatus = true; // ready
   });
 
   State.currentview = "detailed";

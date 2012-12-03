@@ -2,6 +2,8 @@
   display: none!important;
 }
 
+h1 {margin-bottom: 30px!important; u}
+
 .ttmin-10 {background-color: #116633;} /* green */
 .ttmin-20 {background-color: #dd0000;} /*red */
 .ttmin-30 {background-color: #2277ff;} /* blue */

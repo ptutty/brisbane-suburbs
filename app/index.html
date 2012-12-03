@@ -9,7 +9,7 @@
 <![endif]-->
 
 
-  <title>Suburb Profiler</title>
+  <title>Brisbane Suburb Profiles</title>
   <link rel="stylesheet" href="css/app.css">
   <link rel="stylesheet" href="css/bootstrap.css">
   <script src="lib/angular/angular.js"></script>
@@ -28,7 +28,7 @@
  
 </head>
 <body >
-  <div ng-controller="HeaderCtrl" ng-include="'partials/header.html'" class="navbar navbar-inverse navbar-fixed-top">
+  <div ng-controller="HeaderCtrl" ng-include="'partials/header.html'" class="navbar navbar-inverse navbar-fixed-top ng-cloak">
   </div>  
 <div class="container">
   <div class="row" style="margin-top: 30px;">
@@ -37,7 +37,7 @@
     
     </div>
 
-    <div class="span9 ng-cloak ng-view" >
+    <div class="span9 ng-view" >
     </div>
 
   </div>
