@@ -53,7 +53,7 @@ img#overview-map {
   margin-top: 8px;
 }
 
-#map_canvas {
+.map_small {
   width: 300px;
   height: 300px;
   margin: 10px 0px 10px 0px;

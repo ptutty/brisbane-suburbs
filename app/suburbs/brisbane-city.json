@@ -16,7 +16,7 @@
         "herston": 15
     }, 
     "gmap": {
-       "centre" : {"lat": -27.508097, "lng" : 153.05125, "zoom": 15 }
+       "centre" : {"lat": -27.47, "lng" : 153.02, "zoom": 15 } 
     },
     "strapline": "The annual Riverfire spectacular on Brisbane River", 
     "transport": "There are train stations at Roma St and Ann St (Central). Ferry terminals at Riverside, Gardens Point and North Quay will get you to UQ, as will direct buses from Adelaide St",

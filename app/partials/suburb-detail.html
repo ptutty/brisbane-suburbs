@@ -1,4 +1,4 @@
-<div ng-show="httpStatus" >
+<div ng-show="httpStatus">
 <div class="row">
    <div class="span5">
     <h1 >{{suburb.name}}</h1>
@@ -15,7 +15,7 @@
    </div>
 
    <div class="span4">
-    <gmap gdata="{{suburb.gmap}}" id="map_canvas" ></gmap>
+   <div id="map_canvas" class="map_small"> </div>
 
      <img ng-src="{{mainImageUrl}}" class="suburb">
 <ul class="suburb-thumbs spmt30" ng-show="httpStatus">

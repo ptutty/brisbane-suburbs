@@ -324,7 +324,7 @@
         }
     },
     {
-        "id": "chapel hill",
+        "id": "chapel-hill",
         "name": "Chapel Hill", 
         "traveltimes": {
             "stlucia": 50, 

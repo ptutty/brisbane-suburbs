@@ -45,21 +45,45 @@ function SuburbListCtrl($scope, Suburb, Subfilter) {
 
 
 function SuburbDetailCtrl($scope, $routeParams, Suburb, Favourites, State) {
-
-  $scope.httpStatus = false; // in progress
+    
+  // initialise map before template is hidden
+    var map;
+    var mapOptions = {
+      zoom: 13,
+      center: new google.maps.LatLng(-27.50,153.00),
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
+  
+  // hide template until data loaded 
+  $scope.httpStatus = false; // in progress, stops the showing of empty template before AJAX data loading
+  // load ajax data
   $scope.suburb = Suburb.get({suburbId: $routeParams.suburbId}, function(suburb) {
     $scope.mainImageUrl = suburb.images[0];
     Favourites.currentsuburb = suburb.name;
+    // show template
     $scope.httpStatus = true; // ready
-  });
-
+    // update map centre with suburb data
+    setmap(suburb.gmap.centre);
+  }); 
+   // update appService info - for cross controller sharing of state
   State.currentview = "detailed";
 
   $scope.setImage = function(imageUrl) {
     $scope.mainImageUrl = imageUrl;
   }
-  // update appService info - for cross controller sharing of state
-}
+
+
+  function setmap(centre){ 
+    var lat = centre.lat; 
+    var lng = centre.lng; 
+    var myLatLng = new google.maps.LatLng(lat, lng); 
+    map.setCenter(myLatLng); 
+  }
+
+};
+
+
 
 function SuburbFavouritesCtrl($scope, Favourites, State) {
   $scope.subfav = Favourites;

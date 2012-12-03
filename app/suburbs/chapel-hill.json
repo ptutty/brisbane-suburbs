@@ -1,27 +1,24 @@
 {
-    "id": "greenslopes", 
-    "name": "Greenslopes",
+    "id": "chapel-hill", 
+    "name": "Chapel Hill",
     "description": 
-     ["Greenslopes is another great inner city suburb with easy access anything you could need including shops and restaurants with plenty of ‘green space’ for those who enjoy the outdoors. With plenty of access to the busway, it’s easy to get around, in and out of the suburb.",
-     "The Stones Corner area of Greenslopes, located just off the Eastern Busway, is perfect for anyone looking for unique shops or a delicious café breakfast on a lazy weekend. The South East Freeway Bikeway also runs along the length of the suburb, making it a perfect location for the avid bicycle commuter, the more relaxed weekend cyclist, or anyone looking for a leisurely walk into the city. Plenty of supermarkets, medical centres, and other amenities make Greenslopes a great sub- urb with everything you would need close by.",
-     "Greenslopes is popular with young professionals, families and students. Accommodation in the area is a mix of apartment blocks, houses, and townhouses. Share houses start at $_____ per week or a self-contained studio can be rented for $____ per week; prices increase depending on size and location.",
-     "The suburb also has great access to public transportation with easy access to the Buranda Train Station, and the South East and Eastern Busways. There are several direct buses to the city and to UQ. With quick and easy accessibility to the city, a diverse range of shops, restaurants, and cafes nearby, plenty of parks, bikeways and walking paths make Greenslopes a great suburb for anyone looking for the convenience of an inner city suburb with a relaxed, laid back vibe."
-     ],
+     ["Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores",
+      "eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, omnis iste natus error sit voluptatem accusantium, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur"],
     "distance": {
         "city": 6 
     }, 
     "traveltimes": {
-        "stlucia": 20, 
+        "stlucia": 50, 
         "herston": 35
     }, 
     "gmap": {
-       "centre" : {"lat": -27.508097, "lng" : 153.05125, "zoom": 15 }
+       "centre" : {"lat":  -27.493,"lng" : 152.944, "zoom": 15}   
     },
-    "strapline": "Visit Stones Corner for unique shops and cafes!", 
-    "transport": "Two major bus stops on the SE and Eastern busways service Greenslopes with easy access to the Buranda Train Station on the Doomben/Cleveland Line.",
-    "shopping": "There are plenty of small shops in the Stones Corner area and easy access to supermarkets on LoganRoad.",
-    "cost": "Rentals are plentiful and affordable, suitable for students, young professionals, and families.",
-    "social": "The Stones Corner area is well known for it’s cafe scene and is a great place for a weekend brekkie.",
+    "strapline": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem!", 
+    "transport": "Ut enim ad minima veniam, quis nostrum exercitationem ullam.",
+    "shopping": "omnis iste natus error sit voluptatem accusantium",
+    "cost": "omnis iste natus error sit voluptatem accusantium",
+    "social": "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci",
     "images": [
         "img/suburbs/placeholder1.jpg", 
         "img/suburbs/placeholder2.jpg", 
