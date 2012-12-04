@@ -1,3 +1,5 @@
+h5 {margin-bottom: 10px!important;}
+
 .ng-cloak {
   display: none!important;
 }
@@ -35,6 +37,7 @@ h1 {margin-bottom: 30px!important; u}
 .spmt50 {margin-top: 50px;}
 .spmt30 {margin-top: 30px;}
 .spmb20 {margin-bottom: 20px;}
+.spmt5 {margin-top: 5px;}
 
 select.subsearchselect {
   width: 198px;
@@ -90,23 +93,24 @@ img#overview-map {
 
 
 
-.suburb-key { 
+.suburbkey { 
     opacity: 0.65;
     float: left;
     width: 15px;
     height: 15px;
-    margin-right: 20px
+    margin-right: 20px;
 }
 
+/*
 .suburb-key-filter { 
-   opacity: 0.65;
-float: right;
-width: 12px;
-height: 12px;
-margin-right: 50px;
-margin-top: 2px;
+  display: inline-block;
+  opacity: 0.65;
+  width: 12px;
+  height: 12px;
+  margin-right:4px;
+  margin-top:2px
 }
-
+*/
 ul.suburbs {
   margin: 0 0 9px 5px;
 
@@ -131,15 +135,18 @@ ul.suburb-thumbs {
 
 ul.suburb-thumbs li {
   border: 1px solid black;
-  display: inline-block;
-  margin: 3px;
+  /* display: inline-block; */
+  float: left;
+  width: 86px;
+  margin: 5px;
   background-color: white;
 }
 
 ul.suburb-thumbs img {
-  height: 90px;
-  width: 90px;
+  height: 86px;
+  width: 86px;
   padding: 0em;
+  float: left;
 }
 
 ul.suburb-thumbs img:hover {
@@ -161,7 +168,7 @@ ul.specs > li {
   padding: 0px 5px 0px 5px;
 }
 
-ul.specs > li > span{
+span.subdetails  {
   font-weight: bold;
   font-size: 1.2em;
 }

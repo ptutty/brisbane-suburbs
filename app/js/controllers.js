@@ -13,9 +13,9 @@ $scope.$watch('state.currentview', function(currentview) {
  $scope.add = function(){
     Favourites.add(); 
  };
-
-
 };
+
+
 
 /* 
 both controllers MainMap and SuburbList share a model of the current suburb filtering state so both views are updated.
@@ -27,6 +27,13 @@ function SuburbMainMapCtrl($scope, Suburb, Subfilter, State){
   $scope.suburbs = Suburb.query();
   $scope.subfilter = Subfilter;
   State.currentview = "home";
+
+  $scope.setfilter = function(val){
+    Subfilter.traveltimes.stlucia = val;
+    Subfilter.name = "";
+  }
+
+  $(".stlucia-distance").button();
 }
 
 function SuburbListCtrl($scope, Suburb, Subfilter) {	
@@ -34,8 +41,21 @@ function SuburbListCtrl($scope, Suburb, Subfilter) {
   $scope.orderProp = 'traveltimes.stlucia';
   $scope.subfilter = Subfilter;
 
+  // do this way due to IE8 bug!!
+  $scope.setfilter = function(val){
+    Subfilter.traveltimes.stlucia = val;
+    Subfilter.name = "";
+  }
+
   $scope.resettime = function(){
     Subfilter.traveltimes.stlucia = 0;
+    // IE8 hack - due to ng-model and input type=radio not palying well together
+    // reset selected state via JQ and bootstrap
+    $(".stlucia-distance").button('reset');
+  }
+
+  $scope.colorchip = function(num){
+    return 'ttmin-' + num;  
   }
 
   $scope.resetname = function(){

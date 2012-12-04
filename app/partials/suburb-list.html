@@ -1,38 +1,9 @@
  <!--Sidebar content-->
+
+
 <div id="sidecontrol" >
 
 
-<!--[if gte IE 9]><!-->
-
-<h5>St Lucia by public transport</h5>
-<form action="">
-<label class="radio">
-<input type="radio" name="traveltime" ng-model="subfilter.traveltimes.stlucia" value="0" ng-change="resetname()" >
-  All travel times
-</label>  
-<label class="radio">
-  10 mins travel time <div class="suburb-key-filter ttmin-10"> </div> 
-  <input type="radio" name="traveltime" ng-model="subfilter.traveltimes.stlucia" value="10" ng-change="resetname()">
-</label>
-<label class="radio">
-<input type="radio" name="traveltime" ng-model="subfilter.traveltimes.stlucia" value="20" ng-change="resetname()">
-  20 mins travel time <div class="suburb-key-filter ttmin-20"> </div> 
-</label>
-<label class="radio">
-  <input type="radio" name="traveltime" ng-model="subfilter.traveltimes.stlucia" value="30" ng-change="resetname()">
-  30 mins travel time <div class="suburb-key-filter ttmin-30"> </div> 
-</label>
-<label class="radio">
-  <input type="radio" name="traveltime" ng-model="subfilter.traveltimes.stlucia" value="40" ng-change="resetname()">
-  40 mins travel time <div class="suburb-key-filter ttmin-40"> </div> 
-</label>
-<label class="radio">
- <input type="radio" name="traveltime" ng-model="subfilter.traveltimes.stlucia" value="50" ng-change="resetname()">
-  50 mins travel time <div class="suburb-key-filter ttmin-50"> </div> 
-</label>
-</form>
-
-<!--<![endif]-->
 
       <h5>Search for suburb</h5>
       <input class="subsearchinput" ng-model="subfilter.name" ng-click="resettime();">
@@ -46,7 +17,7 @@
       </select>
         <ul class="suburbs">
         <li ng-repeat="suburb in suburbs | filter:{traveltimes.stlucia: subfilter.traveltimes.stlucia} | filter:subfilter.name | orderBy:orderProp" class="thumbnail"> 
-       <div class="ttmin-{{suburb.traveltimes.stlucia}} suburb-key"></div><h4><a href="#/suburbs/{{suburb.id}}">{{suburb.name}}</a></h4>
+       <div class="ttmin-{{suburb.traveltimes.stlucia}} suburbkey"></div><h4><a href="#/suburbs/{{suburb.id}}">{{suburb.name}}</a></h4>
         </li>
       </ul>
     </div>

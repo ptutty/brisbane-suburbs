@@ -1,4 +1,14 @@
 {{}} <!-- these brackets to fix bug in ie8 -->
+<h5>St Lucia by public transport</h5>
+
+<div class="btn-group" data-toggle="buttons-radio">
+  <button type="button" class="btn btn-primary stlucia-distance" ng-click="setfilter(10)">10 mins  </button>
+  <button type="button" class="btn btn-primary stlucia-distance" ng-click="setfilter(20)">20 mins  </button>
+  <button type="button" class="btn btn-primary stlucia-distance" ng-click="setfilter(30)">30 mins  </button>
+  <button type="button" class="btn btn-primary stlucia-distance" ng-click="setfilter(40)">40 mins  </button>
+  <button type="button" class="btn btn-primary stlucia-distance" ng-click="setfilter(50)">50 mins  </button>
+  <button type="button" class="btn stlucia-distance" ng-click="setfilter(0)">Reset</button>
+</div>
 <gmapmain gdata="{{suburbs | filter: subfilter.name | filter:{traveltimes.stlucia: subfilter.traveltimes.stlucia} }}" id="map_canvas_main"></gmapmain>
 
 
