@@ -103,3 +103,64 @@ subcatservices.factory('Favourites', function($location) {
       }
   return favourites;    
 })
+
+
+
+// for managing polygon display
+subcatservices.factory('MapPolygons', function() {
+// controls polygon overlays on googlemap on homepage
+  var overlaysctrl = {
+    polyarray: [], // array of polys
+    showPolys: function(map) { // displays polys on map
+      if (!this.polyarray.length) { // no polys yet created - create all. 
+      this.makePolys();
+    };
+      /*
+        switch(n)
+          {
+          case 1:
+            execute code block 1
+            break;
+          case 2:
+            execute code block 2
+            break;
+          default:
+            code to be executed if n is different from case 1 and 2
+          } */
+  
+      for (var i = 0; i < this.polyarray.length; i++) {
+        this.polyarray[i].setMap(map);
+      };
+      
+    }, 
+
+    hidePolys: function() { // hides polys on map
+      for (var i = 0; i < this.polyarray.length; i++) {
+        this.polyarray[i].setMap(null);
+      };
+    }, 
+
+    makePolys: function(){
+      for (var i = 0; i < polygonpathdata.length; i++) {
+        var paths = polygonpathdata[i].data;
+        var color = polygonpathdata[i].color;
+        var poly = new google.maps.Polygon({
+            paths: paths,
+            strokeColor: color,
+            strokeOpacity: 0.35,
+            strokeWeight: 1,
+            fillColor: color,
+            fillOpacity: 0.65,
+            clickable: false
+          });
+        this.polyarray.push(poly);  
+      };       
+    }
+}
+return overlaysctrl;    
+})
+
+
+
+
+

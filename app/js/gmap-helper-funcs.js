@@ -1,7 +1,6 @@
 
 
 function setMarkers(map, suburbs) {
-
       function addmarker(suburb, infowindow) {
         if (suburb.gmap) {
             var lat = suburb.gmap.marker.lat;
@@ -37,10 +36,26 @@ function setMarkers(map, suburbs) {
 }
 
 
-// adds polygons to googlemap on homepage for each distance zone
-function createOverlays(map) {
-  // add polys to map
-  function addPoly(paths , color){
+// controls polygon overlays on googlemap on homepage
+var OverlaysCtrl = {
+
+  polyarray: [], // stores all polys
+  showPolys: function(map) { // displays polys on map
+    if (!this.polyarray.length) {
+    this.getPolysdata();
+    };
+    for (i in this.polyarray) {
+      this.polyarray[i].setMap(map); 
+    }
+  }, 
+
+  hidePolys: function() { // hides polys on map
+    for (i in this.polyarray) {
+      this.polyarray[i].setMap(null); 
+    }
+  }, 
+
+  makePolys: function(paths , color){
     var poly = new google.maps.Polygon({
             paths: paths,
             strokeColor: color,
@@ -50,16 +65,19 @@ function createOverlays(map) {
             fillOpacity: 0.65,
             clickable: false
           });
-          poly.setMap(map);
-  }
-    // iterates over data below and creates colored polygons
+    this.polyarray.push(poly);             
+  },
+
+  getPolysdata: function() { // iterates over data below and creates colored polygons
     for (k in pathdata){ 
         for (i in pathdata[k].data) {
           var paths = pathdata[k].data[i];
-          addPoly(paths, pathdata[k].color); 
+          this.makePolys(paths, pathdata[k].color); 
         };
-    }      
-} 
+    }
+  } 
+ 
+}
 
 // array of path data objects
 var pathdata = [
@@ -68,5 +86,4 @@ var pathdata = [
 {"color" : "#7700bb", "data": purplepaths},
 {"color" : "#dd0000", "data": redpaths},
 {"color" : "#eeff55", "data": yellowpaths},
-
- ]
+]

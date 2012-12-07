@@ -28,10 +28,23 @@ function SuburbMainMapCtrl($scope, Suburb, Subfilter, State){
   $scope.subfilter = Subfilter;
   State.currentview = "home";
 
+  // filter suburbs model by distance
   $scope.setfilter = function(val){
     Subfilter.traveltimes.stlucia = val;
     Subfilter.name = "";
   }
+  $scope.overlay = 0;
+
+  $scope.toggleoverlay = function(show){
+    if (show == true){
+      console.log("show");
+      $scope.overlay = 1;
+    } else {
+     console.log("hide");
+     $scope.overlay = 0;
+    } 
+  }
+
 
   $(".stlucia-distance").button();
 }
@@ -64,7 +77,7 @@ function SuburbListCtrl($scope, Suburb, Subfilter) {
 }
 
 
-function SuburbDetailCtrl($scope, $routeParams, Suburb, Favourites, State) {
+function SuburbDetailCtrl($scope, $routeParams, Suburb, Favourites, State, Subfilter) {
     
   // initialise map before template is hidden
     var map;
@@ -88,12 +101,14 @@ function SuburbDetailCtrl($scope, $routeParams, Suburb, Favourites, State) {
   }); 
    // update appService info - for cross controller sharing of state
   State.currentview = "detailed";
+  // reset list of suburbs to show all
+  Subfilter.traveltimes.stlucia = 0;
 
   $scope.setImage = function(imageUrl) {
     $scope.mainImageUrl = imageUrl;
   }
 
-
+  // sets map centre
   function setmap(centre){ 
     var lat = centre.lat; 
     var lng = centre.lng; 
