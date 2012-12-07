@@ -1,7 +1,8 @@
 
 
 function setMarkers(map, suburbs) {
-      function addmarker(suburb, infowindow) {
+  
+      function addmarker(suburb) {
         if (suburb.gmap) {
             var lat = suburb.gmap.marker.lat;
             var lng = suburb.gmap.marker.lng;

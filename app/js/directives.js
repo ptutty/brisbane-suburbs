@@ -21,8 +21,9 @@ subcatdirectives.directive('gmapmain', function($parse, MapPolygons) {
 
 		    attrs.$observe('gdata', function(value) {
 				if (value) {
+					console.log(value);
 					var gmapdata = JSON.parse(value);	
-					// setMarkers(map, gmapdata); // adds array of suburb markers
+					setMarkers(map, gmapdata); // adds array of suburb markers
 				}
 			});
 

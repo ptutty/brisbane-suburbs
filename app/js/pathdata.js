@@ -1,5 +1,5 @@
 var polygonpathdata = [
-	{"distance": 30, "color" : "#dd0000", "data": [
+	{"distance": 20, "color" : "#dd0000", "data": [
 	[new google.maps.LatLng(-27.469833,153.009681),
 	new google.maps.LatLng(-27.464655,153.001785),
 	new google.maps.LatLng(-27.464959,152.994232),
@@ -113,7 +113,7 @@ var polygonpathdata = [
 	new google.maps.LatLng(-27.487500,152.995948)]
 ]},
 
-	{"distance": 20, "color" : "#2277ff", "data": [
+	{"distance": 30, "color" : "#2277ff", "data": [
 	[new google.maps.LatLng(-27.485368,153.055000),
 	new google.maps.LatLng(-27.490545,153.049507),
 	new google.maps.LatLng(-27.503336,153.053970),
