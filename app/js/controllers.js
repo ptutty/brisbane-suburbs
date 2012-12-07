@@ -28,23 +28,13 @@ function SuburbMainMapCtrl($scope, Suburb, Subfilter, State){
   $scope.subfilter = Subfilter;
   State.currentview = "home";
 
+
   // filter suburbs model by distance
   $scope.setfilter = function(val){
     Subfilter.traveltimes.stlucia = val;
     Subfilter.name = "";
   }
-  $scope.overlay = 0;
-
-  $scope.toggleoverlay = function(show){
-    if (show == true){
-      console.log("show");
-      $scope.overlay = 1;
-    } else {
-     console.log("hide");
-     $scope.overlay = 0;
-    } 
-  }
-
+ 
 
   $(".stlucia-distance").button();
 }

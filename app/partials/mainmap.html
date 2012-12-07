@@ -8,11 +8,9 @@
   <button type="button" class="btn stlucia-distance" ng-click="setfilter(40)">40 mins  </button><div class="btn-chip ttmin-40"></div>
   <button type="button" class="btn stlucia-distance" ng-click="setfilter(50)">50 mins  </button><div class="btn-chip ttmin-50"></div>
   <button type="button" class="btn stlucia-distance" ng-click="setfilter(0)">Reset</button>
-  <button type="button" class="btn stlucia-distance" ng-click="toggleoverlay(false)">Remove overlay</button>
-  <button type="button" class="btn stlucia-distance" ng-click="toggleoverlay(true)">show overlay</button>
 </div>
 {{overlay}}
 
-<gmapmain gdata="{{suburbs | filter: subfilter.name | filter:{traveltimes.stlucia: subfilter.traveltimes.stlucia} }}" overlay="{{overlay}}" id="map_canvas_main"></gmapmain>
+<gmapmain gdata="{{suburbs | filter: subfilter.name | filter:{traveltimes.stlucia: subfilter.traveltimes.stlucia} }}" distance="{{subfilter.traveltimes.stlucia}}" id="map_canvas_main"></gmapmain>
 
 

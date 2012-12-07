@@ -1,5 +1,5 @@
 var polygonpathdata = [
-	{"name": "red", "color" : "#dd0000", "data": [
+	{"distance": 30, "color" : "#dd0000", "data": [
 	[new google.maps.LatLng(-27.469833,153.009681),
 	new google.maps.LatLng(-27.464655,153.001785),
 	new google.maps.LatLng(-27.464959,152.994232),
@@ -69,7 +69,7 @@ var polygonpathdata = [
 	new google.maps.LatLng(-27.477144,153.043327)]
 	]},
 
-  {"name": "green", "color": "#116633", "data": [
+  {"distance": 10, "color": "#116633", "data": [
 	[new google.maps.LatLng(-27.490850,152.994918),
 	new google.maps.LatLng(-27.492068,152.997322),
 	new google.maps.LatLng(-27.492372,153.003845),
@@ -113,7 +113,7 @@ var polygonpathdata = [
 	new google.maps.LatLng(-27.487500,152.995948)]
 ]},
 
-	{"name": "blue", "color" : "#2277ff", "data": [
+	{"distance": 20, "color" : "#2277ff", "data": [
 	[new google.maps.LatLng(-27.485368,153.055000),
 	new google.maps.LatLng(-27.490545,153.049507),
 	new google.maps.LatLng(-27.503336,153.053970),
@@ -203,7 +203,7 @@ var polygonpathdata = [
 	new google.maps.LatLng(-27.525259,152.935523)]
 	]},
 
-	{"name": "yellow", "color" : "#eeff55", "data": [
+	{"distance": 40, "color" : "#eeff55", "data": [
 	[new google.maps.LatLng(-27.536828,152.959899),
 	new google.maps.LatLng(-27.539872,152.960586),
 	new google.maps.LatLng(-27.542917,152.962989),
@@ -258,7 +258,7 @@ var polygonpathdata = [
 	new google.maps.LatLng(-27.499682,152.953720)]
 	]},
 
-	{"name": "purple", "color" : "#7700bb", "data": [
+	{"distance": 50, "color" : "#7700bb", "data": [
 	[new google.maps.LatLng(-27.498159,152.954750),
 	new google.maps.LatLng(-27.497550,152.933807),
 	new google.maps.LatLng(-27.486281,152.929000),
