@@ -5,7 +5,7 @@ var subcatdirectives = angular.module('suburbcatDirectives', []);
 
 
 // main gmap
-subcatdirectives.directive('gmapmain', function($parse, MapPolygons) {
+subcatdirectives.directive('gmapmain', function($parse, MapOverlays) {
 
     return {
         restrict: 'E',
@@ -21,15 +21,13 @@ subcatdirectives.directive('gmapmain', function($parse, MapPolygons) {
 
 		    attrs.$observe('gdata', function(value) {
 				if (value) {
-					console.log(value);
 					var gmapdata = JSON.parse(value);	
-					setMarkers(map, gmapdata); // adds array of suburb markers
+					MapOverlays.manMarkers(map, gmapdata);
 				}
 			});
 
 		    attrs.$observe('distance', function(distance) { 
-				console.log("overlay is " + distance);
-				MapPolygons.showPolys(map, distance);
+				MapOverlays.showPolys(map, distance);
 		    });
         }
     }

@@ -107,34 +107,99 @@ subcatservices.factory('Favourites', function($location) {
 
 
 // for managing polygon display
-subcatservices.factory('MapPolygons', function() {
+subcatservices.factory('MapOverlays', function() {
 // controls polygon overlays on googlemap on homepage
   var overlaysctrl = {
-    polyarray: [], // array of polys
-    showPolys: function(map, distance) { // displays polys on map
-      if (!this.polyarray.length) { // no polys yet created - create all. 
-      this.makePolys();
-    };
+    polyArray: [], // array of polys
+    markerArray: [], // array of markers
 
-      // remove all polys
-      this.hidePolys(); 
+    // for showing polys
+    showPolys: function(map, distance) { // displays polys on map
+      if (!this.polyArray.length) { // no polys yet created - create all. 
+      this.makePolys();
+      };
+      // hide polys
+      this.hide(this.polyArray); 
       if (distance == 0) {
-        for (var i = 0; i < this.polyarray.length; i++) {
-                this.polyarray[i].poly.setMap(map);
+        for (var i = 0; i < this.polyArray.length; i++) {
+          this.polyArray[i].data.setMap(map);
         };
 
       } else {
-        for (var i = 0; i < this.polyarray.length; i++) {
-          if (distance == this.polyarray[i].distance) {
-            this.polyarray[i].poly.setMap(map);
+        for (var i = 0; i < this.polyArray.length; i++) {
+          if (distance == this.polyArray[i].distance) {
+            this.polyArray[i].data.setMap(map);
           }     
         };
       }   
     }, 
 
-    hidePolys: function() { // hides polys on map
-      for (var i = 0; i < this.polyarray.length; i++) {
-        this.polyarray[i].poly.setMap(null);
+    manMarkers: function(map, suburbs) { // displays markers on map
+      if (!this.markerArray.length) { // no markers yet created - create all. 
+        for (var i = 0; i < suburbs.length; i++) {
+          var suburb = suburbs[i];
+          this.makeMarkers(map, suburb);
+        };
+
+        // show all
+        for (var k = 0; k < this.markerArray.length; k++) {
+          console.log("from the marker array " + this.markerArray[k].id )
+          this.markerArray[i].data.setMap(map);
+        }
+
+        // show marker of st lucia campus
+        var image = "img/university.png";
+        var campusLatLng = new google.maps.LatLng(-27.497854,153.013286);
+        var campusMarker = new google.maps.Marker({
+          position: campusLatLng,
+          map: map,
+          icon: image
+        });
+        campusMarker.setMap(map);
+
+      } else { // markers created show and hide as needed
+
+        // hide all markers
+        this.hide(this.markerArray);
+
+        // iterate over list of suburbs and compare to list of markers if match then show
+        for (var i = 0; i < suburbs.length; i++) {
+          var suburb = suburbs[i];
+          var id = suburb.id;
+            for (var k = 0; k < this.markerArray.length; k++) {
+              if (this.markerArray[k].id == id){
+                this.markerArray[k].data.setMap(map);
+              }
+            }
+        }
+      }
+    }, 
+
+
+    makeMarkers: function(map, suburb) {
+      var id = suburb.id;
+      var lat = suburb.gmap.marker.lat;
+      var lng = suburb.gmap.marker.lng;
+      var image = suburb.gmap.marker.icon;
+      var uqLatLng = new google.maps.LatLng(lat,lng);
+      var uqMarker = new google.maps.Marker({
+            position: uqLatLng,
+            map: map,
+            icon: image
+      });
+      google.maps.event.addListener(uqMarker, 'click', function() {
+              window.location = "#/suburbs/" + suburb.id;
+            }); 
+
+      this.markerArray.push({"id": id, "data": uqMarker});
+    },
+
+
+
+
+    hide: function(overlayArray) { // hides polys on map
+      for (var i = 0; i < overlayArray.length; i++) {
+        overlayArray[i].data.setMap(null);
       };
     }, 
 
@@ -153,7 +218,7 @@ subcatservices.factory('MapPolygons', function() {
             fillOpacity: 0.65,
             clickable: false
           });
-        this.polyarray.push({"distance": distance, "poly": poly});  
+        this.polyArray.push({"distance": distance, "data": poly});  
       };       
     }
 }
