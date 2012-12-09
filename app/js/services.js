@@ -108,6 +108,7 @@ subcatservices.factory('Favourites', function($location) {
 
 // for managing polygon display
 subcatservices.factory('MapOverlays', function() {
+
 // controls polygon overlays on googlemap on homepage
   var overlaysctrl = {
     polyArray: [], // array of polys
@@ -134,28 +135,20 @@ subcatservices.factory('MapOverlays', function() {
       }   
     }, 
 
-    manMarkers: function(map, suburbs) { // displays markers on map
+    manMarkers: function(map, suburbs, infowindow) { // displays markers on map
+
       if (!this.markerArray.length) { // no markers yet created - create all. 
         for (var i = 0; i < suburbs.length; i++) {
           var suburb = suburbs[i];
-          this.makeMarkers(map, suburb);
+          this.makeMarkers(map, suburb, infowindow);
         };
 
         // show all
         for (var k = 0; k < this.markerArray.length; k++) {
-          console.log("from the marker array " + this.markerArray[k].id )
-          this.markerArray[i].data.setMap(map);
+         var data = this.markerArray[k].data;
+         this.setListener(data, infowindow, map); // set listeners of infowindows
+         data.setMap(map);
         }
-
-        // show marker of st lucia campus
-        var image = "img/university.png";
-        var campusLatLng = new google.maps.LatLng(-27.497854,153.013286);
-        var campusMarker = new google.maps.Marker({
-          position: campusLatLng,
-          map: map,
-          icon: image
-        });
-        campusMarker.setMap(map);
 
       } else { // markers created show and hide as needed
 
@@ -168,16 +161,27 @@ subcatservices.factory('MapOverlays', function() {
           var id = suburb.id;
             for (var k = 0; k < this.markerArray.length; k++) {
               if (this.markerArray[k].id == id){
-                this.markerArray[k].data.setMap(map);
+                var data = this.markerArray[k].data;
+                this.setListener(data, infowindow, map); // set listeners of infowindows
+                data.setMap(map);
               }
             }
         }
       }
     }, 
 
+    setListener: function(data, infowindow, map){
+      google.maps.event.addListener(data, 'click', function() {
+              // window.location = "#/suburbs/" + suburb.id;
+              infowindow.setContent(data.html);
+              infowindow.open(map, data);
+        });
+    },
 
-    makeMarkers: function(map, suburb) {
+
+    makeMarkers: function(map, suburb, infowindow) {
       var id = suburb.id;
+      var name = suburb.name;
       var lat = suburb.gmap.marker.lat;
       var lng = suburb.gmap.marker.lng;
       var image = suburb.gmap.marker.icon;
@@ -185,11 +189,14 @@ subcatservices.factory('MapOverlays', function() {
       var uqMarker = new google.maps.Marker({
             position: uqLatLng,
             map: map,
-            icon: image
+            icon: image,
+            html: "Read more about living in <a href='#/suburbs/" + suburb.id + "'>" + name + "</a>"
       });
-      google.maps.event.addListener(uqMarker, 'click', function() {
-              window.location = "#/suburbs/" + suburb.id;
-            }); 
+      /* google.maps.event.addListener(uqMarker, 'click', function() {
+              // window.location = "#/suburbs/" + suburb.id;
+              infowindow.setContent(this.html);
+              infowindow.open(map, uqMarker);
+      }); */
 
       this.markerArray.push({"id": id, "data": uqMarker});
     },
