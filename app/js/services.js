@@ -14,10 +14,10 @@ subcatservices.factory('Suburb', function($resource){
 });    
 
 
-/* services for cross controller communication of state, data, views etc  */
+/******* services for cross controller communication of state, data, views , map info  ******/
 
 
-// shares a model current filters on suburbs across suburblist and mainmap controllers
+/* shares a model of current filters on suburbs across suburblist and mainmap controllers */
 subcatservices.factory('Subfilter', function() {  
     return { 
         name: "",
@@ -46,7 +46,7 @@ subcatservices.factory('State', function() {
 
 
 
-// for managing favourites
+/* for managing favourites */
 subcatservices.factory('Favourites', function($location) {
 
   var favourites = {
@@ -106,7 +106,7 @@ subcatservices.factory('Favourites', function($location) {
 
 
 
-// for managing polygon display
+/* for managing polygon and marker overlays */
 subcatservices.factory('MapOverlays', function() {
 
 // controls polygon overlays on googlemap on homepage
@@ -134,28 +134,29 @@ subcatservices.factory('MapOverlays', function() {
         };
       }   
     }, 
+    // manage marker display
+    manMarkers: function(map, suburbs, infowindow) { 
 
-    manMarkers: function(map, suburbs, infowindow) { // displays markers on map
-
-      if (!this.markerArray.length) { // no markers yet created - create all. 
+      // create all markers and add to array. 
+      if (!this.markerArray.length) { 
         for (var i = 0; i < suburbs.length; i++) {
           var suburb = suburbs[i];
           this.makeMarkers(map, suburb, infowindow);
         };
 
-        // show all
+        // show all markers in array
         for (var k = 0; k < this.markerArray.length; k++) {
          var data = this.markerArray[k].data;
          this.setListener(data, infowindow, map); // set listeners of infowindows
          data.setMap(map);
         }
 
-      } else { // markers created show and hide as needed
+      } else { // show and hide markers as suburbs are filtered
 
         // hide all markers
         this.hide(this.markerArray);
 
-        // iterate over list of suburbs and compare to list of markers if match then show
+        // iterate over list of suburbs and compare to items in marker markerArray
         for (var i = 0; i < suburbs.length; i++) {
           var suburb = suburbs[i];
           var id = suburb.id;

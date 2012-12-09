@@ -90,6 +90,10 @@ img#overview-map {
   border: 1px solid #ccc;
 }
 
+#map_canvas_main img {
+max-width: none;
+}
+
 .suburbs {
   list-style: none;
 }
@@ -111,8 +115,6 @@ img#overview-map {
   background-color: white;
 }
 
-
-
 .suburbkey { 
     opacity: 0.65;
     float: left;
@@ -121,16 +123,6 @@ img#overview-map {
     margin-right: 20px;
 }
 
-/*
-.suburb-key-filter { 
-  display: inline-block;
-  opacity: 0.65;
-  width: 12px;
-  height: 12px;
-  margin-right:4px;
-  margin-top:2px
-}
-*/
 ul.suburbs {
   margin: 0 0 9px 5px;
 
