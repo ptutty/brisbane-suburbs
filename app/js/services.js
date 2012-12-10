@@ -108,116 +108,85 @@ subcatservices.factory('Favourites', function($location) {
 
 /* for managing polygon and marker overlays */
 subcatservices.factory('MapOverlays', function() {
-
-// controls polygon overlays on googlemap on homepage
   var overlaysctrl = {
-    polyArray: [], // array of polys
+    // marker manager
     markerArray: [], // array of markers
-
-    // for showing polys
-    showPolys: function(map, distance) { // displays polys on map
-      if (!this.polyArray.length) { // no polys yet created - create all. 
-      this.makePolys();
-      };
-      // hide polys
-      this.hide(this.polyArray); 
-      if (distance == 0) {
-        for (var i = 0; i < this.polyArray.length; i++) {
-          this.polyArray[i].data.setMap(map);
-        };
-
-      } else {
-        for (var i = 0; i < this.polyArray.length; i++) {
-          if (distance == this.polyArray[i].distance) {
-            this.polyArray[i].data.setMap(map);
-          }     
-        };
-      }   
-    }, 
-    // manage marker display
+    polyArray: [], // array of polys
     manMarkers: function(map, suburbs, infowindow) { 
+
+      function setListener(data){
+        google.maps.event.addListener(data, 'click', function() {
+                infowindow.setContent(data.html);
+                infowindow.open(map, data);
+        });
+      };
+
+      function makeMarkers(suburb) {
+        var id = suburb.id;
+        var name = suburb.name;
+        var stlucia = suburb.traveltimes.stlucia + "mins";
+        var herston = suburb.traveltimes.herston + "mins";
+        var lat = suburb.gmap.marker.lat;
+        var lng = suburb.gmap.marker.lng;
+        var image = suburb.gmap.marker.icon;
+        var uqLatLng = new google.maps.LatLng(lat,lng);
+        var uqMarker = new google.maps.Marker({
+          position: uqLatLng,
+          map: map,
+          icon: image,
+          html: "<h3><a href='#/suburbs/" + suburb.id + "'>"+ name +"</a></h3><p>Travel time St Lucia: " + stlucia + "</br>Travel time Herston: " + herston + "</p>Read more about living in <a href='#/suburbs/" + suburb.id + "'>" + name + "</a>"
+        });
+        return {"id": id, "data": uqMarker};
+      };
+
+
+      function hideMarkers(markers) { // hides markers
+        for (var i = 0; i < markers.length; i++) {
+          markers[i].data.setMap(null);
+        };
+      };
 
       // create all markers and add to array. 
       if (!this.markerArray.length) { 
         for (var i = 0; i < suburbs.length; i++) {
           var suburb = suburbs[i];
-          this.makeMarkers(map, suburb, infowindow);
+          this.markerArray.push(makeMarkers(suburb));
         };
 
         // show all markers in array
         for (var k = 0; k < this.markerArray.length; k++) {
-         var data = this.markerArray[k].data;
-         this.setListener(data, infowindow, map); // set listeners of infowindows
-         data.setMap(map);
-        }
+          var data = this.markerArray[k].data;
+          setListener(data); // set listeners of infowindows
+          data.setMap(map);
+        };
 
       } else { // show and hide markers as suburbs are filtered
-
         // hide all markers
-        this.hide(this.markerArray);
-
+        hideMarkers(this.markerArray);
         // iterate over list of suburbs and compare to items in marker markerArray
         for (var i = 0; i < suburbs.length; i++) {
           var suburb = suburbs[i];
           var id = suburb.id;
-            for (var k = 0; k < this.markerArray.length; k++) {
-              if (this.markerArray[k].id == id){
-                var data = this.markerArray[k].data;
-                this.setListener(data, infowindow, map); // set listeners of infowindows
-                data.setMap(map);
-              }
+          for (var k = 0; k < this.markerArray.length; k++) {
+            if (this.markerArray[k].id == id){
+              var data = this.markerArray[k].data;
+              setListener(data); // set listeners of infowindows
+              data.setMap(map);
             }
+          }
         }
       }
     }, 
 
-    setListener: function(data, infowindow, map){
-      google.maps.event.addListener(data, 'click', function() {
-              // window.location = "#/suburbs/" + suburb.id;
-              infowindow.setContent(data.html);
-              infowindow.open(map, data);
-        });
-    },
-
-
-    makeMarkers: function(map, suburb, infowindow) {
-      var id = suburb.id;
-      var name = suburb.name;
-      var lat = suburb.gmap.marker.lat;
-      var lng = suburb.gmap.marker.lng;
-      var image = suburb.gmap.marker.icon;
-      var uqLatLng = new google.maps.LatLng(lat,lng);
-      var uqMarker = new google.maps.Marker({
-            position: uqLatLng,
-            map: map,
-            icon: image,
-            html: "Read more about living in <a href='#/suburbs/" + suburb.id + "'>" + name + "</a>"
-      });
-      /* google.maps.event.addListener(uqMarker, 'click', function() {
-              // window.location = "#/suburbs/" + suburb.id;
-              infowindow.setContent(this.html);
-              infowindow.open(map, uqMarker);
-      }); */
-
-      this.markerArray.push({"id": id, "data": uqMarker});
-    },
-
-
-
-
-    hide: function(overlayArray) { // hides polys on map
-      for (var i = 0; i < overlayArray.length; i++) {
-        overlayArray[i].data.setMap(null);
-      };
-    }, 
-
-    makePolys: function(){
-      for (var i = 0; i < polygonpathdata.length; i++) {
-        var paths = polygonpathdata[i].data;
-        var color = polygonpathdata[i].color;
-        var distance = polygonpathdata[i].distance;
-
-        var poly = new google.maps.Polygon({
+    // for showing polys
+    manPolys: function(map, distance) { // displays polys on map
+      
+      function makePolys(polys){
+        for (var i = 0; i < polygonpathdata.length; i++) {
+          var paths = polygonpathdata[i].data;
+          var color = polygonpathdata[i].color;
+          var distance = polygonpathdata[i].distance;
+          var poly = new google.maps.Polygon({
             paths: paths,
             strokeColor: color,
             strokeOpacity: 0.35,
@@ -226,12 +195,35 @@ subcatservices.factory('MapOverlays', function() {
             fillOpacity: 0.65,
             clickable: false
           });
-        this.polyArray.push({"distance": distance, "data": poly});  
-      };       
+          polys.push({"distance": distance, "data": poly});  
+        };       
+      };
+
+      function hidePolys(polys) { // hides polys on map
+        for (var i = 0; i < polys.length; i++) {
+          polys[i].data.setMap(null);
+        };
+      }; 
+
+      if (!this.polyArray.length) { // no polys yet created - create all. 
+        makePolys(this.polyArray);
+      };
+      hidePolys(this.polyArray); 
+      if (distance == 0) {
+        for (var i = 0; i < this.polyArray.length; i++) {
+          this.polyArray[i].data.setMap(map);
+        };
+      } else {
+        for (var i = 0; i < this.polyArray.length; i++) {
+          if (distance == this.polyArray[i].distance) {
+            this.polyArray[i].data.setMap(map);
+          }     
+        };
+      };  
     }
 }
 return overlaysctrl;    
-})
+});
 
 
 

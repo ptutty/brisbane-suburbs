@@ -43,13 +43,13 @@ subcatdirectives.directive('gmapmain', function($parse, MapOverlays) {
 
 		    attrs.$observe('gdata', function(value) {
 				if (value) {
-					var gmapdata = JSON.parse(value);	
-					MapOverlays.manMarkers(map, gmapdata, infowindow);
+					var suburbs = JSON.parse(value);	
+					MapOverlays.manMarkers(map, suburbs, infowindow);
 				}
 			});
 
 		    attrs.$observe('distance', function(distance) { 
-					 MapOverlays.showPolys(map, distance);
+					MapOverlays.manPolys(map, distance);
 		    });
         }
     }
