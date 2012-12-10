@@ -1,0 +1,30 @@
+{
+    "id": "carindale", 
+    "name": "Carindale",
+    "description": 
+     ["Carindale is a newer suburb located south-east of Brisbane. With regular access to public transportation and to one of Brisbane’s largest Shopping Centres, it is a great place for anyone seeking more modern accommodation at an affordable rate",
+     "The most well-known landmark in the suburb is the Carindale Shopping Centre, where you can find many stores, restaurants, pubs, and a large cinema all in one place. The development of the shopping centre has also brought in many newer residential properties, primarily high-rise apartments and modern townhouses. Most residents of Carindale are young professionals and families. The approximate average cost for shared accommodation is $160 per week, while individual properties, including houses, cost approximately $580 per week. Keep in mind that costs may vary based on the property’s size and location.",
+     "Transportation in the area is also easy as the Carindale Shopping Centre is just off of Old Cleveland Road, a major road that stretches much of the southern side of Brisbane. Buses frequent the suburb and the Carindale Shopping Centre is a major interchange allowing access to the city and UQ’s St Lucia Campus. The nearest railway station is Cannon Hill which runs on the Cleveland line.",
+     "If you’re looking for outdoor activities look no further than the Belmont Bushland Reserve, where you can find many bushwalking trails to spot wildlife such as wallabies, koalas, and a wide variety of birds. There are also many walkways and bike paths along the Bulimba Creek which runs through the suburb."
+     ],
+    "distance": {
+        "city": 10 
+    }, 
+    "traveltimes": {
+        "stlucia": 40, 
+        "herston": 50
+    }, 
+    "gmap": {
+       "centre" : {"lat": -27.50, "lng" : 153.10, "zoom": 15 }
+    },
+    "strapline": "Visit the Belmont Bushland Reserve for some great wildlife views!", 
+    "transport": "The Carindale Shopping Centre is a major bus interchange with direct access to the City and the St Lucia Campus.",
+    "shopping": "A wide variety of shops, restaurants, and other eateries can be found at the Carindale Shopping Centre, one of Brisbane’s largest centre’s.",
+    "cost": "If you’re looking for more modern accommodation at an affordable rate, Carindale is a great place!",
+    "social": "Check out the Shopping Centre for many restaurants and entertainment options.",
+    "images": [
+        "img/suburbs/placeholder1.jpg", 
+        "img/suburbs/placeholder2.jpg", 
+        "img/suburbs/placeholder3.jpg"
+    ]
+}

@@ -2,23 +2,25 @@
     "id": "moorooka", 
     "name": "Moorooka",
     "description": 
-     ["Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores",
-      "eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, omnis iste natus error sit voluptatem accusantium, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur"],
+     ["Located on the south-side of Brisbane, Moorooka is a great suburb for anyone seeking access to the City, UQ St Lucia, shops, restaurants, and housing at an affordable price. This primarily residential suburb offers a wide array of housing styles including smaller worker’s cottages, unit blocks, and larger family homes.",
+      "Moorooka also has a great shopping district, located on Beaudesert Road, with over 100 businesses ranging from small takeaways, restaurants, café’s, grocery stores, news agents, chemists, and discount stores. The area is also well serviced by public transport, boasting it’s own railway station which allows access to the City and points south, and a variety of buses traveling throughout the suburb to the city and other neighboring suburbs, including St Lucia.",
+      "Moorooka also has a very diverse community, which is reflected in the  variety of shops and eateries found in the area. The majority of people living in the suburb are young professionals and families. Accommodation in the area range from approximately $160 per week for shared accommodation and approximately $380 per week for an individual property or house. Costs for accommodation to tend to vary slightly based on location, size and type of property.",
+      "If you enjoy the outdoors, Toohey Forest Park borders Moorooka. The forest is a fantastic nature reserve with many walking tracks where you can view lush vegetation and great wildlife."],
     "distance": {
-        "city": 6 
+        "city": 7 
     }, 
     "traveltimes": {
         "stlucia": 20, 
-        "herston": 35
+        "herston": 50
     }, 
     "gmap": {
        "centre" : {  "lat": -27.5316, "lng" : 153.0238, "zoom": 15}
     },
-    "strapline": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem!", 
-    "transport": "Ut enim ad minima veniam, quis nostrum exercitationem ullam.",
-    "shopping": "omnis iste natus error sit voluptatem accusantium",
-    "cost": "omnis iste natus error sit voluptatem accusantium",
-    "social": "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci",
+    "strapline": "The walking tracks near Toohey Forest!", 
+    "transport": "Buses frequently travel throughout Moorooka to neighbouring suburbs. A train station also services the suburb with travel to the City and places south.",
+    "shopping": "Over 100 businesses line Beaudesert Road where you can find any number of diverse shops and restaurants.",
+    "cost": "A wide variety of properties at an affordable cost make Moorooka a great place for anyone who is budget conscious.",
+    "social": "With a large diverse community, there are many different kinds of restaurants, cafe’s and eateries in the area.",
     "images": [
         "img/suburbs/placeholder1.jpg", 
         "img/suburbs/placeholder2.jpg", 

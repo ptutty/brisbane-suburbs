@@ -2,8 +2,10 @@
     "id": "mount-gravatt", 
     "name": "Mount Gravatt",
     "description": 
-     ["Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores",
-      "eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, omnis iste natus error sit voluptatem accusantium, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur"],
+     ["The suburb of Mount Gravatt (including neighbouring suburbs of Upper Mount Gravatt and Mount Gravatt East) is located about 10km south-east of the CBD. The area’s name refers to the large hill in the area, Mount Gravatt, where you can walk or drive up to the scenic lookout at the top for spectacular views of the city and beyond. Because of the mix of residential areas and various commercial and retail services in the suburbs, it is often referred to as a mini-CBD.",
+     "Many homes in the area were built in the 1950’s and 1960’s but with more recent developments, there have been new properties in the area including unit blocks and townhouses. The majority of people living in the area are students and young professionals/families. Shared accommodation in the area will cost approximately $190 per week, while individual properties, including small houses, are approximately $410 per week. It is important to remember, though, that the cost of a property highly depends on it’s size and location.",
+     "Buses regularly service the area and it is well connected to the South-East Busway making trips to the City and neighbouring suburbs a breeze. Mount Gravatt is also home to Garden City Shopping Centre, one of Brisbane’s largest shopping centres where you can find a variety of shops, restaurants and entertainment. Garden City also has several grocery and food stores and is a main hub for transportation.",
+     "The area is also home to the Mount Gravatt Showgrounds where various community and cultural events are held regularly. Each year the Annual Mount Gravatt Show is held at the Showgrounds. The suburb is also adjacent to Toohey Forest Park where you can find numerous bushwalking tracks and is a great spot for a picnic or spotting wildlife."],
     "distance": {
         "city": 6 
     }, 
@@ -14,11 +16,11 @@
     "gmap": {
        "centre" : {  "lat": -27.5372, "lng" : 153.0783, "zoom": 15}
     },
-    "strapline": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem!", 
-    "transport": "Ut enim ad minima veniam, quis nostrum exercitationem ullam.",
-    "shopping": "omnis iste natus error sit voluptatem accusantium",
-    "cost": "omnis iste natus error sit voluptatem accusantium",
-    "social": "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci",
+    "strapline": "Visit the Mt. Gravatt Showgrounds for the Annual Mt. Gravatt Show!", 
+    "transport": "Buses frequently travel throughout Mt. Gravatt to the City and St Lucia. The Garden City Shopping Centre is a main transport hub. .",
+    "shopping": "There are many shops along Logan Rd., while the Garden City Shopping Centre has a variety of shops, restaurants, and entertainment.  ",
+    "cost": "New retail establishments have also brought newer homes including units and townhouses. Older style homes are also abundant.",
+    "social": "Garden City Shopping Centre has a variety of restaurants, pubs, and a large movie theatre. There’s also easy access to the City and beyond.",
     "images": [
         "img/suburbs/placeholder1.jpg", 
         "img/suburbs/placeholder2.jpg", 

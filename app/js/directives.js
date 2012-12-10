@@ -35,21 +35,19 @@ subcatdirectives.directive('gmapmain', function($parse, MapOverlays) {
 			});
 			google.maps.event.addListener(campusMarker, 'click', function() {
               // window.location = "#/suburbs/" + suburb.id;
-              infowindow.setContent("University of Queensland St Lucia");
+              infowindow.setContent("<h3>University of Queensland</h3> <h4>St Lucia campus</h4>");
               infowindow.open(map, campusMarker);
       		}); 
       		campusMarker.setMap(map);
 
 
 		    attrs.$observe('gdata', function(value) {
-				if (value) {
-					var suburbs = JSON.parse(value);	
-					MapOverlays.manMarkers(map, suburbs, infowindow);
-				}
+				var suburbs = angular.fromJson(value);	
+				MapOverlays.manMarkers(map, suburbs, infowindow);
 			});
 
 		    attrs.$observe('distance', function(distance) { 
-					MapOverlays.manPolys(map, distance);
+				MapOverlays.manPolys(map, distance);
 		    });
         }
     }

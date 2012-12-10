@@ -340,5 +340,95 @@
                  "icon" : "img/suburb-50.png"
              }
         }
-    }    
+    },
+    {
+        "id": "carindale",
+        "name": "Carindale", 
+        "traveltimes": {
+            "stlucia": 40, 
+            "herston": 50
+        },  
+        "distance": {
+            "city": 10 
+        },
+        "gmap": {
+            "marker": {
+                "lat": -27.50,
+                 "lng" : 153.10,
+                 "icon" : "img/suburb-40.png"
+             }
+        }
+    },
+     {
+        "id": "indooroopilly",
+        "name": "Indooroopilly", 
+        "traveltimes": {
+            "stlucia": 30, 
+            "herston": 40
+        },  
+        "distance": {
+            "city": 7 
+        },
+        "gmap": {
+            "marker": {
+                "lat": -27.49,
+                 "lng" : 152.97,
+                 "icon" : "img/suburb-30.png"
+             }
+        }
+    },
+    {
+        "id": "kelvin-grove",
+        "name": "Kelvin Grove", 
+        "traveltimes": {
+            "stlucia": 40, 
+            "herston": 10
+        },  
+        "distance": {
+            "city": 7 
+        },
+        "gmap": {
+            "marker": {
+                "lat": -27.45,   
+                "lng" : 153.01,
+                "icon" : "img/suburb-40.png"
+             }
+        }
+    },
+    {
+        "id": "milton", 
+        "name": "Milton",
+        "traveltimes": {
+            "stlucia": 20, 
+            "herston": 30
+        },  
+        "distance": {
+            "city": 3 
+        },
+        "gmap": {
+            "marker": {
+                "lat": -27.468,   
+                "lng" : 153.0032,
+                "icon" : "img/suburb-20.png"
+             }
+        }
+    },
+    {
+        "id": "auchenflower", 
+        "name": "Auchenflower",
+        "traveltimes": {
+            "stlucia": 20, 
+            "herston": 30
+        },  
+        "distance": {
+            "city": 3 
+        },
+        "gmap": {
+            "marker": {
+               "lat": -27.4740,
+               "lng" : 152.9952,
+                "icon" : "img/suburb-20.png"
+             }
+        }
+    }                                                
 ]

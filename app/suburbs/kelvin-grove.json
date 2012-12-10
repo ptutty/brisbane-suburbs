@@ -1,0 +1,31 @@
+{
+    "id": "kelvin-grove", 
+    "name": "Kelvin Grove",
+    "description": 
+     ["Herston and Kelvin Grove are two neighbouring (and hilly) suburbs with close access to the City and UQ’s Herston campus. Located only 3km from the CBD, these suburbs make for a perfect spot for anyone looking for an urban lifestyle at an affordable rate.",
+     "Herston and Kelvin Grove’s close proximity to the city also means that there is a wide variety of shops, restaurants and pubs nearby.  Other services like hospitals are also easily found with the Royal Brisbane Hospital, located right in the center of Herston. The Kelvin Grove Urban Village, a popular destination for food and shopping, is also home to many units, restaurants, cafés and pubs.",
+     "Being so close to the city also means that transportation is easily and frequently available. Buses regularly services the area and frequently travel to the City and the St Lucia campus. Save time commuting by taking the bus on the Inner-Northern Busway which travels south to the City and avoids the northern suburbs traffic congestion.",
+     "The two suburbs are largely populated by young professionals and university students; the majority of which live in shared accommodation. The majority of residents in both Herston and Kelvin Grove are employed by the nearby hospital. The average cost of shared accommodation is $170 per week and houses/individual units cost an average of $530 per week, prices vary depending on location and size.",
+     "If you’re looking for some outdoor activities, head to Victoria Park where you can go for a walk or bike ride, or enjoy a game of Putt-putt!"
+     ],
+    "distance": {
+        "city": 3 
+    }, 
+    "traveltimes": {
+        "stlucia": 40, 
+        "herston": 10
+    }, 
+    "gmap": {   
+       "centre" : { "lat": -27.45, "lng" : 153.01, "zoom": 15}
+    },
+    "strapline": "Victoria Park Golf Course for miniature golf and great city views!", 
+    "transport": "The Inner-Northern Busway travels through Herston and Kelvin Grove, making access to the City quick.",
+    "shopping": "Shopping centres, restaurants and pubs are nearby at the Kelvin Grove Urban Village.",
+    "cost": "Rentals in the area are affordable for people looking for an urban lifestyle without the price of living in the CBD.",
+    "social": "The Normanby Hotel is one of Brisbane’s oldest Pubs and is located on the south end of Kelvin Grove.",
+    "images": [
+        "img/suburbs/placeholder1.jpg", 
+        "img/suburbs/placeholder2.jpg", 
+        "img/suburbs/placeholder3.jpg"
+    ]
+}
