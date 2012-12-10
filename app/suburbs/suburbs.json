@@ -430,5 +430,23 @@
                 "icon" : "img/suburb-20.png"
              }
         }
-    }                                                
+    },
+    {
+        "id": "new-farm", 
+        "name": "New Farm",
+        "traveltimes": {
+            "stlucia": 50, 
+            "herston": 40
+        },  
+        "distance": {
+            "city": 2 
+        },
+        "gmap": {
+            "marker": {
+               "lat": -27.4639, 
+               "lng" : 153.0421,
+                "icon" : "img/suburb-50.png"
+             }
+        }
+    }                                                          
 ]

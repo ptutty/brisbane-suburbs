@@ -1,0 +1,31 @@
+{
+    "id": "new-farm", 
+    "name": "New Farm",
+    "description": 
+     ["Located to the east of the city centre, New Farm is Brisbane’s most heavily populated suburb, owing to its cool, cosmopolitan feel. The suburb is a favourite for young singles and couples, however the mix of accommodation in the area means that there is something to suit everyone's needs and budget. ",
+     "The suburb is a mix of traditional and older style houses and cottages, (which can be a little expensive to rent) as well as super trendy apartment buildings. There are quite a lot of new-ish apartment buildings, which may not be very pretty, but the location makes up for it! ",
+     "Given its popularity it may be surprising that you can still find somewhere to live on a tight student budget. Whilst it is getting more expensive, an older-style, unfurnished studio or one bedroom apartment averages about $240 per week. Houseshares can be found in the area for $185 upwards, but can be a bit hard to find depending on the time of year.",
+     "One of the major drawcards of the suburb is New Farm Park, a large open green space that backs onto the Brisbane River. There are regular farmers markets and other events held in the park, and it is a lovely place for soaking up the sun.",
+     "Head to James Street for a great range of cafes and a fresh food market. Some of the shops may be a little pricy for a student budget however looking is free! The cinema is also on James St. The other main shopping area is Merthyr Village on Brunswick Street, where there is a range of stores and a supermarket.",
+     "Public transport is very convenient in the area. There are two citycat stops, as well as high-frequency buses down Brunswick Street."],
+    "distance": {
+        "city": 2 
+    }, 
+    "traveltimes": {
+        "stlucia": 50, 
+        "herston": 40
+    }, 
+    "gmap": {
+       "centre" : {  "lat": -27.4639, "lng" : 153.0421, "zoom": 15}
+    },
+    "strapline": "New Farm Park is a lovely spot for an afternoon walk or picnic", 
+    "transport": "While there is no train, buses run through to the city, there are Citycat stops at New  Farm Park and Sydney Street",
+    "shopping": "There are supermarkets on James St and Brunswick St  as well as smaller specialty stores.",
+    "cost": "Over 70% of the accommodation in the area is apartments, with prices starting at about $185 for a share house.",
+    "social": "This is cafe-lovers heaven. Head to Brunswick St & James St for a great range of pubs, restaurants and bars.",
+    "images": [
+        "img/suburbs/placeholder1.jpg", 
+        "img/suburbs/placeholder2.jpg", 
+        "img/suburbs/placeholder3.jpg"
+    ]
+}
