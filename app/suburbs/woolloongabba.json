@@ -2,23 +2,26 @@
     "id": "woolloongabba", 
     "name": "Woolloongabba",
     "description": 
-     ["Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores",
-      "eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, omnis iste natus error sit voluptatem accusantium, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur"],
+     ["Woolloongabba and Kangaroo Point are two inner-city suburbs with a variety of places to live and plenty of things to see and do. Located just across the river from the City, it’s also easy to travel from one place to another. ",
+     "The suburb of Woollongabba is well known as the home of the Brisbane Cricket Ground, the Gabba; while Kangaroo Point is located on high cliffs offering beautiful views of the CBD and the Story Bridge. The Princess Alexandria Hospital is also located in Woolloongabba. ",
+     "While many residents live in high-rise apartments, there are also smaller unit blocks and historic, Queenslander style home available in the area as well. Prices range from approximately $175 per week for shared accommodation to approximately $560 per week for individual units or houses. The actual cost of housing depends significantly on unit and location. Because of the close proximity to the City and other areas of Brisbane, the majority of residents in the area are students or young professionals. ",
+     "Public transportation in the area is easy to find as buses frequently run throughout the two suburbs with access to the South East Busway via the Woolloongabba Busway Station. Train stations are also nearby at the Park Road, Buranda and South Brisbane Stations. If you would rather cycle to classes, there are also a number of bicycle paths that travel through Woolloongabba and Kangaroo Point to the City, UQ St Lucia and beyond.",
+     "Close proximity to the City also means that there’s always something to do. With many shops, restaurants, and easy access to the City, the Valley, and Southbank, there’s something to suit anyone’s personal tastes here."],
     "distance": {
-        "city": 6 
+        "city": 3 
     }, 
     "traveltimes": {
         "stlucia": 20, 
-        "herston": 35
+        "herston": 30
     }, 
     "gmap": {
        "centre" : { "lat": -27.5005, "lng" : 153.0353, "zoom": 15}
     },
-    "strapline": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem!", 
-    "transport": "Ut enim ad minima veniam, quis nostrum exercitationem ullam.",
-    "shopping": "omnis iste natus error sit voluptatem accusantium",
-    "cost": "omnis iste natus error sit voluptatem accusantium",
-    "social": "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci",
+    "strapline": "A game of Cricket or AFL at the Gabba!", 
+    "transport": "Buses are frequent throughout the suburbs and trains can be accessed at Park Road, Buranda, or South Brisbane.",
+    "shopping": "Various eateries and shops scatter KP and the Gabba offering diverse food choices and many small, local stores and larger national chains.",
+    "cost": "Housing in the area is best suited for shared student accommodation as units, townhouses, and share houses are abundant.",
+    "social": "Pubs and restaurants make for active nightlife in the area, but it’s also just a quick bus ride to the City or the Valley",
     "images": [
         "img/suburbs/placeholder1.jpg", 
         "img/suburbs/placeholder2.jpg", 

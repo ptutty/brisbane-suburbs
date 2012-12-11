@@ -1,0 +1,30 @@
+{
+    "id": "east-brisbane", 
+    "name": "East Brisbane",
+    "description": 
+     ["The south-eastern suburbs of East Brisbane, Coorparoo, Norman Park and Camp Hill are perfect for anyone looking for an easy commute and access to public transport, all within a residential community. ",
+     "While these suburbs are primarily residential, there are many conveniences of living close to a major city including readily available public transportation, a variety of eateries, café’s, restaurants, and takeaway shops, and your pick of supermarkets and shopping centres. Public transport to Westfield Carindale and Stones Corner means that shops, restaurants, and eateries are within easy reach.  Plenty of supermarkets, chemists, banks, restaurants and café’s line the main roads of the area including Old Cleveland Road, a major artery in the area. ",
+     "The majority of residents in the area are young professionals or families, though you can find sharehouses with students. Rental properties range from approximately $150 per week for shared accommodation to approximately $700 per week for individual properties. Accommodation prices change based on the property and it’s location. The most common properties available are Queenslander-style homes and small workers cottages, though units and townhouses are now becoming more available in the area. ",
+     "Public transportation is also easy to find in these residential suburbs. Buses frequently service the area, including the 209 which travels from Carindale directly to UQ St Lucia via the Busway. Access to trains via the Cleveland Line are also available at the Coorparoo and Norman Park Stations. In East Brisbane, you can also catch a ferry via Mowbray Park.",
+     "There are also many parks and recreational areas nearby which are great if you want to go for a cycle, a run or a picnic with family or friends."],
+    "distance": {
+        "city": 4 
+    }, 
+    "traveltimes": {
+        "stlucia": 30, 
+        "herston": 40
+    }, 
+    "gmap": {
+       "centre" : { "lat": -27.4796, "lng" : 153.0459, "zoom": 15}
+    },
+    "strapline": "A picnic at Mowbray Park!", 
+    "transport": "Buses are frequent, including the 209 which goes straight to St Lucia. Trains to the City can be found at Coorparoo and Norman Park.",
+    "shopping": "Small shops, Shopping Centres, restaurants and eateries are abundant and easy to get to via public transport.",
+    "cost": "The many Queenslander-style homes mean this area is great for sharehouses or families looking for their own property.",
+    "social": "Small restaurants and pubs are plentiful in the area and the many parks and recreational areas are great for outdoor pursuits.",
+    "images": [
+        "img/suburbs/placeholder1.jpg", 
+        "img/suburbs/placeholder2.jpg", 
+        "img/suburbs/placeholder3.jpg"
+    ]
+}

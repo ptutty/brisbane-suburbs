@@ -1,0 +1,30 @@
+{
+    "id": "south-brisbane", 
+    "name": "South Brisbane",
+    "description": [
+    "South Brisbane is an inner-city suburb, located just on the southern bank of the Brisbane river, directly across from the CBD and connected to it by several bridges. With the South Bank Parklands and plenty of Museums and Theatres, it’s a popular tourist destination and cultural hub. Despite this, there are plenty of places to live, especially if you’re looking for more modern accommodation in a central location.",
+    "Throughout the suburb, there is a mix of small houses and more modern high-rise apartments with beautiful river views. The majority of residents are students and young professionals because of it’s central location. Shared accommodation will cost approximately $165 per week, while individual properties will cost approximately $530 per week. Keep in mind that accommodation prices will vary depending on location, size and type of property. ",
+    "Living in South Brisbane also means that public transportation is also readily available. Most train lines will travel through the railway stations at South Brisbane and South Bank, while buses travel throughout the suburb and on the South-East Busway via the Cultural Centre, South Bank, and Mater Hill stations. Ferries are also easy to reach at the South Bank Ferry Terminal.",
+    "As a cultural hub, the area also has a lot happening. The South Bank Parklands have events and markets every weekend. Restaurants line Grey Street and Little Stanley Street and there’s plenty of shopping in the area. For services, South Brisbane is just next to West End for access to larger, chain stores and the Mater Hill Hospital is just around the corner."
+    ],
+    "distance": {
+        "city": 1 
+    }, 
+    "traveltimes": {
+        "stlucia": 30, 
+        "herston": 30
+    }, 
+    "gmap": {
+       "centre" : {"lat": -27.4747, "lng" : 153.0169, "zoom": 15} 
+    },
+    "strapline": "Weekend Markets and South Bank Parklands", 
+    "transport": "Access to buses, trains, and the ferry are all centrally located in South Brisbane so transport is a breeze.",
+    "shopping": "Smaller, local shops can be found throughout the suburb and larger stores can be found in the City and neighbouring West End.",
+    "cost": "Accommodation in the area can be more expensive, but the conveniences in the area are hard to beat!",
+    "social": "As a cultural hub of the City, there’s always plenty to do from shopping, restaurants, pubs, theatre, and museums.",
+    "images": [
+        "img/suburbs/placeholder1.jpg", 
+        "img/suburbs/placeholder2.jpg", 
+        "img/suburbs/placeholder3.jpg"
+    ]
+}

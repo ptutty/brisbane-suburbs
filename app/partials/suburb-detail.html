@@ -2,45 +2,54 @@
 <div class="row">
    <div class="span5">
     <h1 >{{suburb.name}}</h1>
+
       
     <p ng-repeat="para in suburb.description"> {{para}}</p> 
     
-   <h3>Fast Facts</h3>
-<div class="fast-facts">
-  <p><strong>St Lucia by bus: </strong> {{suburb.traveltimes.stlucia}} minutes</p>
-    <p><strong>Herston by bus: </strong> {{suburb.traveltimes.herston}} minutes</p>
-   <p><strong>Distance to city: </strong>{{suburb.distance.city}} kms</p> 
-  </div>
-  <blockquote class="spmt50"> <p><strong>Don't miss! </strong>{{suburb.strapline}} </p></blockquote>
-   </div>
+   
+  <blockquote class="spmt30"> <p><strong>Don't miss! </strong>{{suburb.strapline}} </p></blockquote>
 
-   <div class="span4">
-   <div id="map_canvas" class="map_small"> </div>
 
-     <img ng-src="{{mainImageUrl}}" class="suburb">
+   <img ng-src="{{mainImageUrl}}" class="suburb">
 <ul class="suburb-thumbs spmt30" ng-show="httpStatus">
   <li ng-repeat="img in suburb.images">
     <img ng-src="{{img}}" ng-click="setImage(img)">
   </li>
 </ul>
- </div>
- </div>
-     
-<div class="row spmt30">
- <div class="span2">
+   </div>
+
+   <div class="span4 spmt30">
+<div class="widget essential ">   
+  <i class="icon-road"></i>
+    <span class="subdetails">Transport</span>
+    <p>{{suburb.transport}}</p>
+
+    <p><strong>St Lucia by bus: </strong> {{suburb.traveltimes.stlucia}} minutes</p>
+    <p><strong>Herston by bus: </strong> {{suburb.traveltimes.herston}} minutes</p>
+   <p><strong>Distance to city: </strong>{{suburb.distance.city}} kms</p> 
+
+  </div>
+<div class="widget essentials">
     <i class="icon-shopping-cart"></i>
     <span class="subdetails">Shopping</span>
-    <p>{{suburb.shopping}}</p></div>
- <div class="span2">   <i class="icon-road"></i>
-    <span class="subdetails">Transport</span>
-    <p>{{suburb.transport}}</p></div>
- <div class="span2">   <i class="icon-glass"></i>
+    <p>{{suburb.shopping}}</p>
+</div>
+ 
+ <div class="widget essentials">  
+  <i class="icon-glass"></i>
     <span class="subdetails">Social</span>
    <p>{{suburb.social}}</p></div>
- <div class="span2"><i class="icon-briefcase"></i>
+ <div class="widget essentials">
+  <i class="icon-briefcase"></i>
     <span class="subdetails">Cost</span>
-    <p>{{suburb.cost}}</p></div>
-</div>
+    <p>{{suburb.cost}}</p>
+  </div>
+
+   <div id="map_canvas" class="map_small"> </div>
+
+    
+ </div>
+ </div>
 
 
 

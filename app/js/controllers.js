@@ -13,6 +13,7 @@ $scope.$watch('state.currentview', function(currentview) {
  $scope.add = function(){
     Favourites.add(); 
  };
+  
 };
 
 
@@ -37,6 +38,14 @@ function SuburbMainMapCtrl($scope, Suburb, Subfilter, State){
  
 
   $(".stlucia-distance").button();
+    // for showing distance currently selected using ng-show
+    $scope.showdistance = function(){
+      if (Subfilter.traveltimes.stlucia == 0){
+        return false; 
+      } else {
+        return true;
+      };
+    };
 }
 
 function SuburbListCtrl($scope, Suburb, Subfilter) {	

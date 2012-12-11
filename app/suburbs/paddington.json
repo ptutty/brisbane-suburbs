@@ -2,23 +2,27 @@
     "id": "paddington", 
     "name": "Paddington",
     "description": 
-     ["Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores",
-      "eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, omnis iste natus error sit voluptatem accusantium, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur"],
+     ["Paddington, one of Brisbane’s inner suburbs, located on the hilly foothills of Mt. Coot-tha offers all the highlights of living in the city including a diverse range of shops, boutiques, restaurants, pubs, and entertainment. ",
+      "The primarily residential suburb is home to many Queenslander style homes and Worker’s Cottages which makes it a perfect location for anyone looking for a share house or small individual home. As a result, Paddington is very popular with many students, young professionals, and young families. Rentals in the area range from approximately $150 per week for shared accommodation and approximately $680 per week for individual units or houses. Keep in mind that prices will vary based on location and size. ",
+      "Café’s, restaurants, pubs, shops and stores dominate the main roads of Caxton Street, Latrobe Terrace and Given Terrace in Paddington. Many are smaller, local establishments, but there are also several of the larger chain supermarkets in the area. Paddington is also home to many art galleries and fashion boutiques and close to Milton’s vibrant restaurant district. ",
+      "For outdoor activities and entertainment there are several small parks including the Skate Park, tennis courts and public pool. Paddington is also next to Suncorp Stadium, in Milton, where you can catch a Rugby (Union or League) or Soccer game, or see what concert is playing at the venue.",
+      "Buses regularly service Paddington, making transportation to/from the City and the UQ St Lucia campus a breeze. The closest rail stations are Milton and Roma Street, a main throughway for transport in and out of Brisbane. "
+      ],
     "distance": {
-        "city": 6 
+        "city": 2 
     }, 
     "traveltimes": {
         "stlucia": 40, 
-        "herston": 35
+        "herston": 40
     }, 
     "gmap": {
        "centre" : {"lat": -27.4617, "lng" : 153.0061, "zoom": 15}
     },
-    "strapline": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem!", 
-    "transport": "Ut enim ad minima veniam, quis nostrum exercitationem ullam.",
-    "shopping": "omnis iste natus error sit voluptatem accusantium",
-    "cost": "omnis iste natus error sit voluptatem accusantium",
-    "social": "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci",
+    "strapline": "Shops and Restaurants on Caxton St, Latrobe Tce and Given Tce", 
+    "transport": "Main roadways of Caxton St, Latrobe and Given Tce offer plenty of options . The closest Rail stations are Milton and Roma Street.",
+    "shopping": "There are plenty of shopping options on the main roadways whether  you’re looking for food, clothing or homewares.",
+    "cost": "With many Queenslander style homes, Paddington is a great location for share houses.",
+    "social": "Check out Caxton Street for a variety of night clubs and pubs. It’s also the home to the Barracks where you can shop and find the movie theatre.",
     "images": [
         "img/suburbs/placeholder1.jpg", 
         "img/suburbs/placeholder2.jpg", 

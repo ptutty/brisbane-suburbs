@@ -144,20 +144,20 @@
         }
     },
     {
-        "id": "holland-park-west", 
-        "name": "Holland Park West",
+        "id": "east-brisbane", 
+        "name": "East Brisbane",
         "traveltimes": {
-            "stlucia": 10, 
-            "herston": 35
+            "stlucia": 20, 
+            "herston": 40
         },  
         "distance": {
-            "city": 6 
+            "city": 4 
         },
         "gmap": {
             "marker": {   
-                "lat": -27.529609, 
-                 "lng" : 153.07049,
-                 "icon" : "img/suburb-10.png"
+                "lat": -27.4796, 
+                "lng" : 153.0459,
+                "icon" : "img/suburb-20.png"
              }
         }
     },
@@ -238,10 +238,10 @@
         "name": "Sunnybank",
         "traveltimes": {
             "stlucia": 30, 
-            "herston": 35
+            "herston": 50
         },  
         "distance": {
-            "city": 6 
+            "city": 16 
         },
         "gmap": {
             "marker": {
@@ -448,5 +448,41 @@
                 "icon" : "img/suburb-50.png"
              }
         }
-    }                                                          
+    },
+    {
+        "id": "south-brisbane", 
+        "name": "South Brisbane",
+        "traveltimes": {
+            "stlucia": 30, 
+            "herston": 30
+        },  
+        "distance": {
+            "city": 1 
+        },
+        "gmap": {
+            "marker": {
+                "lat": -27.4747, 
+                "lng" : 153.0169,
+                "icon" : "img/suburb-30.png"
+             }
+        }
+    },
+    {
+        "id": "norman-park", 
+        "name": "Norman Park",
+        "traveltimes": {
+            "stlucia": 20, 
+            "herston": 50
+        },  
+        "distance": {
+            "city": 5 
+        },
+        "gmap": {
+            "marker": {
+                "lat": -27.4833, 
+                "lng" : 153.0643,
+                "icon" : "img/suburb-20.png"
+             }
+        }
+    }                                                                    
 ]

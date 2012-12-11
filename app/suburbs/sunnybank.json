@@ -2,23 +2,28 @@
     "id": "sunnybank", 
     "name": "Sunnybank",
     "description": 
-     ["Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores",
-      "eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, omnis iste natus error sit voluptatem accusantium, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur"],
+     [
+     "Sunnybank is a southern suburb of Brisbane with a thriving multicultural community with many Asian influences in the local eateries and culture in the area. The area is a bustling community with access to public transportation, shops, restaurants and entertainment. Many families call Sunnybank their home as the area has many religious centres and schools.",
+     "Accommodation in the Sunnybank area (including Sunnybank Hills) will vary from houses to unit blocks and townhouses; all at an affordable rate. Shared accommodation in the area approximately costs an average of $130 per week and individual accommodation costs an approximate average of $445 per week. Remember that accommodation rates can and will vary depending on property size and location.",
+     "Sunnybank is a busy area with many transportation options, mainly buses which run throughout the suburb. There are also several train stations nearby including railway stops at Banoon, Sunnybank and Altandi; all with access to Brisbane and points south on the Beenleigh line. There is also a large bus station at the Sunnybank Plaza with express buses to the City.",
+     "Shopping in the area is primarily found along Mains Road where you’ll find three Shopping Centres: Sunnybank Plaza, Sunnybank Shopping Centre, and Market Square. All centres have large chain stores and supermarkets and smaller, local food and retail shops.",
+     "If you like sport, check out the two local rugby teams, the Souths Sunnybank Rugby League FC and the Sunnybank Dragons Rugby Union FC."
+     ],
     "distance": {
-        "city": 6 
+        "city": 16 
     }, 
     "traveltimes": {
         "stlucia": 30, 
-        "herston": 35
+        "herston": 50
     }, 
     "gmap": {
        "centre" : {"lat":  -27.5723,"lng" : 153.0660, "zoom": 15}
     },
-    "strapline": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem!", 
-    "transport": "Ut enim ad minima veniam, quis nostrum exercitationem ullam.",
-    "shopping": "omnis iste natus error sit voluptatem accusantium",
-    "cost": "omnis iste natus error sit voluptatem accusantium",
-    "social": "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci",
+    "strapline": "Check out the Oldmac Oval for a Sunnybank Dragons Rugby match!", 
+    "transport": "Many buses, including express buses to the City, travel in and out of Sunnybank. There are also options for the train at Banoon, Sunnybank, and Altandi Railway Stations.",
+    "shopping": "There are three main shopping centres on Mains Road and many smaller, local shops in the area. ",
+    "cost": "Being further outside of the City Centre means that housing prices are more affordable and still with many of the conveniences of the City close by.",
+    "social": "There are many great international restaurants and eateries in the area that would suit anyone’s tastes!",
     "images": [
         "img/suburbs/placeholder1.jpg", 
         "img/suburbs/placeholder2.jpg", 
