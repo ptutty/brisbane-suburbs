@@ -2,23 +2,26 @@
     "id": "yeronga", 
     "name": "Yeronga",
     "description": 
-     ["Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores",
-      "eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, omnis iste natus error sit voluptatem accusantium, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur"],
+     ["Fairfield, Yeronga, and Yeerongpilly are three suburbs located just south of the City and offer a homey, residential community, with access to the City and beyond via good public transport and roadways. The mainly residential suburbs are centrally located for anyone at the St Lucia campus or looking for close proximity to West End, the Princess Alexandra Hospital, and various schools and parks.",
+     "Popular with young professionals and families, these suburbs have a great variety of housing options, primarily in the form of Queenslander-style houses; though small unit blocks can be found. Shared accommodation costs approximately $140 per week, while individual properties average approximately $460 per week. Costs can vary depending on property size, location, and type.",
+     "Public transport in the area is plentiful with plenty of buses, access to trains and the ferries nearby. Each of the three suburbs have their own train station and have buses operating throughout to the City, neighbouring suburbs, and the UQ St Lucia campus.",
+     "The closest shopping centre, Fairfield Gardens, offers a wide range of shops including a supermarket, café’s, a chemist, and banks. Smaller, local shops can be found all along Ipswich Road, a major roadway through the three suburbs.",
+     "In addition to the close proximity to the conveniences of the City, there are also many parks, walkways, bike paths and other recreational areas. You can catch a soccer match at Goodwin Park, gain access to the river via the Yeronga Rowing Club, or go for a round of golf at the Brisbane Golf Club."],
     "distance": {
-        "city": 6 
+        "city": 7 
     }, 
     "traveltimes": {
         "stlucia": 20, 
-        "herston": 25
+        "herston": 30
     }, 
     "gmap": {
        "centre" : {"lat": -27.5164, "lng" : 153.0160, "zoom": 15}
     },
-    "strapline": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem!", 
-    "transport": "Ut enim ad minima veniam, quis nostrum exercitationem ullam.",
-    "shopping": "omnis iste natus error sit voluptatem accusantium",
-    "cost": "omnis iste natus error sit voluptatem accusantium",
-    "social": "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci",
+    "strapline": "See the Olympic Football Club play at Goodwin Park!", 
+    "transport": "Buses are frequent and each suburb has their own train station with access to the City and other parts south.",
+    "shopping": "Shopping at the Fairfield Gardens Shopping Centre is a breeze or you can visit some of the smaller, local shops on Ipswich Road. ",
+    "cost": "The many Queenslander-style homes mean this area is great for sharehouses or families looking for their own space.",
+    "social": "Small restaurants and pubs line the main streets here. There’s also plenty of access via public transport to West End and the City.",
     "images": [
         "img/suburbs/placeholder1.jpg", 
         "img/suburbs/placeholder2.jpg", 

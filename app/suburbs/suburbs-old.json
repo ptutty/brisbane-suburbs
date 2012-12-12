@@ -162,6 +162,24 @@
         }
     },
     {
+        "id": "holland-park", 
+        "name": "Holland Park",
+        "traveltimes": {
+            "stlucia": 30, 
+            "herston": 35
+        },  
+        "distance": {
+            "city": 6 
+        },
+        "gmap": {
+            "marker": {
+                "lat": -27.5171,
+                 "lng" : 153.0512,
+                 "icon" : "img/suburb.png"
+             }
+        }
+    },
+    {
         "id": "moorooka", 
         "name": "Moorooka", 
         "traveltimes": {
@@ -198,6 +216,24 @@
         }
     },
     {
+        "id": "salisbury",
+        "name": "Salisbury", 
+        "traveltimes": {
+            "stlucia": 30, 
+            "herston": 35
+        },  
+        "distance": {
+            "city": 6 
+        },
+        "gmap": {
+            "marker": {
+                "lat": -27.551095, 
+                 "lng" : 153.036698,
+                 "icon" : "img/suburb.png"
+             }
+        }
+    },
+    {
         "id": "sunnybank", 
         "name": "Sunnybank",
         "traveltimes": {
@@ -212,6 +248,24 @@
                 "lat":  -27.572371,
                  "lng" : 153.066028,
                  "icon" : "img/suburb.png"
+             }
+        }
+    },
+    {
+        "id": "tarragindi",
+        "name": "Tarragindi", 
+        "traveltimes": {
+            "stlucia": 30, 
+            "herston": 35
+        },  
+        "distance": {
+            "city": 6 
+        },
+        "gmap": {
+            "marker": {  
+                "lat": -27.5222,
+                 "lng" : 153.0471,
+                 "icon" : "img/suburb-30.png"
              }
         }
     },
@@ -233,6 +287,24 @@
              }
         }
     },
+    /*{
+        "id": "rocklea",
+        "name": "Rocklea", 
+        "traveltimes": {
+            "stlucia": 50, 
+            "herston": 35
+        },  
+        "distance": {
+            "city": 6 
+        },
+        "gmap": {
+            "marker": {
+                "lat": -27.535603, 
+                 "lng" : 152.998864,
+                 "icon" : "img/suburb-50.png"
+             }
+        }
+    }, */
     {
         "id": "kenmore",
         "name": "Kenmore", 
