@@ -1,4 +1,42 @@
 
+.distance-control {
+padding: 15px;
+margin-top: 5px;
+margin-bottom: 10px;
+color: inherit;
+background-color: #EEE;
+-webkit-border-radius: 6px;
+-moz-border-radius: 6px;
+border-radius: 6px;
+}
+
+
+.navbar .brand {
+padding: 23px 5px 0px 70px!important;
+}
+
+.brandlogo {
+display: block;
+float: left;
+padding: 0px 20px 0px;
+margin-left: -20px;
+font-size: 20px;
+font-weight: 200;
+line-height: 1;
+color: #999;
+}
+
+.navbar {}
+.navbar-inner {
+  height: 70px!important;
+  background-color: #231f20!important;
+  background-image: none!important;
+}
+
+.maintitle {
+  color: white!important;
+}
+
 .btn-chip {
 position: relative;
 float: left;
@@ -58,6 +96,7 @@ h1 {margin-bottom: 30px!important; u}
 .spmt30 {margin-top: 30px;}
 .spmb20 {margin-bottom: 20px;}
 .spmt5 {margin-top: 5px;}
+.spmt15 {margin-top: 15px;}
 
 select.subsearchselect {
   width: 198px;
@@ -77,7 +116,7 @@ img#overview-map {
 }
 
 .map_small {
-  width: 315px;
+  width: 297px;
   height: 300px;
   margin: 10px 0px 10px 0px;
   border: 1px solid #ccc;
@@ -196,7 +235,7 @@ h1 {
 
 
 .widget {
-width: 100%;
+width: 280px;
 padding: 10px;
 margin-top: 5px;
 margin-bottom: 10px;

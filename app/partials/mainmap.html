@@ -1,6 +1,7 @@
 {{}} <!-- these brackets to fix bug in ie8 -->
-<h5>Travel time to St Lucia by public transport <span ng-show="showdistance()">{{subfilter.traveltimes.stlucia}} minutes</span></h5>
-
+<div class="distance-control">
+<h4>Travel time to UQ St Lucia campus <span ng-show="showdistance()">{{subfilter.traveltimes.stlucia}} minutes</span></h4>
+<p>Choose options below to show travel times by public transport</p>
 <div class="btn-group" data-toggle="buttons-radio">
   <div class="btn-chip ttmin-10"></div><button type="button" class="btn stlucia-distance" ng-click="setfilter(10)">10 mins  </button>
   <div class="btn-chip ttmin-20"></div><button type="button" class="btn stlucia-distance" ng-click="setfilter(20)">20 mins  </button>
@@ -8,6 +9,7 @@
   <div class="btn-chip ttmin-40"></div><button type="button" class="btn stlucia-distance" ng-click="setfilter(40)">40 mins  </button>
   <div class="btn-chip ttmin-50"></div><button type="button" class="btn stlucia-distance" ng-click="setfilter(50)">50 mins  </button>
   <button type="button" class="btn btn-inverse stlucia-distance" ng-click="setfilter(0)">Show all</button>
+</div>
 </div>
 
 <gmapmain gdata="{{suburbs | filter: subfilter.name | filter:{traveltimes.stlucia: subfilter.traveltimes.stlucia} }}" distance="{{subfilter.traveltimes.stlucia}}" id="map_canvas_main"></gmapmain>
