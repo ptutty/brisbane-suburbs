@@ -1,5 +1,4 @@
-<h1>Your Shortlist</h1>
-
+<h1>My Shortlist</h1>
 <ul class="unstyled favs" ng-repeat="item in subfav.list">
 	<li> 
 	  <input type="checkbox" ng-model="item.done">
@@ -7,8 +6,4 @@
 </li>
 </ul>
 
-
-
 <button ng-show="subfav.length()" class="btn btn-danger" ng-click="remove();" type="button">Remove selected</button> 
-
-<!-- <button  class="btn btn-danger" ng-click="test();" type="button">test</button> -->
