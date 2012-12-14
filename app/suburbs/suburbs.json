@@ -412,5 +412,41 @@
                 "icon" : "img/suburb-20.png"
              }
         }
-    }                                                                    
+    },
+    {
+        "id": "holland-park", 
+        "name": "Holland Park",
+        "traveltimes": {
+            "stlucia": 30, 
+            "herston": 35
+        },  
+        "distance": {
+            "city": 6 
+        },
+        "gmap": {
+            "marker": {
+                "lat": -27.5171,
+                 "lng" : 153.0512,
+                 "icon" : "img/suburb.png"
+             }
+        }
+    },
+    {
+        "id": "tarragindi",
+        "name": "Tarragindi", 
+        "traveltimes": {
+            "stlucia": 30, 
+            "herston": 35
+        },  
+        "distance": {
+            "city": 9 
+        },
+        "gmap": {
+            "marker": {  
+                "lat": -27.5222,
+                 "lng" : 153.0471,
+                 "icon" : "img/suburb-30.png"
+             }
+        }
+    }                                                                   
 ]

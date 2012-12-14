@@ -2,10 +2,12 @@
     "id": "holland-park", 
     "name": "Holland Park",
     "description": 
-     ["Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores",
-      "eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, omnis iste natus error sit voluptatem accusantium, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur"],
+     ["Tarragindi and neighbouring suburb of Holland Park (including Holland Park West) are mostly residential suburbs where you’ll find many older houses and some newer developments. Depending on where you’re looking in the suburb, public transportation can be a quick and easy ride into the city or UQ St Lucia.",
+     "The area is well serviced by buses, though, there are no train stations in either of the suburbs. Logan Road, a major thruway in the area, makes transportation a breeze and is the home to many shops, restaurants and local pubs. It also allows access to neighbouring suburbs  and nearby shopping centres. Both suburbs are also very close to several public and private schools, which make this a great location for families. ",
+     "The majority of residents in the area are young professionals and families living in smaller workers cottages or Queenslander-style homes. The average approximate cost of shared accommodation in these suburbs is $125 per week, while the average approximate cost of individual accommodation is $460 per week. Keep in mind that housing prices will vary depending on property type, size and location.",
+     "Additionally, if you enjoy the outdoors, Tarragindi and Holland Park are great suburbs as there is access to many bikeways, parks and picnic areas. Tarragindi is also home to Toohey Forest, where you’ll find a fantastic nature reserve with many walking tracks where you can view lush vegetation and great wildlife."],
     "distance": {
-        "city": 6 
+        "city": 9 
     }, 
     "traveltimes": {
         "stlucia": 30, 
@@ -14,11 +16,11 @@
     "gmap": {
        "centre" : { "lat": -27.5171, "lng" : 153.0512, "zoom": 15 }
     },
-    "strapline": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem!", 
-    "transport": "Ut enim ad minima veniam, quis nostrum exercitationem ullam.",
-    "shopping": "omnis iste natus error sit voluptatem accusantium",
-    "cost": "omnis iste natus error sit voluptatem accusantium",
-    "social": "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci",
+    "strapline": "Walking trails in Toohey Forest.", 
+    "transport": "While there are no train stations in the area, the two suburbs are well serviced by buses and have access to the SE Busway.",
+    "shopping": "Many shops, stores, restaurants and pubs line the main streets in the area, mainly Logan Rd. ",
+    "cost": "Rentals in the area are well suited for families or sharehouses as there are many  houses found in the area.",
+    "social": "The main roads in the area are home to many local pubs and restaurants; while there is easy access to the City via the SE Busway.",
     "images": [
         "img/suburbs/placeholder1.jpg", 
         "img/suburbs/placeholder2.jpg", 
