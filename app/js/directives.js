@@ -14,7 +14,7 @@ subcatdirectives.directive('gmapmain', function($parse, MapOverlays) {
         link: function(scope, element, attrs) { 
 		    var myOptions = {
 				            zoom: 12,
-				            center: new google.maps.LatLng(-27.522217, 153.003159),
+				            center: new google.maps.LatLng(-27.5222, 153.0031),
 				            mapTypeId: google.maps.MapTypeId.ROADMAP
 				        };	
 		    var map = new google.maps.Map(document.getElementById(attrs.id), myOptions);  
@@ -22,7 +22,7 @@ subcatdirectives.directive('gmapmain', function($parse, MapOverlays) {
 
 		     // show marker for st lucia campus
 	        var image = "img/university.png";
-	        var campusLatLng = new google.maps.LatLng(-27.497854,153.013286);
+	        var campusLatLng = new google.maps.LatLng(-27.4978,153.0132);
 	        var campusMarker = new google.maps.Marker({
 	          position: campusLatLng,
 	          map: map,

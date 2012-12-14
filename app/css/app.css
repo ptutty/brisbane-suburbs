@@ -27,8 +27,14 @@ line-height: 1;
 color: #999;
 }
 
-.navbar {}
-.navbar-inner {
+/*.navbar-inner {
+  height: 70px!important;
+  background-color: #231f20!important;
+  background-image: none!important;
+}*/
+
+
+.navbar-inner-custom {
   height: 70px!important;
   background-color: #231f20!important;
   background-image: none!important;
