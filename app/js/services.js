@@ -114,11 +114,18 @@ subcatservices.factory('MapOverlays', function() {
     polyArray: [], // array of polys
     manMarkers: function(map, suburbs, infowindow) { 
 
-      function setListener(data){
-        google.maps.event.addListener(data, 'click', function() {
-                infowindow.setContent(data.html);
-                infowindow.open(map, data);
+      function setListener(data, id){
+        google.maps.event.addListener(data, 'mouseover', function() {
+          infowindow.setContent(data.html);
+          infowindow.open(map, data);
         });
+        google.maps.event.addListener(data, 'mouseout', function() {
+          infowindow.close();
+        });
+        google.maps.event.addListener(data, 'click', function() {
+          window.location = "#/suburbs/" + id;
+        });
+
       };
 
       function makeMarkers(suburb) {
@@ -134,7 +141,7 @@ subcatservices.factory('MapOverlays', function() {
           position: uqLatLng,
           map: map,
           icon: image,
-          html: "<h3><a href='#/suburbs/" + suburb.id + "'>"+ name +"</a></h3><p>Travel time St Lucia: " + stlucia + "</br>Travel time Herston: " + herston + "</p>Read more about living in <a href='#/suburbs/" + suburb.id + "'>" + name + "</a>"
+          html: "<h3><a href='#/suburbs/" + suburb.id + "'>"+ name +"</a></h3><p>Travel time St Lucia: " + stlucia + "</br>Travel time Herston: " + herston + "</p></a>"
         });
         return {"id": id, "data": uqMarker};
       };
@@ -156,7 +163,8 @@ subcatservices.factory('MapOverlays', function() {
         // show all markers in array
         for (var k = 0; k < this.markerArray.length; k++) {
           var data = this.markerArray[k].data;
-          setListener(data); // set listeners of infowindows
+          var id = this.markerArray[k].id;
+          setListener(data, id); // set listeners for infowindows
           data.setMap(map);
         };
 
@@ -170,7 +178,7 @@ subcatservices.factory('MapOverlays', function() {
           for (var k = 0; k < this.markerArray.length; k++) {
             if (this.markerArray[k].id == id){
               var data = this.markerArray[k].data;
-              setListener(data); // set listeners of infowindows
+              setListener(data, id); // set listeners of infowindows
               data.setMap(map);
             }
           }

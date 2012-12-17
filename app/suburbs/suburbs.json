@@ -415,7 +415,7 @@
     },
     {
         "id": "holland-park", 
-        "name": "Holland Park",
+        "name": "Holland Park",   
         "traveltimes": {
             "stlucia": 30, 
             "herston": 35
@@ -425,8 +425,8 @@
         },
         "gmap": {
             "marker": {
-                "lat": -27.5171,
-                 "lng" : 153.0512,
+                "lat": -27.517109,
+                 "lng" : 153.069703,
                  "icon" : "img/suburb.png"
              }
         }
