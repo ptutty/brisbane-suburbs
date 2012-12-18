@@ -1,4 +1,19 @@
-  
+.footer {
+margin-left: -20px;
+margin-right: -20px;
+padding-left: 20px;
+padding-right: 20px;
+text-align: center;
+height: 50px;
+}
+
+.footer {
+text-align: center;
+padding: 30px 0;
+margin-top: 70px;
+border-top: 1px solid #E5E5E5;
+background-color: whiteSmoke;
+}  
 
 .distance-control {
 padding: 15px;
