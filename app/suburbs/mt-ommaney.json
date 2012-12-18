@@ -1,0 +1,30 @@
+{
+    "id": "mt-ommaney", 
+    "name": "Mt Ommaney",
+    "description": 
+     ["Jindalee and Mt Ommaney are part of Brisbane’s Centenary Suburb located approximately 30 minutes, by car, from the CBD. Whilst Jindalee is considered quite flat, Mt Ommaney is located on a hill and partly surrounded by the Brisbane River. These suburbs are quite popular with families as it has a number of schools surrounding the area and offers a range of facilities. Both suburbs have easy access to River Rocks Park, quaint restaurants and the Mt Coot-tha lookout and botanical gardens via the Centenary Highway.",
+     "Shopping wise, the Mt Ommaney shopping centre is pretty much in the middle of the 2 suburbs. It houses a wide range of boutique style shops, 3 department stores plus 3 supermarkets (Woolworths, Coles and Aldi). There is also DFO (Direct Factory Outlet) located in Jindalee which is popular for its clothing, shoe, and home wares stores.",
+     "The majority of people in the area live in houses. The cost of shared accommodation is an approximate average of $140 per week. If you’re looking for an individual property, including a house, the average cost is approximately $470 per week. It is important to keep in mind that the cost of accommodation will vary depending on property type, size and location.",
+     "Public transport is quite good for both suburbs. Apart from a number of bus stops located in the suburb itself, it has 2 main drop-off points, one in Mt Ommaney Shopping Centre and a “Park and Ride” at Jindalee which features a cyclist facility. There is also a shuttle bus that can take you to the nearest train station if need be (Darra or Oxley train stations)."
+     ],
+    "distance": {
+        "city": 14 
+    }, 
+    "traveltimes": {
+        "stlucia": 30, 
+        "herston": 60
+    }, 
+    "gmap": {
+       "centre" : {"lat": -27.547464,"lng" : 152.935703, "zoom": 15}
+    },
+    "strapline": "A trip to River Rocks Park", 
+    "transport": "There are a number of bus stops in the area, including large interchanges at the Mt Ommaney Shopping Centre. The closest train stations are at Darra and Oxley.",
+    "shopping": "The Mt Ommaney Shopping Centre has many stores, including several grocery stores.",
+    "cost": "The majority of residents are families living in houses. Being further from the CBD means that the price of individual properties can be more affordable.",
+    "social": "Many small shops and restaurants can be found on the main roadways and near the Shopping Centre.",
+    "images": [
+        "img/suburbs/placeholder1.jpg", 
+        "img/suburbs/placeholder2.jpg", 
+        "img/suburbs/placeholder3.jpg"
+    ]
+}
