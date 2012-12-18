@@ -41,8 +41,8 @@ subcatdirectives.directive('gmapmain', function($parse, MapOverlays) {
       		campusMarker.setMap(map);
 
 
-		    attrs.$observe('gdata', function(value) {
-				var suburbs = angular.fromJson(value);	
+		    attrs.$observe('gdata', function(data) {
+				var suburbs = angular.fromJson(data);	
 				MapOverlays.manMarkers(map, suburbs, infowindow);
 			});
 

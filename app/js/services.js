@@ -106,13 +106,14 @@ subcatservices.factory('Favourites', function($location) {
 
 
 
-/* for managing polygon and marker overlays */
+/* manages polygon and marker overlays in 'main gmap' directive */
 subcatservices.factory('MapOverlays', function() {
-  var overlaysctrl = {
-    // marker manager
+  return {
     markerArray: [], // array of markers
     polyArray: [], // array of polys
-    manMarkers: function(map, suburbs, infowindow) { 
+
+    /* marker manager */
+    manMarkers: function(map, suburbs, infowindow) { // params: googlemap object, array of suburbs, googlemap infowindow object
 
       function setListener(data, id){
         google.maps.event.addListener(data, 'mouseover', function() {
@@ -186,8 +187,8 @@ subcatservices.factory('MapOverlays', function() {
       }
     }, 
 
-    // for showing polys
-    manPolys: function(map, distance) { // displays polys on map
+    /* polygon manager */
+    manPolys: function(map, distance) {
       
       function makePolys(polys){
         for (var i = 0; i < polygonpathdata.length; i++) {
@@ -230,7 +231,7 @@ subcatservices.factory('MapOverlays', function() {
       };  
     }
 }
-return overlaysctrl;    
+  
 });
 
 
