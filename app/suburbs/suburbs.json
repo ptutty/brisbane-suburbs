@@ -448,5 +448,41 @@
                  "icon" : "img/suburb-30.png"
              }
         }
-    }                                                                   
+    },
+    {
+        "id": "jindalee",
+        "name": "Jindalee", 
+        "traveltimes": {
+            "stlucia": 30, 
+            "herston": 50
+        },  
+        "distance": {
+            "city": 14 
+        },
+        "gmap": {
+            "marker": {  
+                "lat": -27.533507,
+                "lng" : 152.947289,
+                "icon" : "img/suburb-30.png"
+             }
+        }
+    },
+    {
+        "id": "mt-ommaney",
+        "name": "Mt Ommaney", 
+        "traveltimes": {
+            "stlucia": 30, 
+            "herston": 50
+        },  
+        "distance": {
+            "city": 14 
+        },
+        "gmap": {
+            "marker": {  
+               "lat": -27.547464,
+               "lng" : 152.935703,
+                "icon" : "img/suburb-30.png"
+             }
+        }
+    }                                                                                  
 ]

@@ -2,23 +2,26 @@
     "id": "chapel-hill", 
     "name": "Chapel Hill",
     "description": 
-     ["Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores",
-      "eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, omnis iste natus error sit voluptatem accusantium, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur"],
+     ["The two neighbouring suburbs of Chapel Hill and Kenmore are great suburbs for anyone looking for a primarily residential place to live with easy access to St. Lucia and the CBD.",
+     "Conveniences of city-life are relatively close by with small shopping centres in Chapel Hill and the larger Village Shopping Centre in Kenmore. The majority of cafes, take-away shops, pubs and restaurants in the area are located in Kenmore and there is easy access to the Indooroopilly Shopping Centre. ",
+     "The most frequently used form of public transportation in the area is the bus, though the majority of residents in the two suburbs commute by car. By bus, Chapel Hill and Kenmore are well connected to Indooroopilly, St Lucia and the CBD. The closest rail station to the two suburbs is Indooroopilly. ",
+     "The majority of people who live in Chapel Hill and Kenmore live in houses since units and townhouses are somewhat rare here. Couples and families make up the majority of residents in the area. The average rent for the two suburbs is approximately $140 per week for shared accommodation and $675 per week for an individual house or unit. It is important to keep in mind that accommodation prices will vary depending on size and type of property.",
+     "While Chapel Hill and Kenmore are slightly more removed from the City and St Lucia, there are a great number of outdoor activities within close range including walking tracks, cycling paths, boating ramps and horseback riding in the area. If you enjoy the outdoors, these suburbs are great because of the access to the Mt. Coot-tha walking tracks to the lookout, the Botanical Gardens, and the Planetarium."],
     "distance": {
-        "city": 6 
+        "city": 10 
     }, 
     "traveltimes": {
-        "stlucia": 50, 
-        "herston": 35
+        "stlucia": 30, 
+        "herston": 50
     }, 
     "gmap": {
-       "centre" : {"lat":  -27.493,"lng" : 152.944, "zoom": 15}   
+       "centre" : {  "lat": -27.493986, "lng" : 152.944923, "zoom": 15 }
     },
-    "strapline": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem!", 
-    "transport": "Ut enim ad minima veniam, quis nostrum exercitationem ullam.",
-    "shopping": "omnis iste natus error sit voluptatem accusantium",
-    "cost": "omnis iste natus error sit voluptatem accusantium",
-    "social": "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci",
+    "strapline": "Great walking and cycling tracks to Mt. Coot-tha lookout", 
+    "transport": "Several buses run through Chapel Hill and Kenmore to shops, stores, UQ St Lucia and the CBC.",
+    "shopping": "Shopping centres, restaurants and pubs in Kenmore  have a wide range of shops and food outlets. ",
+    "cost": "Rentals are affordable in the area for families and or anyone looking for share houses. ",
+    "social": "Chapel Hill and Kenmore are great locations for anyone looking for easy access to outdoor activities, parks, with easy access to the City.",
     "images": [
         "img/suburbs/placeholder1.jpg", 
         "img/suburbs/placeholder2.jpg", 

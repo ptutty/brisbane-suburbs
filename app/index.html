@@ -2,6 +2,7 @@
 <html lang="en" id="ng-app" ng-app="suburbcat">
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="expires" content="0">
 
    <!-- polyfills for IE -->
     <!--[if lt IE 8]>
@@ -9,24 +10,9 @@
 <![endif]-->
 
 
-  <title>UQ Accommodation | Brisbane Suburb Guide</title>
+  <title>UQ Accommodation | Brisbane Suburb Guide.</title>
   <link rel="stylesheet" href="css/app.css">
   <link rel="stylesheet" href="css/bootstrap.css">
-  <script src="lib/angular/angular.js"></script>
-  <script src="js/app.js"></script>
-  <script src="js/controllers.js"></script>
-  <script src="js/filters.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?sensor=false" type="text/javascript"></script>
-  <script src="js/pathdata.js"></script>
-  <script src="js/services.js"></script>
-  <script src="js/directives.js"></script>
-  <script src="lib/angular/angular-resource.js"></script>
-  <script src="lib/jquery/jquery-1.8.3.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="lib/modernizr/modernizr-latest.js"></script>
-
-
- 
 </head>
 <body >
   <div ng-controller="HeaderCtrl" ng-include="'partials/header.html'" class="navbar navbar-inverse navbar-fixed-top ng-cloak">
@@ -43,12 +29,24 @@
 
   </div>
 </div>
-<footer class="footer">
+<footer class="footer ng-cloak">
       <div class="container">
         <p>&#169; 2013 | University of Queensland | Student Services</p>
          <p>Browser support: Internet Explorer 8 and above. Best viewed on Safari/Chrome/Firefox</p>
         <p>Developed by <a href="http://www.philiptutty.com">Philip Tutty</a></p>
       </div>
 </footer>
+<script src="lib/angular/angular.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/controllers.js"></script>
+  <script src="js/filters.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?sensor=false" type="text/javascript"></script>
+  <script src="js/pathdata.js"></script>
+  <script src="js/services.js"></script>
+  <script src="js/directives.js"></script>
+  <script src="lib/angular/angular-resource.js"></script>
+  <script src="lib/jquery/jquery-1.8.3.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="lib/modernizr/modernizr-latest.js"></script>
 </body>
 </html>
