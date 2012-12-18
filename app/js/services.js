@@ -108,10 +108,10 @@ subcatservices.factory('Favourites', function($location) {
 
 /* manages polygon and marker overlays in 'main gmap' directive */
 subcatservices.factory('MapOverlays', function() {
-  return {
-    markerArray: [], // array of markers
-    polyArray: [], // array of polys
-
+ 
+    var markerArray = [], polyArray =  []; // array of markers
+  // array of polys
+ return {
     /* marker manager */
     manMarkers: function(map, suburbs, infowindow) { // params: googlemap object, array of suburbs, googlemap infowindow object
 
@@ -155,30 +155,30 @@ subcatservices.factory('MapOverlays', function() {
       };
 
       // create all markers and add to array. 
-      if (!this.markerArray.length) { 
+      if (!markerArray.length) { 
         for (var i = 0; i < suburbs.length; i++) {
           var suburb = suburbs[i];
-          this.markerArray.push(makeMarkers(suburb));
+          markerArray.push(makeMarkers(suburb));
         };
 
         // show all markers in array
-        for (var k = 0; k < this.markerArray.length; k++) {
-          var data = this.markerArray[k].data;
-          var id = this.markerArray[k].id;
+        for (var k = 0; k < markerArray.length; k++) {
+          var data = markerArray[k].data;
+          var id = markerArray[k].id;
           setListener(data, id); // set listeners for infowindows
           data.setMap(map);
         };
 
       } else { // show and hide markers as suburbs are filtered
         // hide all markers
-        hideMarkers(this.markerArray);
+        hideMarkers(markerArray);
         // iterate over list of suburbs and compare to items in marker markerArray
         for (var i = 0; i < suburbs.length; i++) {
           var suburb = suburbs[i];
           var id = suburb.id;
-          for (var k = 0; k < this.markerArray.length; k++) {
-            if (this.markerArray[k].id == id){
-              var data = this.markerArray[k].data;
+          for (var k = 0; k < markerArray.length; k++) {
+            if (markerArray[k].id == id){
+              var data = markerArray[k].data;
               setListener(data, id); // set listeners of infowindows
               data.setMap(map);
             }
@@ -214,18 +214,18 @@ subcatservices.factory('MapOverlays', function() {
         };
       }; 
 
-      if (!this.polyArray.length) { // no polys yet created - create all. 
-        makePolys(this.polyArray);
+      if (!polyArray.length) { // no polys yet created - create all. 
+        makePolys(polyArray);
       };
-      hidePolys(this.polyArray); 
+      hidePolys(polyArray); 
       if (distance == 0) {
-        for (var i = 0; i < this.polyArray.length; i++) {
-          this.polyArray[i].data.setMap(map);
+        for (var i = 0; i < polyArray.length; i++) {
+           polyArray[i].data.setMap(map);
         };
       } else {
-        for (var i = 0; i < this.polyArray.length; i++) {
-          if (distance == this.polyArray[i].distance) {
-            this.polyArray[i].data.setMap(map);
+        for (var i = 0; i < polyArray.length; i++) {
+          if (distance == polyArray[i].distance) {
+            polyArray[i].data.setMap(map);
           }     
         };
       };  
