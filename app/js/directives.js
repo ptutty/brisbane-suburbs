@@ -19,13 +19,14 @@ subcatdirectives.directive('suburbsmap', function($parse) {
 		suburbsMap = new google.maps.Map(document.getElementById(id), myOptions); 
 	};
 
-	function mapCreateMarker(suburbMarkerData, infoWindowText){
+	function mapCreateMarker(suburbMarkerData, infoWindowText, id){
 		var latLng = new google.maps.LatLng(suburbMarkerData.lat, suburbMarkerData.lng);
 		var marker = new google.maps.Marker({
 		  position: latLng,
 		  map: suburbsMap,
 		  icon: suburbMarkerData.icon,
-		  html: infoWindowText
+		  html: infoWindowText,
+		  id: id
 		});
 		return marker;
 	};
@@ -34,10 +35,18 @@ subcatdirectives.directive('suburbsmap', function($parse) {
 		var infowindow = new google.maps.InfoWindow({
 		content: "holding..."
 		});
-		google.maps.event.addListener(marker, 'click', function() {
-			infowindow.setContent(marker.html);
-			infowindow.open(suburbsMap, marker);
-		}); 
+		 
+		google.maps.event.addListener(marker, 'mouseover', function() {
+          infowindow.setContent(marker.html);
+          infowindow.open(suburbsMap, marker);
+        });
+
+        google.maps.event.addListener(marker, 'mouseout', function() {
+          infowindow.close();
+        });
+        google.maps.event.addListener(marker, 'click', function() {
+          window.location = "#/suburbs/" + marker.id;
+        });
 		return infowindow; 
 	};
 
@@ -45,18 +54,39 @@ subcatdirectives.directive('suburbsmap', function($parse) {
 		mapCreate(id);
 		var stluciaCampusMapData = {"lat": -27.4978, "lng": 153.0132, "icon": "img/university.png"};
 		var infoWindowText = "<h3>University of Queensland</h3><p>St Lucia Campus</p>";
-		var stluciaMarker = mapCreateMarker(stluciaCampusMapData, infoWindowText);
+		var stluciaMarker = mapCreateMarker(stluciaCampusMapData, infoWindowText, "stluciacampus");
 		mapCreateInfoWindow(stluciaMarker);
 	};
 
-	function suburbsMarkersInitialize(suburbsData){
+	function mapSuburbMarkersInitialize(suburbsData){
         for (var i = 0; i < suburbsData.length; i++) {
           var suburb = suburbsData[i];
-          var suburbMarker = mapCreateMarker(suburb.gmap.marker);
-          var infoWindowText = "<h3><a href='#/suburbs/" + suburb.id + "'>"+ suburb.name +"</a></h3><p>Travel time St Lucia: " + stlucia + "</br>Travel time Herston: " + herston + "</p></a>"
+          var infoWindowText = "<h3><a href='#/suburbs/" + suburb.id + "'>"+ suburb.name +"</a></h3><p>Travel time St Lucia: " + suburb.traveltimes.stlucia + "</br>Travel time Herston: " + suburb.traveltimes.herston + "</p></a>";
+          var suburbMarker = mapCreateMarker(suburb.gmap.marker, infoWindowText, suburb.id);
           mapCreateInfoWindow(suburbMarker);
+          suburbMarkerArray.push(suburbMarker);
       	}
-	}
+	};
+
+	function mapSuburbMarkersUpdate(suburbsData){
+		 mapMarkerHide();
+	     for (var i = 0; i < suburbsData.length; i++) {
+	     	var suburbID = suburbsData[i].id;
+	     	for (var k = 0; k < suburbMarkerArray.length; k++) {
+	     		var marker = suburbMarkerArray[k];
+		     	if (suburbID == marker.id){
+		     		marker.setMap(suburbsMap);
+		     	};
+	     	};
+	     };
+	};
+
+	function mapMarkerHide() { // hides markers
+		for (var i = 0; i < suburbMarkerArray.length; i++) {
+         	var marker = suburbMarkerArray[i];
+         	marker.setMap(null);
+         };    
+    };
 
 
 	return {
@@ -65,21 +95,19 @@ subcatdirectives.directive('suburbsmap', function($parse) {
 		template: '<div></div>',     
 		link: function(scope, element, attrs) {	
 			mapInitialize(attrs.id);
-	 		
 			attrs.$observe('suburbsdata', function(data) {
 				var data = angular.fromJson(data);
-				if (data.length !== 0) {
-					suburbsMarkersInitialize(data);
+				if (data.length !== 0 && suburbMarkerArray.length == 0) {
+					mapSuburbMarkersInitialize(data);
+				} else if (data.length !== 0 && suburbMarkerArray.length !== 0) {
+					mapSuburbMarkersUpdate(data);
 				};
-					
-			
-				// MapOverlays.manMarkers(map, suburbs, infowindow);
 			});
 
-		/*
-		attrs.$observe('distance', function(distance) { 
-			MapOverlays.manPolys(map, distance);
-		});*/
-		}
-	}
-})
+			/*
+			attrs.$observe('distance', function(distance) { 
+				MapOverlays.manPolys(map, distance);
+			});*/
+		};
+	};
+});
