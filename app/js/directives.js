@@ -110,6 +110,6 @@ subcatdirectives.directive('suburbsmap', function($parse) {
 			attrs.$observe('distance', function(distance) { 
 				MapOverlays.manPolys(map, distance);
 			});*/
-		};
+		}
 	};
 });
