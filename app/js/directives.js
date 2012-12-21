@@ -69,7 +69,9 @@ subcatdirectives.directive('suburbsmap', function($parse) {
 	};
 
 	function mapSuburbMarkersUpdate(suburbsData){
-		 mapMarkerHide();
+		 mapMarkerHide(); // hide all markers
+		 // iterate over new suburbs list to display
+		 // compare id with marker id markerArray display marker if true
 	     for (var i = 0; i < suburbsData.length; i++) {
 	     	var suburbID = suburbsData[i].id;
 	     	for (var k = 0; k < suburbMarkerArray.length; k++) {
