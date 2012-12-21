@@ -8,6 +8,7 @@ var subcatdirectives = angular.module('suburbcatDirectives', []);
 subcatdirectives.directive('suburbsmap', function($parse) {
 
 	var suburbMarkerArray = []; 
+	var suburbPolygonArray = [];
 	var suburbsMap; // google map object
 
 	function mapCreate(id) {
@@ -19,7 +20,7 @@ subcatdirectives.directive('suburbsmap', function($parse) {
 		suburbsMap = new google.maps.Map(document.getElementById(id), myOptions); 
 	};
 
-	function mapCreateMarker(suburbMarkerData, infoWindowText, id){
+	function mapMarkerCreate(suburbMarkerData, infoWindowText, id){
 		var latLng = new google.maps.LatLng(suburbMarkerData.lat, suburbMarkerData.lng);
 		var marker = new google.maps.Marker({
 		  position: latLng,
@@ -31,7 +32,7 @@ subcatdirectives.directive('suburbsmap', function($parse) {
 		return marker;
 	};
 
-	function mapCreateInfoWindow(marker){
+	function mapInfoWindowCreate(marker){
 		var infowindow = new google.maps.InfoWindow({
 		content: "holding..."
 		});
@@ -54,21 +55,64 @@ subcatdirectives.directive('suburbsmap', function($parse) {
 		mapCreate(id);
 		var stluciaCampusMapData = {"lat": -27.4978, "lng": 153.0132, "icon": "img/university.png"};
 		var infoWindowText = "<h3>University of Queensland</h3><p>St Lucia Campus</p>";
-		var stluciaMarker = mapCreateMarker(stluciaCampusMapData, infoWindowText, "stluciacampus");
-		mapCreateInfoWindow(stluciaMarker);
+		var stluciaMarker = mapMarkerCreate(stluciaCampusMapData, infoWindowText, "stluciacampus");
+		mapInfoWindowCreate(stluciaMarker);
 	};
 
-	function mapSuburbMarkersInitialize(suburbsData){
+	function mapMarkersInitialize(suburbsData){
         for (var i = 0; i < suburbsData.length; i++) {
           var suburb = suburbsData[i];
           var infoWindowText = "<h3><a href='#/suburbs/" + suburb.id + "'>"+ suburb.name +"</a></h3><p>Travel time St Lucia: " + suburb.traveltimes.stlucia + "</br>Travel time Herston: " + suburb.traveltimes.herston + "</p></a>";
-          var suburbMarker = mapCreateMarker(suburb.gmap.marker, infoWindowText, suburb.id);
-          mapCreateInfoWindow(suburbMarker);
+          var suburbMarker = mapMarkerCreate(suburb.gmap.marker, infoWindowText, suburb.id);
+          mapInfoWindowCreate(suburbMarker);
           suburbMarkerArray.push(suburbMarker);
       	}
 	};
 
-	function mapSuburbMarkersUpdate(suburbsData){
+	function mapPolygonInitialize(distance, callback){
+		for (var i = 0; i < polygonpathdata.length; i++) {
+          var paths = polygonpathdata[i].data;
+          var color = polygonpathdata[i].color;
+          var distance = polygonpathdata[i].distance;
+          var poly = new google.maps.Polygon({
+            paths: paths,
+            strokeColor: color,
+            strokeOpacity: 0.35,
+            strokeWeight: 1,
+            fillColor: color,
+            fillOpacity: 0.65,
+            clickable: false
+          });
+          if (typeof callback === 'function'){
+		    callback(poly, true);
+          };
+          suburbPolygonArray.push({"distance": distance, "data": poly});  
+        };  
+	};
+
+	function mapPolygonShowHide(polygon, show){
+		if (show == true){
+			polygon.setMap(suburbsMap);
+		} else {
+			polygon.setMap(null);	
+		}
+	};
+
+	function mapPolygonUpdate(currentdistance) { // hides polys on map
+        for (var i = 0; i < suburbPolygonArray.length; i++) {
+        	var poly = suburbPolygonArray[i].data;
+        	var polydistance = suburbPolygonArray[i].distance;
+        	mapPolygonShowHide(suburbPolygonArray[i].data, false);
+        	if (polydistance == currentdistance){
+        		mapPolygonShowHide(poly, true);
+        	};	
+        	if (currentdistance == 0){
+        		mapPolygonShowHide(poly, true);
+        	};
+        };
+     }; 
+
+	function mapMarkersUpdate(suburbsData){
 		 mapMarkerHide(); // hide all markers
 		 // iterate over new suburbs list to display
 		 // compare id with marker id markerArray display marker if true
@@ -100,16 +144,18 @@ subcatdirectives.directive('suburbsmap', function($parse) {
 			attrs.$observe('suburbsdata', function(data) {
 				var data = angular.fromJson(data);
 				if (data.length !== 0 && suburbMarkerArray.length == 0) {
-					mapSuburbMarkersInitialize(data);
+					mapMarkersInitialize(data);
 				} else if (data.length !== 0 && suburbMarkerArray.length !== 0) {
-					mapSuburbMarkersUpdate(data);
+					mapMarkersUpdate(data);
+				};
+			});		
+			attrs.$observe('distance', function(distance) { 
+				if (suburbPolygonArray.length == 0) {
+					mapPolygonInitialize(distance, mapPolygonShowHide); 
+				} else if (suburbMarkerArray.length !== 0) {
+					mapPolygonUpdate(distance);
 				};
 			});
-
-			/*
-			attrs.$observe('distance', function(distance) { 
-				MapOverlays.manPolys(map, distance);
-			});*/
 		}
 	};
 });
