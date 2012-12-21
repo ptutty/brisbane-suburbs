@@ -5,12 +5,10 @@ var subcatdirectives = angular.module('suburbcatDirectives', []);
 
 
 // google map on homepage
-subcatdirectives.directive('suburbsmap', function($parse) {
-
+subcatdirectives.directive('suburbsmap', function() {
 	var suburbMarkerArray = []; 
 	var suburbPolygonArray = [];
 	var suburbsMap; // google map object
-
 	function mapCreate(id) {
 		var myOptions = {
 			            zoom: 12,
@@ -19,7 +17,6 @@ subcatdirectives.directive('suburbsmap', function($parse) {
 				        };	
 		suburbsMap = new google.maps.Map(document.getElementById(id), myOptions); 
 	};
-
 	function mapMarkerCreate(suburbMarkerData, infoWindowText, id){
 		var latLng = new google.maps.LatLng(suburbMarkerData.lat, suburbMarkerData.lng);
 		var marker = new google.maps.Marker({
@@ -31,17 +28,14 @@ subcatdirectives.directive('suburbsmap', function($parse) {
 		});
 		return marker;
 	};
-
 	function mapInfoWindowCreate(marker){
 		var infowindow = new google.maps.InfoWindow({
 		content: "holding..."
 		});
-		 
 		google.maps.event.addListener(marker, 'mouseover', function() {
           infowindow.setContent(marker.html);
           infowindow.open(suburbsMap, marker);
         });
-
         google.maps.event.addListener(marker, 'mouseout', function() {
           infowindow.close();
         });
@@ -50,7 +44,6 @@ subcatdirectives.directive('suburbsmap', function($parse) {
         });
 		return infowindow; 
 	};
-
 	function mapInitialize(id){
 		mapCreate(id);
 		var stluciaCampusMapData = {"lat": -27.4978, "lng": 153.0132, "icon": "img/university.png"};
@@ -58,7 +51,6 @@ subcatdirectives.directive('suburbsmap', function($parse) {
 		var stluciaMarker = mapMarkerCreate(stluciaCampusMapData, infoWindowText, "stluciacampus");
 		mapInfoWindowCreate(stluciaMarker);
 	};
-
 	function mapMarkersInitialize(suburbsData){
         for (var i = 0; i < suburbsData.length; i++) {
           var suburb = suburbsData[i];
@@ -68,7 +60,6 @@ subcatdirectives.directive('suburbsmap', function($parse) {
           suburbMarkerArray.push(suburbMarker);
       	}
 	};
-
 	function mapPolygonInitialize(distance, callback){
 		for (var i = 0; i < polygonpathdata.length; i++) {
           var paths = polygonpathdata[i].data;
@@ -89,7 +80,6 @@ subcatdirectives.directive('suburbsmap', function($parse) {
           suburbPolygonArray.push({"distance": distance, "data": poly});  
         };  
 	};
-
 	function mapPolygonShowHide(polygon, show){
 		if (show == true){
 			polygon.setMap(suburbsMap);
@@ -97,7 +87,6 @@ subcatdirectives.directive('suburbsmap', function($parse) {
 			polygon.setMap(null);	
 		}
 	};
-
 	function mapPolygonUpdate(currentdistance) { // hides polys on map
         for (var i = 0; i < suburbPolygonArray.length; i++) {
         	var poly = suburbPolygonArray[i].data;
@@ -111,7 +100,6 @@ subcatdirectives.directive('suburbsmap', function($parse) {
         	};
         };
      }; 
-
 	function mapMarkersUpdate(suburbsData){
 		 mapMarkerHide(); // hide all markers
 		 // iterate over new suburbs list to display
@@ -126,15 +114,12 @@ subcatdirectives.directive('suburbsmap', function($parse) {
 	     	};
 	     };
 	};
-
 	function mapMarkerHide() { // hides markers
 		for (var i = 0; i < suburbMarkerArray.length; i++) {
          	var marker = suburbMarkerArray[i];
          	marker.setMap(null);
          };    
     };
-
-
 	return {
 		restrict: 'E',
 		replace: true,      
