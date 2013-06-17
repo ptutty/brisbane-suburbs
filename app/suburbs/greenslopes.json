@@ -2,10 +2,10 @@
     "id": "greenslopes", 
     "name": "Greenslopes",
     "description": 
-     ["Greenslopes is another great inner city suburb with easy access anything you could need including shops and restaurants with plenty of ‘green space’ for those who enjoy the outdoors. With plenty of access to the busway, it’s easy to get around, in and out of the suburb.",
-     "The Stones Corner area of Greenslopes, located just off the Eastern Busway, is perfect for anyone looking for unique shops or a delicious café breakfast on a lazy weekend. The South East Freeway Bikeway also runs along the length of the suburb, making it a perfect location for the avid bicycle commuter, the more relaxed weekend cyclist, or anyone looking for a leisurely walk into the city. Plenty of supermarkets, medical centres, and other amenities make Greenslopes a great sub- urb with everything you would need close by.",
+     ["Greenslopes is another great inner City suburb with easy access to anything you could need including shops and restaurants with plenty of ‘green space’ for those who enjoy the outdoors. With plenty of access to the busway, it’s easy to get around, in and out of the suburb.",
+     "The Stones Corner area of Greenslopes, located just off the Eastern Busway, is perfect for anyone looking for unique shops or a delicious café breakfast on a lazy weekend. The South East Freeway Bikeway also runs along the length of the suburb, making it a perfect location for the avid bicycle commuter, the more relaxed weekend cyclist, or anyone looking for a leisurely walk into the City. Plenty of supermarkets, medical centres, and other amenities make Greenslopes a great suburb with everything you would need close by.",
      "Greenslopes is popular with young professionals, families and students. Accommodation in the area is a mix of apartment blocks, houses, and townhouses. Share houses start at $145.00 per week or a self-contained studio can be rented for $350 per week; prices increase depending on size and location.",
-     "The suburb also has great access to public transportation with easy access to the Buranda Train Station, and the South East and Eastern Busways. There are several direct buses to the city and to UQ. With quick and easy accessibility to the city, a diverse range of shops, restaurants, and cafes nearby, plenty of parks, bikeways and walking paths make Greenslopes a great suburb for anyone looking for the convenience of an inner city suburb with a relaxed, laid back vibe."
+     "The suburb also has great access to public transportation with easy access to the Buranda Train Station, and the South East and Eastern Busways. There are several direct buses to the City and to UQ. With quick and easy accessibility to the City, a diverse range of shops, restaurants, and cafes nearby, plenty of parks, bikeways and walking paths, make Greenslopes a great suburb for anyone looking for the convenience of an inner City suburb with a relaxed, laid back vibe."
      ],
     "distance": {
         "city": 6 
@@ -19,9 +19,9 @@
     },
     "strapline": "Visit Stones Corner for unique shops and cafes!", 
     "transport": "Two major bus stops on the SE and Eastern busways service Greenslopes with easy access to the Buranda Train Station on the Doomben/Cleveland Line.",
-    "shopping": "There are plenty of small shops in the Stones Corner area and easy access to supermarkets on LoganRoad.",
+    "shopping": "There are plenty of small shops in the Stones Corner area and easy access to supermarkets on Logan Road.",
     "cost": "Rentals are plentiful and affordable, suitable for students, young professionals, and families.",
-    "social": "The Stones Corner area is well known for it’s cafe scene and is a great place for a weekend brekkie.",
+    "social": "The Stones Corner area is well known for its cafe scene and is a great place for a weekend brekkie.",
     "images": [
         "img/suburbs/placeholder1.jpg", 
         "img/suburbs/placeholder2.jpg", 

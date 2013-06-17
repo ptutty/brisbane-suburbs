@@ -2,10 +2,10 @@
     "id": "indooroopilly", 
     "name": "Indooroopilly",
     "description": 
-     ["Affectionately known as ‘Indro’ to the locals, Indooroopilly is a thriving suburb to the west of the city centre. The area is extremely popular with young professionals, families and students, with more and more UQ students calling the area home.",
+     ["Affectionately known as ‘Indro’ to the locals, Indooroopilly is a thriving suburb to the west of the City centre. The area is extremely popular with young professionals, families and students, with more and more UQ students calling the area home.",
      "The suburb has all of the services and amenities you would expect, including Indooroopilly Shopping Centre, which is the largest shopping centre in the western suburbs—perfect for students looking for casual work! There are two cinema complexes for those essential study-breaks, as well as a golf club if you are so inclined.",
      "The streets alongside the railway station offer more independent shops and boutiques, as well as some great cafes and restaurants.",
-     "Indro is well-serviced by public transport, a large bus interchange is located just outside the shopping centre, and the train station (where you can get trains into the city and beyond) is 400m away. You can get a bus direct to the UQ St Lucia campus every 15-20 minutes during the day. You can also grab a bicycle and access the cycleway towards both the city and UQ.",
+     "Indro is well-serviced by public transport; a large bus interchange is located just outside the shopping centre, and the train station (where you can get trains into the City and beyond) is 400m away. You can get a bus direct to the UQ St Lucia campus every 15-20 minutes during the day. You can also grab a bicycle and access the cycleway towards both the City and UQ.",
      "Accommodation in the area is a mix of traditional Queenslander homes (many of which have been renovated) and townhouses and units, with rental prices in the area starting at $150 for a share house. There are some cheaper bargains out there in more basic older style homes. You can probably manage to find an unfurnished 2 bedroom apartment for under $350."
      ],
     "distance": {
@@ -18,7 +18,7 @@
     "gmap": {   
        "centre" : {"lat": -27.49, "lng" : 152.97, "zoom": 15}
     },
-    "strapline": "Taringa, a neighbouring suburb, is also a good option for students. While it is predominantly a residential area, it has great transport links to UQ and the City, and you can get all of your groceries etc in Indro pretty easily.!", 
+    "strapline": "Taringa, a neighbouring suburb, is also a good option for students. While it is predominantly a residential area, it has great transport links to UQ and the City, and you can get all of your groceries etc in Indro pretty easily!", 
     "transport": "Indooroopilly train station is on the Ipswich line. Direct bus service to UQ takes about 25mins",
     "shopping": "Indooroopilly Shopping Centre has all the major stores and supermarkets you will need.",
     "cost": "Rental prices in the area cater well to students. Share houses start at $150, vacant properties at about $275.",
