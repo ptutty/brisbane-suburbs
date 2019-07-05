@@ -1,7 +1,6 @@
-# Brisbane Suburb Profiler
+# Brisbane Suburbs
 
-Just clone the repo (or download the zip/tarball), start up your webserver and you are ready go.
-You can check it out by opening app/index.html in your browser (might not work file `file://` scheme in certain browsers)
+Use GoogleMap API and Suburb boundary data, transport data to create visualisation of quicks route and mode of transport to campus.
 
 
 ### Running the app during development
