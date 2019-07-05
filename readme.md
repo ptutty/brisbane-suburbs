@@ -1,6 +1,6 @@
 # Brisbane Suburbs
 
-Use GoogleMap API and Suburb boundary data, transport data to create visualisation of quicks route and mode of transport to campus.
+Use GoogleMap API, suburb boundary data, transport data to create visualisation of quicks route and mode of transport to campus.
 
 
 ### Running the app during development
